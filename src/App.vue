@@ -40,7 +40,7 @@ watch(locale, (newLocale) => {
       }
     });
 
-    console.log(messages.pageValencia)
+    console.log(messages)
 </script>
 
 <template>
