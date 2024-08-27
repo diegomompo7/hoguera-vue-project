@@ -3,6 +3,7 @@ import English from "./lang/en.json";
 import Spanish from "./lang/es.json";
 import Valencia from "./lang/va.json";
 import Language from "./components/Language.vue";
+import Header from "./components/Header.vue";
 import { ref, watch, onMounted } from 'vue';
 
 
@@ -47,6 +48,7 @@ watch(locale, (newLocale) => {
 <template>
   <div class="text-center pt-3">
     <Language :messages="messages" :setLanguage="setLanguage"></Language>
+    <Header></Header>
   </div>
 
 </template>
