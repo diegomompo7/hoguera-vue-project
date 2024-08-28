@@ -1,0 +1,13 @@
+$theme-colors: (
+    "yellow-500" : $yellow
+);
+
+@mixin apply-color($color) {
+   color: map-get($theme-colors, $color);
+  }
+  
+  @each $color, $value in $theme-colors {
+    .text-#{$color} {
+      @include apply-color($color);
+    }
+  }

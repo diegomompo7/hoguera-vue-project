@@ -34,47 +34,58 @@ $marginPadding: (
 }
 
 @mixin applyPadding($size) {
-  margin: map-get($marginPadding, $size);
-}
-
-@each $size, $value in $widths {
-  .w-#{$size} {
-    @include apply-width($size);
-  }
+  padding: map-get($marginPadding, $size);
 }
 
 @each $size, $value in $marginPadding {
   .m-#{$size} {
-    @include apply-margin($size);
+    @include applyMargin($size);
+  }
+  .mx-#{$size} {
+    margin-right: map-get($marginPadding, $size);
+    margin-left:  map-get($marginPadding, $size);
+  }
+  .my-#{$size} {
+    margin-top: map-get($marginPadding, $size);
+    margin-bottom: map-get($marginPadding, $size);
   }
   .mt-#{$size} {
     margin-top: map-get($marginPadding, $size);
   }
-  .mr-#{$size} {
+  .me-#{$size} {
     margin-right: map-get($marginPadding, $size);
   }
   .mb-#{$size} {
     margin-bottom: map-get($marginPadding, $size);
   }
-  .ml-#{$size} {
+  .ms-#{$size} {
     margin-left: map-get($marginPadding, $size);
   }
 }
 
 @each $size, $value in $marginPadding {
   .p-#{$size} {
-    @include apply-padding($size);
+    @include applyPadding($size);
+  }
+
+  .px-#{$size} {
+    padding-right: map-get($marginPadding, $size);
+    padding-left:  map-get($marginPadding, $size);
+  }
+  .py-#{$size} {
+    padding-top: map-get($marginPadding, $size);
+    padding-bottom: map-get($marginPadding, $size);
   }
   .pt-#{$size} {
     padding-top: map-get($marginPadding, $size);
   }
-  .pr-#{$size} {
+  .pe-#{$size} {
     padding-right: map-get($marginPadding, $size);
   }
   .pb-#{$size} {
     padding-bottom: map-get($marginPadding, $size);
   }
-  .pl-#{$size} {
+  .ps-#{$size} {
     padding-left: map-get($marginPadding, $size);
   }
 }

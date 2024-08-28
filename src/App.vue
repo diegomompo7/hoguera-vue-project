@@ -4,10 +4,12 @@ import Spanish from "./lang/es.json";
 import Valencia from "./lang/va.json";
 import Language from "./components/Language.vue";
 import Header from "./components/Header.vue";
+import Scenes from "./components/Scenes.vue";
 import { ref, watch, onMounted } from 'vue';
+import { useI18n } from 'vue-i18n';
 
+const { locale } = useI18n();
 
-let locale = ref(navigator.language);
 let messages = ref({});
 
 const params = new URLSearchParams(window.location.search);
@@ -51,6 +53,7 @@ watch(locale, (newLocale) => {
     <Language :messages="messages" :setLanguage="setLanguage"></Language>
   </div>
   <Header :messages="messages" :setLanguage="setLanguage"></Header>
+  <Scenes :messages="messages" :language="locale"></Scenes>
   </div>
 
 </template>
