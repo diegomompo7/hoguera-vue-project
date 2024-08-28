@@ -1,0 +1,80 @@
+$marginPadding: (
+  /* 2px  */ 0_5: 0.125rem,
+  /* 6px  */ 1_5: 0.375rem,
+  /* 10px  */ 2_25: 0.625rem,
+  /* 12px */ 2_5: 0.75rem,
+  /* 14px */ 2_75: 0.875rem,
+  /* 20px */ 3_5: 1.25rem,
+  /* 28px */ 4_2: 1.75rem,
+  /* 32px */ 4_4: 2rem,
+  /* 36px */ 4_5: 2.25rem,
+  /* 40px */ 4_6: 2.5rem,
+  /* 44px */ 4_8: 2.75rem,
+  /* 56px */ 5_5: 3.5rem,
+  /* 64px */ 6: 4rem,
+  /* 80px */ 7: 5rem,
+  /* 96px */ 8: 6rem,
+  /* 112px */ 9: 7rem,
+  /* 128px */ 10: 8rem,
+  /* 144px */ 11: 9rem,
+  /* 160px */ 12: 10rem,
+  /* 176px */ 13: 11rem,
+  /* 192px */ 14: 12rem,
+  /* 208px */ 15: 13rem,
+  /* 224px */ 16: 14rem,
+  /* 240px */ 17: 15rem,
+  /* 256px */ 18: 16rem,
+  /* 288px */ 19: 18rem,
+  /* 320px */ 20: 20rem,
+  /* 384px */ 21: 24rem
+);
+
+@mixin applyMargin($size) {
+  margin: map-get($marginPadding, $size);
+}
+
+@mixin applyPadding($size) {
+  margin: map-get($marginPadding, $size);
+}
+
+@each $size, $value in $widths {
+  .w-#{$size} {
+    @include apply-width($size);
+  }
+}
+
+@each $size, $value in $marginPadding {
+  .m-#{$size} {
+    @include apply-margin($size);
+  }
+  .mt-#{$size} {
+    margin-top: map-get($marginPadding, $size);
+  }
+  .mr-#{$size} {
+    margin-right: map-get($marginPadding, $size);
+  }
+  .mb-#{$size} {
+    margin-bottom: map-get($marginPadding, $size);
+  }
+  .ml-#{$size} {
+    margin-left: map-get($marginPadding, $size);
+  }
+}
+
+@each $size, $value in $marginPadding {
+  .p-#{$size} {
+    @include apply-padding($size);
+  }
+  .pt-#{$size} {
+    padding-top: map-get($marginPadding, $size);
+  }
+  .pr-#{$size} {
+    padding-right: map-get($marginPadding, $size);
+  }
+  .pb-#{$size} {
+    padding-bottom: map-get($marginPadding, $size);
+  }
+  .pl-#{$size} {
+    padding-left: map-get($marginPadding, $size);
+  }
+}

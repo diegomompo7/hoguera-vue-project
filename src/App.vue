@@ -46,9 +46,11 @@ watch(locale, (newLocale) => {
 </script>
 
 <template>
+  <div class="">
   <div class="text-center pt-3">
     <Language :messages="messages" :setLanguage="setLanguage"></Language>
-    <Header></Header>
+  </div>
+  <Header :messages="messages" :setLanguage="setLanguage"></Header>
   </div>
 
 </template>

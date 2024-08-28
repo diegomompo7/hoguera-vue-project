@@ -1,0 +1,102 @@
+$widths: (
+  1_12: 8.3333333%,
+  1_6: 16.666667%,
+  1_5: 20%,
+  1_3: 33.333333%,
+  2_5: 40%,
+  5_12: 41.666667%,
+  7_12: 58.333333%,
+  3_5: 60%,
+  2_3: 66.666667%,
+  4_5: 80%,
+  5_6: 83.333333%,
+  11_12: 91.666667%,
+);
+
+@mixin apply-width($size) {
+  width: map-get($widths, $size);
+}
+
+@each $size, $value in $widths {
+  .w-#{$size} {
+    @include apply-width($size);
+  }
+}
+
+@layer utilities {
+  .w-0 {
+    width: 0px;
+  }
+  .w-1 {
+    width: 0.25rem;
+  }
+  .w-2 {
+    width: 0.5rem;
+  }
+  .w-3 {
+    width: 1rem;
+  }
+  .w-4 {
+    width: 1.5rem;
+  }
+  .w-5 {
+    width: 2rem;
+  }
+  .w-6 {
+    width: 2.5rem;
+  }
+  .w-7 {
+    width: 3rem;
+  }
+  .w-8 {
+    width: 3.5rem;
+  }
+  .w-9 {
+    width: 4rem;
+  }
+  .w-10 {
+    width: 5rem;
+  }
+  .w-11 {
+    width: 6rem;
+  }
+  .w-12 {
+    width: 7rem;
+  }
+  .w-13 {
+    width: 8rem;
+  }
+  .w-14 {
+    width: 9rem;
+  }
+  .w-15 {
+    width: 10rem;
+  }
+  .w-16 {
+    width: 11rem;
+  }
+  .w-17 {
+    width: 12rem;
+  }
+  .w-18 {
+    width: 13rem;
+  }
+  .w-19 {
+    width: 14rem;
+  }
+  .w-20 {
+    width: 15rem;
+  }
+  .w-21 {
+    width: 16rem;
+  }
+  .w-22 {
+    width: 18rem;
+  }
+  .w-23 {
+    width: 20rem;
+  }
+  .w-24 {
+    width: 24rem;
+  }
+}
