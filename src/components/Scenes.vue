@@ -92,6 +92,12 @@ const handleAudioEnded = (sceneNumber) => {
                 <audio id="audioPlayerAdult"  :ref="(el) => { audioRefs[initScene+1] = el}" @ended="handleAudioEnded(initScene + 1)">
                     <source :src="$t(`audioAdult`)"
                         type="audio/mpeg" />
+                    <track
+                        label="Spanish"
+                        kind="captions"
+                        srclang="es"
+                        src="../assets/subtitles/SceneAdult.vtt"
+                    default />
                     Tu navegador no soporta el elemento de audio.
                     <h1>El audio no se pudo cargar: {{ t('audioAdult') }}</h1>
                 </audio>

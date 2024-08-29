@@ -1,0 +1,449 @@
+{
+    "result": "Hola, soy Lara V\u00e1zquez P\u00e9rez, Belleza de la Foguera San Blay de Dalt, os voy a acompa\u00f1ar  durante la visita a nuestro monumento. Durante esta visita encontrar\u00e1s c\u00f3digos QR alrededor  de la foguera. En ellos podr\u00e1s escuchar un poema dedicado a cada parte de ella, seguido  de una explicaci\u00f3n. Los poemas los escuchar\u00e1s en valenciano.",
+    "stab_segments": [
+        {
+            "start": 0.57,
+            "end": 0.85,
+            "word": "Hola,",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 1.35,
+            "end": 1.59,
+            "word": "soy",
+            "probability": 0.7646484375,
+            "segmentNo": 0
+        },
+        {
+            "start": 1.59,
+            "end": 1.89,
+            "word": "Lara",
+            "probability": 0.66015625,
+            "segmentNo": 0
+        },
+        {
+            "start": 1.89,
+            "end": 2.39,
+            "word": "Blázquez",
+            "probability": 0.5747884114583334,
+            "segmentNo": 0
+        },
+        {
+            "start": 2.39,
+            "end": 2.83,
+            "word": "Pérez,",
+            "probability": 0.94580078125,
+            "segmentNo": 0
+        },
+        {
+            "start": 3.41,
+            "end": 3.93,
+            "word": "Belleza",
+            "probability": 0.54193115234375,
+            "segmentNo": 0
+        },
+        {
+            "start": 3.93,
+            "end": 4.23,
+            "word": "de",
+            "probability": 0.89306640625,
+            "segmentNo": 0
+        },
+        {
+            "start": 4.23,
+            "end": 4.39,
+            "word": "la",
+            "probability": 0.8896484375,
+            "segmentNo": 0
+        },
+        {
+            "start": 4.39,
+            "end": 4.75,
+            "word": "Foguera",
+            "probability": 0.876953125,
+            "segmentNo": 0
+        },
+        {
+            "start": 4.75,
+            "end": 5.17,
+            "word": "San",
+            "probability": 0.6708984375,
+            "segmentNo": 0
+        },
+        {
+            "start": 5.17,
+            "end": 5.41,
+            "word": "Blay",
+            "probability": 0.5452880859375,
+            "segmentNo": 0
+        },
+        {
+            "start": 5.41,
+            "end": 5.53,
+            "word": "de",
+            "probability": 0.81787109375,
+            "segmentNo": 0
+        },
+        {
+            "start": 5.53,
+            "end": 5.83,
+            "word": "Dalt,",
+            "probability": 0.824951171875,
+            "segmentNo": 0
+        },
+        {
+            "start": 6.53,
+            "end": 6.73,
+            "word": "os",
+            "probability": 0.82421875,
+            "segmentNo": 0
+        },
+        {
+            "start": 6.73,
+            "end": 6.93,
+            "word": "voy",
+            "probability": 0.90185546875,
+            "segmentNo": 0
+        },
+        {
+            "start": 6.93,
+            "end": 7.03,
+            "word": "a",
+            "probability": 0.94482421875,
+            "segmentNo": 0
+        },
+        {
+            "start": 7.03,
+            "end": 7.67,
+            "word": "acompa\u00f1ar",
+            "probability": 0.82763671875,
+            "segmentNo": 0
+        },
+        {
+            "start": 7.67,
+            "end": 8.09,
+            "word": "durante",
+            "probability": 0.8525390625,
+            "segmentNo": 1
+        },
+        {
+            "start": 8.09,
+            "end": 8.31,
+            "word": "la",
+            "probability": 0.88525390625,
+            "segmentNo": 1
+        },
+        {
+            "start": 8.31,
+            "end": 8.69,
+            "word": "visita",
+            "probability": 0.935302734375,
+            "segmentNo": 1
+        },
+        {
+            "start": 8.69,
+            "end": 8.87,
+            "word": "a",
+            "probability": 0.98583984375,
+            "segmentNo": 1
+        },
+        {
+            "start": 8.87,
+            "end": 9.13,
+            "word": "nuestro",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 9.13,
+            "end": 10.07,
+            "word": "monumento.",
+            "probability": 0.8779296875,
+            "segmentNo": 1
+        },
+        {
+            "start": 10.61,
+            "end": 10.93,
+            "word": "Durante",
+            "probability": 0.95703125,
+            "segmentNo": 1
+        },
+        {
+            "start": 10.93,
+            "end": 11.21,
+            "word": "esta",
+            "probability": 0.693359375,
+            "segmentNo": 1
+        },
+        {
+            "start": 11.21,
+            "end": 11.67,
+            "word": "visita",
+            "probability": 0.938720703125,
+            "segmentNo": 1
+        },
+        {
+            "start": 11.67,
+            "end": 12.71,
+            "word": "encontrar\u00e1s",
+            "probability": 0.777587890625,
+            "segmentNo": 1
+        },
+        {
+            "start": 12.71,
+            "end": 13.07,
+            "word": "c\u00f3digos",
+            "probability": 0.91650390625,
+            "segmentNo": 1
+        },
+        {
+            "start": 13.07,
+            "end": 13.45,
+            "word": "QR",
+            "probability": 0.990234375,
+            "segmentNo": 1
+        },
+        {
+            "start": 13.45,
+            "end": 14.05,
+            "word": "alrededor",
+            "probability": 0.79736328125,
+            "segmentNo": 1
+        },
+        {
+            "start": 14.05,
+            "end": 14.31,
+            "word": "de",
+            "probability": 0.90673828125,
+            "segmentNo": 2
+        },
+        {
+            "start": 14.31,
+            "end": 14.43,
+            "word": "la",
+            "probability": 0.88525390625,
+            "segmentNo": 2
+        },
+        {
+            "start": 14.43,
+            "end": 14.77,
+            "word": "foguera.",
+            "probability": 0.7781575520833334,
+            "segmentNo": 2
+        },
+        {
+            "start": 15.61,
+            "end": 15.73,
+            "word": "En",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 15.73,
+            "end": 15.99,
+            "word": "ellos",
+            "probability": 0.84033203125,
+            "segmentNo": 2
+        },
+        {
+            "start": 15.99,
+            "end": 16.49,
+            "word": "podr\u00e1s",
+            "probability": 0.814697265625,
+            "segmentNo": 2
+        },
+        {
+            "start": 16.49,
+            "end": 16.99,
+            "word": "escuchar",
+            "probability": 0.831298828125,
+            "segmentNo": 2
+        },
+        {
+            "start": 16.99,
+            "end": 17.49,
+            "word": "un",
+            "probability": 0.8974609375,
+            "segmentNo": 2
+        },
+        {
+            "start": 17.49,
+            "end": 17.89,
+            "word": "poema",
+            "probability": 0.947021484375,
+            "segmentNo": 2
+        },
+        {
+            "start": 17.89,
+            "end": 18.51,
+            "word": "dedicado",
+            "probability": 0.885009765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 18.51,
+            "end": 18.83,
+            "word": "a",
+            "probability": 0.9951171875,
+            "segmentNo": 2
+        },
+        {
+            "start": 18.83,
+            "end": 19.01,
+            "word": "cada",
+            "probability": 0.82568359375,
+            "segmentNo": 2
+        },
+        {
+            "start": 19.01,
+            "end": 19.33,
+            "word": "parte",
+            "probability": 0.765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 19.33,
+            "end": 19.53,
+            "word": "de",
+            "probability": 0.89892578125,
+            "segmentNo": 2
+        },
+        {
+            "start": 19.53,
+            "end": 19.75,
+            "word": "ella,",
+            "probability": 0.8515625,
+            "segmentNo": 2
+        },
+        {
+            "start": 20.51,
+            "end": 20.77,
+            "word": "seguido",
+            "probability": 0.88623046875,
+            "segmentNo": 2
+        },
+        {
+            "start": 20.77,
+            "end": 20.91,
+            "word": "de",
+            "probability": 0.9052734375,
+            "segmentNo": 3
+        },
+        {
+            "start": 20.91,
+            "end": 21.05,
+            "word": "una",
+            "probability": 0.82568359375,
+            "segmentNo": 3
+        },
+        {
+            "start": 21.05,
+            "end": 21.57,
+            "word": "explicaci\u00f3n.",
+            "probability": 0.822021484375,
+            "segmentNo": 3
+        },
+        {
+            "start": 22.57,
+            "end": 22.75,
+            "word": "Los",
+            "probability": 0.9423828125,
+            "segmentNo": 3
+        },
+        {
+            "start": 22.75,
+            "end": 23.37,
+            "word": "poemas",
+            "probability": 0.941650390625,
+            "segmentNo": 3
+        },
+        {
+            "start": 23.37,
+            "end": 23.79,
+            "word": "los",
+            "probability": 0.869140625,
+            "segmentNo": 3
+        },
+        {
+            "start": 23.79,
+            "end": 24.39,
+            "word": "escuchar\u00e1s",
+            "probability": 0.8924153645833334,
+            "segmentNo": 3
+        },
+        {
+            "start": 24.39,
+            "end": 24.55,
+            "word": "en",
+            "probability": 0.892578125,
+            "segmentNo": 3
+        },
+        {
+            "start": 24.55,
+            "end": 25.03,
+            "word": "valenciano.",
+            "probability": 0.8857421875,
+            "segmentNo": 3
+        }
+    ],
+    "segment_data": [
+        {
+            "start": 0.57,
+            "end": 7.67,
+            "index": 0
+        },
+        {
+            "start": 7.67,
+            "end": 14.05,
+            "index": 1
+        },
+        {
+            "start": 14.05,
+            "end": 20.77,
+            "index": 2
+        },
+        {
+            "start": 20.77,
+            "end": 25.03,
+            "index": 3
+        }
+    ],
+    "vad_segment_array": [
+        {
+            "start": 0.56875,
+            "end": 3.236125
+        },
+        {
+            "start": 3.336125,
+            "end": 6.4449375
+        },
+        {
+            "start": 6.5449375,
+            "end": 10.43475
+        },
+        {
+            "start": 10.53475,
+            "end": 15.4263125
+        },
+        {
+            "start": 15.5263125,
+            "end": 20.2140625
+        },
+        {
+            "start": 20.3140625,
+            "end": 22.4041875
+        },
+        {
+            "start": 22.5041875,
+            "end": 25.050875
+        }
+    ],
+    "diarization": [
+        {
+            "start": "0",
+            "end": "25.730612",
+            "speaker": "SPEAKER_00"
+        }
+    ]
+}
