@@ -17,6 +17,20 @@
 @import "./utilities/heights";
 @import "./utilities/marginPadding";
 @import "./utilities/colors";
+@import "./utilities/fontSize";
 
+$enable-shadows: true;
 
+$customShadow: (
+    shadowYellow: 0em 0em 0.4em 0.44em rgba(255, 255, 0, 1)
+);
 
+@mixin applyShadow($shadow) {
+    box-shadow: map-get($customShadow, $shadow);
+  }
+  
+  @each $size, $value in $customShadow {
+    .shadow-#{$size} {
+      @include applyShadow($size);
+    } 
+}

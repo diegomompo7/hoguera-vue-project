@@ -25,14 +25,14 @@
         {
             "start": 1.89,
             "end": 2.39,
-            "word": "Blázquez",
+            "word": "V\u00e1zquez",
             "probability": 0.5747884114583334,
             "segmentNo": 0
         },
         {
             "start": 2.39,
             "end": 2.83,
-            "word": "Pérez,",
+            "word": "P\u00e9rez,",
             "probability": 0.94580078125,
             "segmentNo": 0
         },

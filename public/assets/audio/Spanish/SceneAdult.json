@@ -1,0 +1,120 @@
+{
+    "result": "Hola, soy Lara V\u00e1zquez P\u00e9rez, Belleza de la Foguera San Blay de Dalt, os voy a acompa\u00f1ar  durante la visita a nuestro monumento. Durante esta visita encontrar\u00e1s c\u00f3digos QR alrededor  de la foguera. En ellos podr\u00e1s escuchar un poema dedicado a cada parte de ella, seguido  de una explicaci\u00f3n. Los poemas los escuchar\u00e1s en valenciano.",
+    "stab_segments": [
+        {
+            "start": 0.57,
+            "end": 5.41,
+            "word": "Hola, soy Lara Blázquez Pérez, belleza de la Foguera San Blai",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 5.41,
+            "end": 8.87,
+            "word": "de Dalt, os voy a acompañar durante la visita a",
+            "probability": 0.81787109375,
+            "segmentNo": 0
+        },
+        {
+            "start": 8.87,
+            "end": 10.07,
+            "word": "nuestro monumento.",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 10.61,
+            "end": 13.45,
+            "word": "Durante esta visita encontrarás códigos QR",
+            "probability": 0.95703125,
+            "segmentNo": 1
+        },
+        {
+            "start": 13.45,
+            "end": 14.77,
+            "word": "alrededor de la foguera.",
+            "probability": 0.79736328125,
+            "segmentNo": 1
+        },
+        {
+            "start": 15.61,
+            "end": 19.01,
+            "word": "En ellos podrás escuchar un poema dedicado a cada",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 19.01,
+            "end": 21.57,
+            "word": "parte de ella, seguido de una explicación. ",
+            "probability": 0.765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 22.57,
+            "end": 25.03,
+            "word": "Los poemas los escucharás en valenciano.",
+            "probability": 0.9423828125,
+            "segmentNo": 3
+        }
+    ],
+    "segment_data": [
+        {
+            "start": 0.57,
+            "end": 7.67,
+            "index": 0
+        },
+        {
+            "start": 7.67,
+            "end": 14.05,
+            "index": 1
+        },
+        {
+            "start": 14.05,
+            "end": 20.77,
+            "index": 2
+        },
+        {
+            "start": 20.77,
+            "end": 25.03,
+            "index": 3
+        }
+    ],
+    "vad_segment_array": [
+        {
+            "start": 0.56875,
+            "end": 3.236125
+        },
+        {
+            "start": 3.336125,
+            "end": 6.4449375
+        },
+        {
+            "start": 6.5449375,
+            "end": 10.43475
+        },
+        {
+            "start": 10.53475,
+            "end": 15.4263125
+        },
+        {
+            "start": 15.5263125,
+            "end": 20.2140625
+        },
+        {
+            "start": 20.3140625,
+            "end": 22.4041875
+        },
+        {
+            "start": 22.5041875,
+            "end": 25.050875
+        }
+    ],
+    "diarization": [
+        {
+            "start": "0",
+            "end": "25.730612",
+            "speaker": "SPEAKER_00"
+        }
+    ]
+}

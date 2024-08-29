@@ -37,5 +37,9 @@
     "pageValencia": "Página en Valenciano",
     "language": "Idioma",
     "header": "Cabecera",
-    "sponsors": "Patrocinadores"
+    "sponsors": "Patrocinadores",
+    "titleAudioAdult": "Bienvenida de la belleza",
+    "enableSubtitle": "Activar Subtítulos",
+    "disableSubtitle": "Desactivar Subtítulos",
+    "subtitleAdult": "/assets/audio/Spanish/SceneAdult.json"
 }

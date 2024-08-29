@@ -27,17 +27,21 @@ const setLanguage = (lang) =>{
   locale.value = lang
 }
 
+
 watch(locale, (newLocale) => {
       switch (newLocale) {
         case 'es':
+          locale.value = 'es';
           messages.value = Spanish;
           document.documentElement.lang = 'es'
           break;
         case 'en':
+        locale.value = 'en';
           messages.value = English;
           document.documentElement.lang = 'en'
           break;
         case 'va':
+        locale.value = 'va';
           messages.value = Valencia;
           document.documentElement.lang = 'ca-valencia'
           break;
@@ -45,6 +49,7 @@ watch(locale, (newLocale) => {
       
     });
 
+console.log(locale)
 </script>
 
 <template>

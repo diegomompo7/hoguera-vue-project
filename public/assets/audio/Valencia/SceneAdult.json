@@ -1,0 +1,120 @@
+{
+    "result": "",
+    "stab_segments": [
+        {
+            "start": 0.801,
+            "end": 3.113,
+            "word": "Hola, sóc Laura Blázquez Pérez",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 3.403,
+            "end": 5.926,
+            "word": "bellesa de la foguera Sant Blai de Dalt i",
+            "probability": 0.81787109375,
+            "segmentNo": 0
+        },
+        {
+            "start":5.936,
+            "end": 8.589,
+            "word": "us acompanyaré durant la visita al nostre",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 8.599,
+            "end": 11.522,
+            "word": "monument. Trobaràs còdex",
+            "probability": 0.95703125,
+            "segmentNo": 1
+        },
+        {
+            "start": 11.532,
+            "end": 14.385,
+            "word": "QR al voltant de la foguera. En",
+            "probability": 0.79736328125,
+            "segmentNo": 1
+        },
+        {
+            "start": 14.395,
+            "end": 16.867,
+            "word": "ells podràs escoltar un",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 16.877,
+            "end": 19.370,
+            "word": "poema dedicat a cada part ella",
+            "probability": 0.765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 19.820,
+            "end": 22.113,
+            "word": "seguint d'una explicació.",
+            "probability": 0.765625,
+            "segmentNo": 2
+        }
+    ],
+    "segment_data": [
+        {
+            "start": 0.57,
+            "end": 7.67,
+            "index": 0
+        },
+        {
+            "start": 7.67,
+            "end": 14.05,
+            "index": 1
+        },
+        {
+            "start": 14.05,
+            "end": 20.77,
+            "index": 2
+        },
+        {
+            "start": 20.77,
+            "end": 25.03,
+            "index": 3
+        }
+    ],
+    "vad_segment_array": [
+        {
+            "start": 0.56875,
+            "end": 3.236125
+        },
+        {
+            "start": 3.336125,
+            "end": 6.4449375
+        },
+        {
+            "start": 6.5449375,
+            "end": 10.43475
+        },
+        {
+            "start": 10.53475,
+            "end": 15.4263125
+        },
+        {
+            "start": 15.5263125,
+            "end": 20.2140625
+        },
+        {
+            "start": 20.3140625,
+            "end": 22.4041875
+        },
+        {
+            "start": 22.5041875,
+            "end": 25.050875
+        }
+    ],
+    "diarization": [
+        {
+            "start": "0",
+            "end": "25.730612",
+            "speaker": "SPEAKER_00"
+        }
+    ]
+}

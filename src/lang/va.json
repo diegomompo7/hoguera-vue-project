@@ -37,5 +37,9 @@
     "pageValencia": "Pàgina en Valencià",
     "language": "Idioma",
     "header": "Capçalera",
-    "sponsors": "Patrocinadors"
+    "sponsors": "Patrocinadors",
+    "titleAudioAdult": "Benvinguda de la bellesa",
+    "enableSubtitle": "Activar Subtítols",
+    "disableSubtitle":  "Desactivar Subtítols",
+    "subtitleAdult": "/assets/audio/Valencia/SceneAdult.json"
 }

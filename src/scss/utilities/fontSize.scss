@@ -1,0 +1,26 @@
+$fontSize: (
+  text_xs: 0.75rem, /* 12px */
+  text_sm: 0.875rem, /* 14px */
+  text_base: 1rem, /* 16px */
+  text_lg	: 1.125rem, /* 18px */
+  text_xl: 1.25rem, /* 20px */
+  text_2xl: 1.5rem, /* 24px */
+  text_3xl: 1.875rem, /* 30px */
+  text_4xl: 2.25rem, /* 36px */
+  text_5xl: 3rem, /* 48px */
+  text_6xl: 3.75rem, /* 60px */
+  text_7xl: 4.5rem, /* 72px */
+  text_8xl: 6rem, /* 96px */
+  text_9xl: 8rem, /* 128px */
+  
+);
+
+@mixin applyFontSize($size) {
+ font-size: map-get($fontSize, $size);
+}
+
+@each $size, $value in $fontSize {
+  .fs-#{$size} {
+    @include applyFontSize($size);
+  }
+}
