@@ -23,6 +23,13 @@
             "segmentNo": 1
         },
         {
+            "start": 10.07,
+            "end": 10.61,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
             "start": 10.61,
             "end": 13.45,
             "word": "Durante esta visita encontrarás códigos QR",
@@ -34,6 +41,13 @@
             "end": 14.77,
             "word": "alrededor de la foguera.",
             "probability": 0.79736328125,
+            "segmentNo": 1
+        },
+        {
+            "start": 14.77,
+            "end": 15.61,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
             "segmentNo": 1
         },
         {
@@ -49,6 +63,13 @@
             "word": "parte de ella, seguido de una explicación. ",
             "probability": 0.765625,
             "segmentNo": 2
+        },
+        {
+            "start": 21.57,
+            "end": 22.57,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
         },
         {
             "start": 22.57,

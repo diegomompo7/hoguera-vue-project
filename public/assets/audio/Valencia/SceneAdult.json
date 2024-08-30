@@ -2,59 +2,59 @@
     "result": "",
     "stab_segments": [
         {
-            "start": 0.801,
-            "end": 3.113,
-            "word": "Hola, sóc Laura Blázquez Pérez",
+            "start": 0.800,
+            "end": 4.500,
+            "word": "Hola, sóc Lara Blázquez Pérez, bellesa de la foguera",
             "probability": 0.5322265625,
             "segmentNo": 0
         },
         {
-            "start": 3.403,
-            "end": 5.926,
-            "word": "bellesa de la foguera Sant Blai de Dalt i",
+            "start": 4.500,
+            "end": 8.100,
+            "word": "Sant Blai de Dalt, i us acompanyaré durant la visita",
             "probability": 0.81787109375,
             "segmentNo": 0
         },
         {
-            "start":5.936,
-            "end": 8.589,
-            "word": "us acompanyaré durant la visita al nostre",
+            "start": 8.100,
+            "end": 9.000,
+            "word": "al nostre monument.",
             "probability": 0.75146484375,
             "segmentNo": 1
         },
         {
-            "start": 8.599,
-            "end": 11.522,
-            "word": "monument. Trobaràs còdex",
+            "start": 9.000,
+            "end": 9.900,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 9.900,
+            "end": 13.200,
+            "word": "Trobaràs còdex QR al voltant de la foguera.",
             "probability": 0.95703125,
             "segmentNo": 1
         },
         {
-            "start": 11.532,
-            "end": 14.385,
-            "word": "QR al voltant de la foguera. En",
+            "start": 13.200,
+            "end": 14.100,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 14.100,
+            "end": 19.000,
+            "word": "En ells podràs escoltar un poema dedicat a cada",
             "probability": 0.79736328125,
             "segmentNo": 1
         },
         {
-            "start": 14.395,
-            "end": 16.867,
-            "word": "ells podràs escoltar un",
+            "start": 19.000,
+            "end": 21.700,
+            "word": "part d'ella, seguint d'una explicació.",
             "probability": 0.91259765625,
-            "segmentNo": 2
-        },
-        {
-            "start": 16.877,
-            "end": 19.370,
-            "word": "poema dedicat a cada part ella",
-            "probability": 0.765625,
-            "segmentNo": 2
-        },
-        {
-            "start": 19.820,
-            "end": 22.113,
-            "word": "seguint d'una explicació.",
-            "probability": 0.765625,
             "segmentNo": 2
         }
     ],

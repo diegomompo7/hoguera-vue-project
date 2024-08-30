@@ -41,5 +41,6 @@
     "titleAudioAdult": "Benvinguda de la bellesa",
     "enableSubtitle": "Activar Subtítols",
     "disableSubtitle":  "Desactivar Subtítols",
-    "subtitleAdult": "/assets/audio/Valencia/SceneAdult.json"
+    "subtitleAdult": "/assets/audio/Valencia/SceneAdult.json",
+    "subtitleKid": "/assets/audio/Valencia/SceneKid.json"
 }

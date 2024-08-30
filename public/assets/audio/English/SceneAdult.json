@@ -2,58 +2,51 @@
     "result": "",
     "stab_segments": [
         {
-            "start": 0.631,
-            "end": 2.753,
-            "word": "Hola, sóc Laura Blázquez Pérez",
+            "start": 0.700,
+            "end": 4.200,
+            "word": "Hello, I'm Lara Blázquez Pérez belleza de la foguera",
             "probability": 0.5322265625,
             "segmentNo": 0
         },
         {
-            "start": 3.403,
-            "end": 5.926,
-            "word": "bellesa de la foguera Sant Blai de Dalt i",
+            "start": 4.200,
+            "end": 8.400,
+            "word": "San Blai de Dalt and I will be with you while visiting",
             "probability": 0.81787109375,
             "segmentNo": 0
         },
         {
-            "start":5.936,
-            "end": 8.589,
-            "word": "us acompanyaré durant la visita al nostre",
+            "start":8.400,
+            "end": 9.000,
+            "word": "our monument.",
             "probability": 0.75146484375,
             "segmentNo": 1
         },
         {
-            "start": 8.599,
-            "end": 11.522,
-            "word": "monument. Trobaràs còdex",
+            "start": 9.000,
+            "end": 13.300,
+            "word": "You will find QR codes around the monument where",
             "probability": 0.95703125,
             "segmentNo": 1
         },
         {
-            "start": 11.532,
-            "end": 14.385,
-            "word": "QR al voltant de la foguera. En",
+            "start": 13.300,
+            "end": 17.100,
+            "word": "you can listen a poem dedicated to its part,",
             "probability": 0.79736328125,
             "segmentNo": 1
         },
         {
-            "start": 14.395,
-            "end": 16.867,
-            "word": "ells podràs escoltar un",
+            "start": 17.100,
+            "end": 19.600,
+            "word": "followed by an explanation.",
             "probability": 0.91259765625,
             "segmentNo": 2
         },
         {
-            "start": 16.877,
-            "end": 19.370,
-            "word": "poema dedicat a cada part ella",
-            "probability": 0.765625,
-            "segmentNo": 2
-        },
-        {
-            "start": 19.820,
-            "end": 22.113,
-            "word": "seguint d'una explicació.",
+            "start": 19.600,
+            "end": 21.900,
+            "word": "The poems will be in valenciano.",
             "probability": 0.765625,
             "segmentNo": 2
         }

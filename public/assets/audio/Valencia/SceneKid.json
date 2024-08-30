@@ -1,0 +1,220 @@
+{
+    "result": "",
+           
+    "stab_segments": [
+        {
+            "start": 0.600,
+            "end": 3.100,
+            "word": "Hola, sóc Xiana Ugeda Andrés bellesa infantil",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 3.100,
+            "end": 5.300,
+            "word": "de la foguera Sant Blai de Dalt.",
+            "probability": 0.81787109375,
+            "segmentNo": 0
+        },
+        {
+            "start": 5.300,
+            "end": 8.600,
+            "word": "Vaig acompanyar-vos durant la visita al nostre",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 8.600,
+            "end": 11.100,
+            "word": "monument infantil. Te n'has adonat?",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 11.100,
+            "end": 13.300,
+            "word": "Segur que t'has quedat embruixat al veure-la.",
+            "probability": 0.95703125,
+            "segmentNo": 1
+        },
+        {
+            "start": 13.300,
+            "end": 14.600,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 14.600,
+            "end": 17.900,
+            "word": "Benvingut al castell de la Bruixa. Anem de Halloween.",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 17.900,
+            "end": 18.400,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 18.400,
+            "end": 21.800,
+            "word": "La nostra Bruixa porta dins del seu barret la terrorífica",
+            "probability": 0.79736328125,
+            "segmentNo": 1
+        },
+        {
+            "start": 21.800,
+            "end": 25.200,
+            "word": "nit, amb la lluna envoltada de núvols i animalets",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        }
+        ,
+        {
+            "start": 25.200,
+            "end": 27.600,
+            "word": "com el mussol i la rata penada.",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 27.600,
+            "end": 28.700,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 28.700,
+            "end": 32.500,
+            "word": "Ella està fent pòsimes màgiques amb el seu calder,",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 32.500,
+            "end": 34.100,
+            "word": "per tal d'aterrir-nos.",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 34.100,
+            "end": 34.800,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 34.800,
+            "end": 37.300,
+            "word": "Han eixit acompanyada la bruixa, carabases,",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 37.300,
+            "end": 40.200,
+            "word": "fantasmes i mòmies terroríficament divertides.",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 40.200,
+            "end": 41.700,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 41.700,
+            "end": 45.900,
+            "word": "En la nit de lluna plena de Halloween, un boig Frankenstein",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 45.900,
+            "end": 49.300,
+            "word": "amb bruixes, pòsimes i carabases apareix.",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 49.300,
+            "end": 53.300,
+            "word": "Esperem que gaudiu amb la festa de Halloween i de",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 53.300,
+            "end": 55.200,
+            "word": "les fogueres amb una il·lusió terrorífica.",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        }
+    ],
+    "segment_data": [
+        {
+            "start": 0.57,
+            "end": 7.67,
+            "index": 0
+        },
+        {
+            "start": 7.67,
+            "end": 14.05,
+            "index": 1
+        },
+        {
+            "start": 14.05,
+            "end": 20.77,
+            "index": 2
+        },
+        {
+            "start": 20.77,
+            "end": 25.03,
+            "index": 3
+        }
+    ],
+    "vad_segment_array": [
+        {
+            "start": 0.56875,
+            "end": 3.236125
+        },
+        {
+            "start": 3.336125,
+            "end": 6.4449375
+        },
+        {
+            "start": 6.5449375,
+            "end": 10.43475
+        },
+        {
+            "start": 10.53475,
+            "end": 15.4263125
+        },
+        {
+            "start": 15.5263125,
+            "end": 20.2140625
+        },
+        {
+            "start": 20.3140625,
+            "end": 22.4041875
+        },
+        {
+            "start": 22.5041875,
+            "end": 25.050875
+        }
+    ],
+    "diarization": [
+        {
+            "start": "0",
+            "end": "25.730612",
+            "speaker": "SPEAKER_00"
+        }
+    ]
+}

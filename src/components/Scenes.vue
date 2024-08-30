@@ -5,7 +5,6 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { ref, reactive, watch, onMounted, onUnmounted} from 'vue';
 import { useI18n } from 'vue-i18n';
-import sceneAdultES from "../assets/audio/Spanish/SceneAdult.json"
 
 const props = defineProps({
     messages: {
@@ -20,7 +19,7 @@ const props = defineProps({
 
 
 const { t } = useI18n()
-const audioRefs = ref([new Array(7).fill()]);
+const audioRefs = ref(new Array(7).fill());
 const isPlayed = ref([false, false, false, false, false, false, false]);
 let sceneNumber = ref(0);
 const params = new URLSearchParams(window.location.search);
@@ -32,8 +31,6 @@ let audio = ref()
 let intervalId = null;
 
 
-
-console.log(initScene)
 console.log(props.language)
 
 watch(() => props.language, () => {
@@ -41,7 +38,6 @@ watch(() => props.language, () => {
         if (audioRef) {
             audioRef.pause();
             audioRef.currentTime = 0;
-            audioRef.src = t('audioAdult')
             audioRef.load();
             isPlayed.value = isPlayed.value.map((state, i) => i === index ? false : state); // Reiniciar el estado de reproducción de la 
         }
@@ -67,7 +63,7 @@ const controlAudio = (sceneNumber) => {
 
     console.log(audio)
 
-    console.log(isPlayed.value[sceneNumber])
+    console.log(isPlayed)
 
     if (audio) {
         console.log("1")
@@ -82,7 +78,7 @@ const controlAudio = (sceneNumber) => {
 }
 
 const handleAudioEnded = (sceneNumber) => {
-    isPlayed[sceneNumber] = false;
+    isPlayed.value[sceneNumber] = false;
     currentSubtitle.value = null; 
 };
 
@@ -90,9 +86,12 @@ let subtitleData = null
 
 const updateSubtitles = async() => {
     if (showSubtitles.value) {
+        console.log(sceneNumber.value)
         const audio = audioRefs.value[sceneNumber.value];
+        const foundWord = audio.id.replace("audioPlayer", "");
+        console.log(foundWord)
         if (audio) {
-            await fetch(props.messages.subtitleAdult)
+            await fetch(props.messages[`subtitle${foundWord}`])
             .then(response => response.json())
             .then(data => {
                 console.log(data)
@@ -110,6 +109,7 @@ const toggleSubtitles = () => {
 };
 
 watch(showSubtitles, (newValue) => {
+    console.log(newValue)
     if (newValue) {
         intervalId = setInterval(updateSubtitles, 100);
     } else {
@@ -120,7 +120,7 @@ watch(showSubtitles, (newValue) => {
     }
 });
 
-console.log(showSubtitles)
+console.log(props.messages)
 
 
 </script>
@@ -131,9 +131,28 @@ console.log(showSubtitles)
             <swiper-slide class="d-flex mt-4_2 flex-column text-center ">
                 <h1 class="fw-bold" role="title">{{ messages.sceneAdult }}</h1>
                 <img src="../assets/img/imgAdult.png" alt="" class="w-1_3 m-auto">
-                <audio id="audioPlayerAdult" :ref="(el) => { audioRefs[initScene + 1] = el }"
+                <audio id="audioPlayerAdult" :ref="(el) => { audioRefs[initScene + 1] = el, sceneNumber = initScene + 1 }" 
                     @ended="handleAudioEnded(initScene + 1)">
                     <source :src="$t(`audioAdult`)" type="audio/mpeg"/>
+                </audio>
+                <div class="d-flex justify-content-center">
+                <button @click="controlAudio(initScene + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow-500 shadow-shadowYellow rounded-5" :title="messages.titleAudioAdult">
+                    {{ isPlayed[initScene + 1] ? 'Pause' : 'Play' }}
+                </button>
+                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow-500 shadow-shadowYellow rounded-5" :title="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
+            </div>
+                <p v-if="currentSubtitle"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
+                    {{ currentSubtitle.word }}
+                </p>
+            </swiper-slide>
+        </swiper>
+        <swiper v-if="initScene === 4" class="bg-black mt-4_6 text-yellow-500 ">
+            <swiper-slide class="d-flex mt-4_2 flex-column text-center ">
+                <h1 class="fw-bold" role="title">{{ messages.sceneKid }}</h1>
+                <img src="../assets/img/imgKid.png" alt="" class="w-1_3 m-auto">
+                <audio id="audioPlayerKid" :ref="(el) => { audioRefs[initScene + 1] = el, sceneNumber = initScene + 1 }"
+                    @ended="handleAudioEnded(initScene + 1)">
+                    <source :src="$t(`audioKid`)" type="audio/mpeg"/>
                 </audio>
                 <div class="d-flex justify-content-center">
                 <button @click="controlAudio(initScene + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow-500 shadow-shadowYellow rounded-5" :title="messages.titleAudioAdult">
