@@ -1,0 +1,290 @@
+{
+    "result": "Hola, aoy Xiana Ugeda Andrés belleza infantil de la hoguera San Blai de Dalt. Os voy a acompañar durante la visita a nuestro monumento infantil. ¿Te has dado cuenta? Seguro que te has quedado embrujado al verla. Bienvenido al castillo de la bruja. Nos vamos de Halloween. Nuestra bruja lleva en su sombrero la terrorífica noche simbolizada con la luna rodeada de nubes y animalitos como el búho y el murciélago. A ella puedes verla maquinando pócimas mágicas con su caldero. Para aterrorizarnos, han salido acompañar a la bruja calabazas encantadas, fantasmitas y momias terroríficamente divertidas. Si eres atrevido lee los libros de magia oscura y hechizos. Estate en alerta porque están custodiados por calaveras maléficamente festeras. En la noche de luna llena de Halloween, un alocador Frankenstein acompañado por la brujita, pócimas y las calabazas. Esperamos que disfrutes de la fiesta de Halloween y de les Fogueres con una ilusión atronadora.",
+           
+    "stab_segments": [
+        {
+            "start": 0.800,
+            "end": 3.500,
+            "word": "Hola, soy Xiana Ugeda Andrés belleza infantil",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 3.500,
+            "end": 5.100,
+            "word": "de la hoguera San Blai de Dalt.",
+            "probability": 0.81787109375,
+            "segmentNo": 0
+        },
+        {
+            "start": 5.100,
+            "end": 5.500,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 5.500,
+            "end": 8.100,
+            "word": "Os voy a acompañar durante la visita a",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 8.100,
+            "end": 9.400,
+            "word": "nuestro monumento infantil.",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 9.400,
+            "end": 10.100,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 10.100,
+            "end": 11.500,
+            "word": "¿Te has dado cuenta?",
+            "probability": 0.95703125,
+            "segmentNo": 1
+        },
+        {
+            "start": 11.500,
+            "end": 13.900,
+            "word": "Seguro que te has quedado embrujado al verla.",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 13.900,
+            "end": 14.200,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 14.200,
+            "end": 16.100,
+            "word": "Bienvenido al castillo de la bruja.",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 16.100,
+            "end": 17.700,
+            "word": "Nos vamos de Halloween.",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 17.700,
+            "end": 20.700,
+            "word": "Nuestra bruja lleva en su sombrero la terrorífica",
+            "probability": 0.79736328125,
+            "segmentNo": 1
+        },
+        {
+            "start": 20.700,
+            "end": 24.100,
+            "word": "noche simbolizada con la luna rodeada de",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        }
+        ,
+        {
+            "start": 24.100,
+            "end": 26.900,
+            "word": "nubes y animalitos como el búho y el murciélago.",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 26.900,
+            "end": 27.500,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 27.500,
+            "end": 30.000,
+            "word": "A ella puedes verla maquinando pócimas",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 30.000,
+            "end": 31.800,
+            "word": "mágicas con su caldero.",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 31.800,
+            "end": 32.300,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 32.300,
+            "end": 34.200,
+            "word": "Para aterrorizarnos, han salido acompañar",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 34.200,
+            "end": 37.800,
+            "word": "a la bruja calabazas encantadas, fantasmitas",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 37.800,
+            "end": 39.600,
+            "word": "y momias terroríficamente divertidas.",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 39.600,
+            "end": 40.200,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 40.200,
+            "end": 42.600,
+            "word": "Si eres atrevido lee los libros de magia",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 42.600,
+            "end": 44.500,
+            "word": "oscura y hechizos. Estate en alerta porque",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 44.500,
+            "end": 46.300,
+            "word": "están custodiados por calaveras",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 46.300,
+            "end": 47.500,
+            "word": "maléficamente festeras.",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 47.500,
+            "end": 48.800,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 48.800,
+            "end": 50.600,
+            "word": "En la noche de luna llena de Halloween,",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 50.600,
+            "end": 52.600,
+            "word": "un alocador Frankenstein acompañado por",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 52.600,
+            "end": 56.100,
+            "word": "la brujita, pócimas y las calabazas. Esperamos",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 56.100,
+            "end": 58.300,
+            "word": "que disfrutes de la fiesta de Halloween",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        },
+        {
+            "start": 58.300,
+            "end": 60.800,
+            "word": "y de les Fogueres con una ilusión atronadora.",
+            "probability": 0.91259765625,
+            "segmentNo": 2
+        }
+    ],
+    "segment_data": [
+        {
+            "start": 0.57,
+            "end": 7.67,
+            "index": 0
+        },
+        {
+            "start": 7.67,
+            "end": 14.05,
+            "index": 1
+        },
+        {
+            "start": 14.05,
+            "end": 20.77,
+            "index": 2
+        },
+        {
+            "start": 20.77,
+            "end": 25.03,
+            "index": 3
+        }
+    ],
+    "vad_segment_array": [
+        {
+            "start": 0.56875,
+            "end": 3.236125
+        },
+        {
+            "start": 3.336125,
+            "end": 6.4449375
+        },
+        {
+            "start": 6.5449375,
+            "end": 10.43475
+        },
+        {
+            "start": 10.53475,
+            "end": 15.4263125
+        },
+        {
+            "start": 15.5263125,
+            "end": 20.2140625
+        },
+        {
+            "start": 20.3140625,
+            "end": 22.4041875
+        },
+        {
+            "start": 22.5041875,
+            "end": 25.050875
+        }
+    ],
+    "diarization": [
+        {
+            "start": "0",
+            "end": "25.730612",
+            "speaker": "SPEAKER_00"
+        }
+    ]
+}

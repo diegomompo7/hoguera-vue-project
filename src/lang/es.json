@@ -41,5 +41,6 @@
     "titleAudioAdult": "Bienvenida de la belleza",
     "enableSubtitle": "Activar Subtítulos",
     "disableSubtitle": "Desactivar Subtítulos",
-    "subtitleAdult": "/assets/audio/Spanish/SceneAdult.json"
+    "subtitleAdult": "/assets/audio/Spanish/SceneAdult.json",
+    "subtitleKid": "/assets/audio/Spanish/SceneKid.json"
 }

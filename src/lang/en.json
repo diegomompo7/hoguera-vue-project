@@ -41,6 +41,7 @@
     "titleAudioAdult": "Belleza's Welcome",
     "enableSubtitle": "Enable Subtitles",
     "disableSubtitle": "Disable Subtitles",
-    "subtitleAdult": "/assets/audio/English/SceneAdult.json"
+    "subtitleAdult": "/assets/audio/English/SceneAdult.json",
+    "subtitleKid": "/assets/audio/English/SceneKid.json"
     
 }
