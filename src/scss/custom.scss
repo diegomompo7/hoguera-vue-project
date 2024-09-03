@@ -22,7 +22,8 @@
 $enable-shadows: true;
 
 $customShadow: (
-    shadowYellow: 0em 0em 0.4em 0.44em rgba(255, 255, 0, 1)
+    shadowYellow1: 0em 0em 0.4em 0.44em rgba(255, 255, 0, 1),
+    shadowYellow2: 0em 0em 0.625rem 0.6875rem rgba(255,255,0, 1)
 );
 
 @mixin applyShadow($shadow) {

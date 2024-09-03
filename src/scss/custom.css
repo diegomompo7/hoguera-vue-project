@@ -21027,8 +21027,8 @@ progress {
   padding-left: 24rem;
 }
 
-.text-yellow-500 {
-  color: #ffc107;
+.text-yellow {
+  color: #ffff00;
 }
 
 .fs-text_xs {
@@ -21083,6 +21083,10 @@ progress {
   font-size: 8rem;
 }
 
-.shadow-shadowYellow {
+.shadow-shadowYellow1 {
   box-shadow: 0em 0em 0.4em 0.44em rgb(255, 255, 0);
+}
+
+.shadow-shadowYellow2 {
+  box-shadow: 0em 0em 0.625rem 0.6875rem rgb(255, 255, 0);
 }/*# sourceMappingURL=custom.css.map */

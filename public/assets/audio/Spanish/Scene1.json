@@ -1,0 +1,191 @@
+{
+    "result": "Terra màgica de dansa i foc, d'aigua que banya una deu, on sent orgull del que sóc. Perquè la crema no és morir, és moment de refermar-se i per sempre les fogueres gaudir. I que el foc siga sempre amic, que doni pas a noves creacions, que els obradors troben amic. En cent amb el foc, ell És el gran faedor d'esta festa i el concloure d'aquesta. De la mar, iix una sirena que va onit-se a poc a poc amb el foc, mitjançant una dansa acompanyada per les flames.",
+           
+    "stab_segments": [
+        {
+            "start": 0.700,
+            "end": 3.000,
+            "word": "(Música)",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 3.000,
+            "end": 6.200,
+            "word": "Terra màgica de dansa i foc, d'aigua que",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 6.200,
+            "end": 9.200,
+            "word": "banya una deu, on sent orgull del que sóc.",
+            "probability": 0.81787109375,
+            "segmentNo": 0
+        },
+        {
+            "start": 9.200,
+            "end": 10.100,
+            "word": "(Música)",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 10.100,
+            "end": 13.000,
+            "word": "Perquè la crema no és morir, és moment",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 13.000,
+            "end": 16.300,
+            "word": "de refermar-se i per sempre les fogueres gaudir.",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 16.300,
+            "end": 17.100,
+            "word": "(Música)",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 17.100,
+            "end": 20.200,
+            "word": "I que el foc siga sempre amic, que doni",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 20.200,
+            "end": 23.100,
+            "word": "pas a noves creacions, que els obradors",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 23.100,
+            "end": 24.000,
+            "word": "troben amic",
+            "probability": 0.95703125,
+            "segmentNo": 1
+        },
+        {
+            "start": 24.000,
+            "end": 27.300,
+            "word": "(Termina la música)",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 27.300,
+            "end": 28.000,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 28.000,
+            "end": 32.600,
+            "word": "Enciéndete con el fuego, él es el gran hacedor",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 32.600,
+            "end": 35.400,
+            "word": "de esta fiesta y el cúlmine de ella.",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 35.400,
+            "end": 36.100,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 36.100,
+            "end": 39.800,
+            "word": "Podemos observar como del mar sale una sirena",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 39.800,
+            "end": 42.100,
+            "word": "que va uniéndose poco a poco con el fuego",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 42.100,
+            "end": 46.800,
+            "word": "que va uniéndose poco a poco con el fuego.",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        }
+    ],
+    "segment_data": [
+        {
+            "start": 0.57,
+            "end": 7.67,
+            "index": 0
+        },
+        {
+            "start": 7.67,
+            "end": 14.05,
+            "index": 1
+        },
+        {
+            "start": 14.05,
+            "end": 20.77,
+            "index": 2
+        },
+        {
+            "start": 20.77,
+            "end": 25.03,
+            "index": 3
+        }
+    ],
+    "vad_segment_array": [
+        {
+            "start": 0.56875,
+            "end": 3.236125
+        },
+        {
+            "start": 3.336125,
+            "end": 6.4449375
+        },
+        {
+            "start": 6.5449375,
+            "end": 10.43475
+        },
+        {
+            "start": 10.53475,
+            "end": 15.4263125
+        },
+        {
+            "start": 15.5263125,
+            "end": 20.2140625
+        },
+        {
+            "start": 20.3140625,
+            "end": 22.4041875
+        },
+        {
+            "start": 22.5041875,
+            "end": 25.050875
+        }
+    ],
+    "diarization": [
+        {
+            "start": "0",
+            "end": "25.730612",
+            "speaker": "SPEAKER_00"
+        }
+    ]
+}

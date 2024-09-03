@@ -1,5 +1,5 @@
 $theme-colors: (
-    "yellow-500" : $yellow
+    "yellow" : #ffff00
 );
 
 @mixin apply-color($color) {
@@ -11,3 +11,4 @@ $theme-colors: (
       @include apply-color($color);
     }
   }
+

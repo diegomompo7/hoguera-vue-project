@@ -17,6 +17,14 @@ const props = defineProps({
     },
 })
 
+const modules = [Navigation];
+
+// Navigation options
+const navigation = {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+};
+
 
 const { t } = useI18n()
 const audioRefs = ref(new Array(7).fill());
@@ -29,6 +37,10 @@ let currentSubtitle = ref(null);
 const showSubtitles = ref(false);
 let audio = ref()
 let intervalId = null;
+const getSlideKey = (index) => `${(4 + (index - 1)) % 4 + 1}`;
+const getSceneMessage = (index) => t(`scene${(4 + (index - 1)) % 4 + 1}`);
+
+console.log(getSlideKey)
 
 
 console.log(props.language)
@@ -47,6 +59,7 @@ watch(() => props.language, () => {
 
 
 const handleSlideChange = () => {
+    console.log(audioRefs.value)
     audioRefs.value.forEach((ref, index) => {
         if (audio && isPlayed[index]) {
             audio.value.pause();
@@ -82,7 +95,7 @@ const handleAudioEnded = (sceneNumber) => {
     currentSubtitle.value = null; 
 };
 
-let subtitleData = null
+
 
 const updateSubtitles = async() => {
     if (showSubtitles.value) {
@@ -120,14 +133,12 @@ watch(showSubtitles, (newValue) => {
     }
 });
 
-console.log(props.messages)
-
 
 </script>
 
 <template>
     <div class="" role="scenes">
-        <swiper v-if="initScene === -1" class="bg-black mt-4_6 text-yellow-500 ">
+        <swiper v-if="initScene === -1" class="bg-black mt-4_6 text-yellow ">
             <swiper-slide class="d-flex mt-4_2 flex-column text-center ">
                 <h1 class="fw-bold" role="title">{{ messages.sceneAdult }}</h1>
                 <img src="../assets/img/imgAdult.png" alt="" class="w-1_3 m-auto">
@@ -136,17 +147,17 @@ console.log(props.messages)
                     <source :src="$t(`audioAdult`)" type="audio/mpeg"/>
                 </audio>
                 <div class="d-flex justify-content-center">
-                <button @click="controlAudio(initScene + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow-500 shadow-shadowYellow rounded-5" :title="messages.titleAudioAdult">
+                <button @click="controlAudio(initScene + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow rounded-5" :title="messages.titleAudioAdult">
                     {{ isPlayed[initScene + 1] ? 'Pause' : 'Play' }}
                 </button>
-                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow-500 shadow-shadowYellow rounded-5" :title="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
+                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow rounded-5" :title="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
             </div>
                 <p v-if="currentSubtitle"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
                     {{ currentSubtitle.word }}
                 </p>
             </swiper-slide>
         </swiper>
-        <swiper v-if="initScene === 4" class="bg-black mt-4_6 text-yellow-500 ">
+        <swiper v-if="initScene === 4" class="bg-black mt-4_6 text-yellow ">
             <swiper-slide class="d-flex mt-4_2 flex-column text-center ">
                 <h1 class="fw-bold" role="title">{{ messages.sceneKid }}</h1>
                 <img src="../assets/img/imgKid.png" alt="" class="w-1_3 m-auto">
@@ -155,16 +166,35 @@ console.log(props.messages)
                     <source :src="$t(`audioKid`)" type="audio/mpeg"/>
                 </audio>
                 <div class="d-flex justify-content-center">
-                <button @click="controlAudio(initScene + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow-500 shadow-shadowYellow rounded-5" :title="messages.titleAudioAdult">
+                <button @click="controlAudio(initScene + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow rounded-5" :title="messages.titleAudioAdult">
                     {{ isPlayed[initScene + 1] ? 'Pause' : 'Play' }}
                 </button>
-                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow-500 shadow-shadowYellow rounded-5"  title="Activar Subitutlos" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
+                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow rounded-5"  title="Activar Subitutlos" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
             </div>
                 <p v-if="currentSubtitle"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
                     {{ currentSubtitle.word }}
                 </p>
             </swiper-slide>
         </swiper>
+        <swiper v-if="initScene < 4 && initScene !=-1" class="bg-black mt-4_6 text-yellow swiper-container" :navigation="navigation" :modules="modules" :loop="true" :initial-slide="initScene != null ? initScene : 0" @slideChange="handleSlideChange">
+            <swiper-slide class="d-flex mt-4_2 flex-column text-center " v-for="index in 4" :key="getSlideKey(index)">
+                <h1 class="fw-bold" role="title">{{getSceneMessage(index)}}</h1>
+                <audio :id="`audioPlayer${((4 + index)) % 4 + 1}`" :ref="(el) => { audioRefs[((4 + index)) % 4 + 1] = el, sceneNumber = initScene + 1 }"
+                    @ended="handleAudioEnded(((4 + index)) % 4 + 1)">
+                    <source :src="$t(`audio${((4 + index)) % 4 + 1}`)" type="audio/mpeg"/>
+                </audio>
+                <div class="d-flex flex-column justify-content-center">
+                <button @click="controlAudio(((4 + index)) % 4 + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" :title="messages.titleAudioAdult">
+                    {{ isPlayed[((4 + index)) % 4 + 1]  ? 'Pause' : 'Play' }}
+                </button>
+                <button @click="toggleSubtitles" class="mt-4 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  title="Activar Subitutlos" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
+            </div>
+                <p v-if="currentSubtitle"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
+                    {{ currentSubtitle.word }}
+                </p>
+            </swiper-slide>
+            <div ref="prevButton" class="swiper-button-next"></div>
+            <div ref="nextButton" class="swiper-button-prev"></div>
+        </swiper>
     </div>
-
 </template>
