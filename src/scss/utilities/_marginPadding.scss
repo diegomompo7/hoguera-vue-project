@@ -29,63 +29,42 @@ $marginPadding: (
   /* 384px */ 21: 24rem
 );
 
-@mixin applyMargin($size) {
-  margin: map-get($marginPadding, $size);
+
+@mixin applyMarginPadding($size, $property) {
+  #{$property}: map-get($marginPadding, $size);
 }
 
-@mixin applyPadding($size) {
-  padding: map-get($marginPadding, $size);
-}
 
-@each $size, $value in $marginPadding {
-  .m-#{$size} {
-    @include applyMargin($size);
-  }
-  .mx-#{$size} {
-    margin-right: map-get($marginPadding, $size);
-    margin-left:  map-get($marginPadding, $size);
-  }
-  .my-#{$size} {
-    margin-top: map-get($marginPadding, $size);
-    margin-bottom: map-get($marginPadding, $size);
-  }
-  .mt-#{$size} {
-    margin-top: map-get($marginPadding, $size);
-  }
-  .me-#{$size} {
-    margin-right: map-get($marginPadding, $size);
-  }
-  .mb-#{$size} {
-    margin-bottom: map-get($marginPadding, $size);
-  }
-  .ms-#{$size} {
-    margin-left: map-get($marginPadding, $size);
+@mixin generate-utility-classes($type, $properties) {
+  @each $size, $value in $marginPadding {
+
+    .swiper-button-next.text-.#{$type}-#{$size},
+    .swiper-button-prev.text-.#{$type}-#{$size} {
+      @each $property in $properties {
+        @include applyMarginPadding($size, $property);
+      }
+    }
+
+    .#{$type}-#{$size} {
+      @each $property in $properties {
+        @include applyMarginPadding($size, $property);
+      }
+    }
   }
 }
 
-@each $size, $value in $marginPadding {
-  .p-#{$size} {
-    @include applyPadding($size);
-  }
+@include generate-utility-classes('m', 'margin');
+@include generate-utility-classes('mx', ('margin-right', 'margin-left'));
+@include generate-utility-classes('my', ('margin-top', 'margin-bottom'));
+@include generate-utility-classes('mt', 'margin-top');
+@include generate-utility-classes('me', 'margin-right');
+@include generate-utility-classes('mb', 'margin-bottom');
+@include generate-utility-classes('ms', 'margin-left');
 
-  .px-#{$size} {
-    padding-right: map-get($marginPadding, $size);
-    padding-left:  map-get($marginPadding, $size);
-  }
-  .py-#{$size} {
-    padding-top: map-get($marginPadding, $size);
-    padding-bottom: map-get($marginPadding, $size);
-  }
-  .pt-#{$size} {
-    padding-top: map-get($marginPadding, $size);
-  }
-  .pe-#{$size} {
-    padding-right: map-get($marginPadding, $size);
-  }
-  .pb-#{$size} {
-    padding-bottom: map-get($marginPadding, $size);
-  }
-  .ps-#{$size} {
-    padding-left: map-get($marginPadding, $size);
-  }
-}
+@include generate-utility-classes('p', 'padding');
+@include generate-utility-classes('px', ('padding-right', 'padding-left'));
+@include generate-utility-classes('py', ('padding-top', 'padding-bottom'));
+@include generate-utility-classes('pt', 'padding-top');
+@include generate-utility-classes('pe', 'padding-right');
+@include generate-utility-classes('pb', 'padding-bottom');
+@include generate-utility-classes('ps', 'padding-left');

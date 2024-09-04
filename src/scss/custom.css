@@ -19347,8 +19347,262 @@ progress {
   height: 91.666667%;
 }
 
+.swiper-button-next.text-.m-0_5,
+.swiper-button-prev.text-.m-0_5 {
+  margin: 0.125rem;
+}
+
 .m-0_5 {
   margin: 0.125rem;
+}
+
+.swiper-button-next.text-.m-1_5,
+.swiper-button-prev.text-.m-1_5 {
+  margin: 0.375rem;
+}
+
+.m-1_5 {
+  margin: 0.375rem;
+}
+
+.swiper-button-next.text-.m-2_25,
+.swiper-button-prev.text-.m-2_25 {
+  margin: 0.625rem;
+}
+
+.m-2_25 {
+  margin: 0.625rem;
+}
+
+.swiper-button-next.text-.m-2_5,
+.swiper-button-prev.text-.m-2_5 {
+  margin: 0.75rem;
+}
+
+.m-2_5 {
+  margin: 0.75rem;
+}
+
+.swiper-button-next.text-.m-2_75,
+.swiper-button-prev.text-.m-2_75 {
+  margin: 0.875rem;
+}
+
+.m-2_75 {
+  margin: 0.875rem;
+}
+
+.swiper-button-next.text-.m-3_5,
+.swiper-button-prev.text-.m-3_5 {
+  margin: 1.25rem;
+}
+
+.m-3_5 {
+  margin: 1.25rem;
+}
+
+.swiper-button-next.text-.m-4_2,
+.swiper-button-prev.text-.m-4_2 {
+  margin: 1.75rem;
+}
+
+.m-4_2 {
+  margin: 1.75rem;
+}
+
+.swiper-button-next.text-.m-4_4,
+.swiper-button-prev.text-.m-4_4 {
+  margin: 2rem;
+}
+
+.m-4_4 {
+  margin: 2rem;
+}
+
+.swiper-button-next.text-.m-4_5,
+.swiper-button-prev.text-.m-4_5 {
+  margin: 2.25rem;
+}
+
+.m-4_5 {
+  margin: 2.25rem;
+}
+
+.swiper-button-next.text-.m-4_6,
+.swiper-button-prev.text-.m-4_6 {
+  margin: 2.5rem;
+}
+
+.m-4_6 {
+  margin: 2.5rem;
+}
+
+.swiper-button-next.text-.m-4_8,
+.swiper-button-prev.text-.m-4_8 {
+  margin: 2.75rem;
+}
+
+.m-4_8 {
+  margin: 2.75rem;
+}
+
+.swiper-button-next.text-.m-5_5,
+.swiper-button-prev.text-.m-5_5 {
+  margin: 3.5rem;
+}
+
+.m-5_5 {
+  margin: 3.5rem;
+}
+
+.swiper-button-next.text-.m-6,
+.swiper-button-prev.text-.m-6 {
+  margin: 4rem;
+}
+
+.m-6 {
+  margin: 4rem;
+}
+
+.swiper-button-next.text-.m-7,
+.swiper-button-prev.text-.m-7 {
+  margin: 5rem;
+}
+
+.m-7 {
+  margin: 5rem;
+}
+
+.swiper-button-next.text-.m-8,
+.swiper-button-prev.text-.m-8 {
+  margin: 6rem;
+}
+
+.m-8 {
+  margin: 6rem;
+}
+
+.swiper-button-next.text-.m-9,
+.swiper-button-prev.text-.m-9 {
+  margin: 7rem;
+}
+
+.m-9 {
+  margin: 7rem;
+}
+
+.swiper-button-next.text-.m-10,
+.swiper-button-prev.text-.m-10 {
+  margin: 8rem;
+}
+
+.m-10 {
+  margin: 8rem;
+}
+
+.swiper-button-next.text-.m-11,
+.swiper-button-prev.text-.m-11 {
+  margin: 9rem;
+}
+
+.m-11 {
+  margin: 9rem;
+}
+
+.swiper-button-next.text-.m-12,
+.swiper-button-prev.text-.m-12 {
+  margin: 10rem;
+}
+
+.m-12 {
+  margin: 10rem;
+}
+
+.swiper-button-next.text-.m-13,
+.swiper-button-prev.text-.m-13 {
+  margin: 11rem;
+}
+
+.m-13 {
+  margin: 11rem;
+}
+
+.swiper-button-next.text-.m-14,
+.swiper-button-prev.text-.m-14 {
+  margin: 12rem;
+}
+
+.m-14 {
+  margin: 12rem;
+}
+
+.swiper-button-next.text-.m-15,
+.swiper-button-prev.text-.m-15 {
+  margin: 13rem;
+}
+
+.m-15 {
+  margin: 13rem;
+}
+
+.swiper-button-next.text-.m-16,
+.swiper-button-prev.text-.m-16 {
+  margin: 14rem;
+}
+
+.m-16 {
+  margin: 14rem;
+}
+
+.swiper-button-next.text-.m-17,
+.swiper-button-prev.text-.m-17 {
+  margin: 15rem;
+}
+
+.m-17 {
+  margin: 15rem;
+}
+
+.swiper-button-next.text-.m-18,
+.swiper-button-prev.text-.m-18 {
+  margin: 16rem;
+}
+
+.m-18 {
+  margin: 16rem;
+}
+
+.swiper-button-next.text-.m-19,
+.swiper-button-prev.text-.m-19 {
+  margin: 18rem;
+}
+
+.m-19 {
+  margin: 18rem;
+}
+
+.swiper-button-next.text-.m-20,
+.swiper-button-prev.text-.m-20 {
+  margin: 20rem;
+}
+
+.m-20 {
+  margin: 20rem;
+}
+
+.swiper-button-next.text-.m-21,
+.swiper-button-prev.text-.m-21 {
+  margin: 24rem;
+}
+
+.m-21 {
+  margin: 24rem;
+}
+
+.swiper-button-next.text-.mx-0_5,
+.swiper-button-prev.text-.mx-0_5 {
+  margin-right: 0.125rem;
+  margin-left: 0.125rem;
 }
 
 .mx-0_5 {
@@ -19356,29 +19610,10 @@ progress {
   margin-left: 0.125rem;
 }
 
-.my-0_5 {
-  margin-top: 0.125rem;
-  margin-bottom: 0.125rem;
-}
-
-.mt-0_5 {
-  margin-top: 0.125rem;
-}
-
-.me-0_5 {
-  margin-right: 0.125rem;
-}
-
-.mb-0_5 {
-  margin-bottom: 0.125rem;
-}
-
-.ms-0_5 {
-  margin-left: 0.125rem;
-}
-
-.m-1_5 {
-  margin: 0.375rem;
+.swiper-button-next.text-.mx-1_5,
+.swiper-button-prev.text-.mx-1_5 {
+  margin-right: 0.375rem;
+  margin-left: 0.375rem;
 }
 
 .mx-1_5 {
@@ -19386,29 +19621,10 @@ progress {
   margin-left: 0.375rem;
 }
 
-.my-1_5 {
-  margin-top: 0.375rem;
-  margin-bottom: 0.375rem;
-}
-
-.mt-1_5 {
-  margin-top: 0.375rem;
-}
-
-.me-1_5 {
-  margin-right: 0.375rem;
-}
-
-.mb-1_5 {
-  margin-bottom: 0.375rem;
-}
-
-.ms-1_5 {
-  margin-left: 0.375rem;
-}
-
-.m-2_25 {
-  margin: 0.625rem;
+.swiper-button-next.text-.mx-2_25,
+.swiper-button-prev.text-.mx-2_25 {
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
 }
 
 .mx-2_25 {
@@ -19416,29 +19632,10 @@ progress {
   margin-left: 0.625rem;
 }
 
-.my-2_25 {
-  margin-top: 0.625rem;
-  margin-bottom: 0.625rem;
-}
-
-.mt-2_25 {
-  margin-top: 0.625rem;
-}
-
-.me-2_25 {
-  margin-right: 0.625rem;
-}
-
-.mb-2_25 {
-  margin-bottom: 0.625rem;
-}
-
-.ms-2_25 {
-  margin-left: 0.625rem;
-}
-
-.m-2_5 {
-  margin: 0.75rem;
+.swiper-button-next.text-.mx-2_5,
+.swiper-button-prev.text-.mx-2_5 {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 
 .mx-2_5 {
@@ -19446,29 +19643,10 @@ progress {
   margin-left: 0.75rem;
 }
 
-.my-2_5 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.mt-2_5 {
-  margin-top: 0.75rem;
-}
-
-.me-2_5 {
-  margin-right: 0.75rem;
-}
-
-.mb-2_5 {
-  margin-bottom: 0.75rem;
-}
-
-.ms-2_5 {
-  margin-left: 0.75rem;
-}
-
-.m-2_75 {
-  margin: 0.875rem;
+.swiper-button-next.text-.mx-2_75,
+.swiper-button-prev.text-.mx-2_75 {
+  margin-right: 0.875rem;
+  margin-left: 0.875rem;
 }
 
 .mx-2_75 {
@@ -19476,29 +19654,10 @@ progress {
   margin-left: 0.875rem;
 }
 
-.my-2_75 {
-  margin-top: 0.875rem;
-  margin-bottom: 0.875rem;
-}
-
-.mt-2_75 {
-  margin-top: 0.875rem;
-}
-
-.me-2_75 {
-  margin-right: 0.875rem;
-}
-
-.mb-2_75 {
-  margin-bottom: 0.875rem;
-}
-
-.ms-2_75 {
-  margin-left: 0.875rem;
-}
-
-.m-3_5 {
-  margin: 1.25rem;
+.swiper-button-next.text-.mx-3_5,
+.swiper-button-prev.text-.mx-3_5 {
+  margin-right: 1.25rem;
+  margin-left: 1.25rem;
 }
 
 .mx-3_5 {
@@ -19506,29 +19665,10 @@ progress {
   margin-left: 1.25rem;
 }
 
-.my-3_5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-.mt-3_5 {
-  margin-top: 1.25rem;
-}
-
-.me-3_5 {
-  margin-right: 1.25rem;
-}
-
-.mb-3_5 {
-  margin-bottom: 1.25rem;
-}
-
-.ms-3_5 {
-  margin-left: 1.25rem;
-}
-
-.m-4_2 {
-  margin: 1.75rem;
+.swiper-button-next.text-.mx-4_2,
+.swiper-button-prev.text-.mx-4_2 {
+  margin-right: 1.75rem;
+  margin-left: 1.75rem;
 }
 
 .mx-4_2 {
@@ -19536,29 +19676,10 @@ progress {
   margin-left: 1.75rem;
 }
 
-.my-4_2 {
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
-}
-
-.mt-4_2 {
-  margin-top: 1.75rem;
-}
-
-.me-4_2 {
-  margin-right: 1.75rem;
-}
-
-.mb-4_2 {
-  margin-bottom: 1.75rem;
-}
-
-.ms-4_2 {
-  margin-left: 1.75rem;
-}
-
-.m-4_4 {
-  margin: 2rem;
+.swiper-button-next.text-.mx-4_4,
+.swiper-button-prev.text-.mx-4_4 {
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .mx-4_4 {
@@ -19566,29 +19687,10 @@ progress {
   margin-left: 2rem;
 }
 
-.my-4_4 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.mt-4_4 {
-  margin-top: 2rem;
-}
-
-.me-4_4 {
-  margin-right: 2rem;
-}
-
-.mb-4_4 {
-  margin-bottom: 2rem;
-}
-
-.ms-4_4 {
-  margin-left: 2rem;
-}
-
-.m-4_5 {
-  margin: 2.25rem;
+.swiper-button-next.text-.mx-4_5,
+.swiper-button-prev.text-.mx-4_5 {
+  margin-right: 2.25rem;
+  margin-left: 2.25rem;
 }
 
 .mx-4_5 {
@@ -19596,29 +19698,10 @@ progress {
   margin-left: 2.25rem;
 }
 
-.my-4_5 {
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
-}
-
-.mt-4_5 {
-  margin-top: 2.25rem;
-}
-
-.me-4_5 {
-  margin-right: 2.25rem;
-}
-
-.mb-4_5 {
-  margin-bottom: 2.25rem;
-}
-
-.ms-4_5 {
-  margin-left: 2.25rem;
-}
-
-.m-4_6 {
-  margin: 2.5rem;
+.swiper-button-next.text-.mx-4_6,
+.swiper-button-prev.text-.mx-4_6 {
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
 }
 
 .mx-4_6 {
@@ -19626,29 +19709,10 @@ progress {
   margin-left: 2.5rem;
 }
 
-.my-4_6 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.mt-4_6 {
-  margin-top: 2.5rem;
-}
-
-.me-4_6 {
-  margin-right: 2.5rem;
-}
-
-.mb-4_6 {
-  margin-bottom: 2.5rem;
-}
-
-.ms-4_6 {
-  margin-left: 2.5rem;
-}
-
-.m-4_8 {
-  margin: 2.75rem;
+.swiper-button-next.text-.mx-4_8,
+.swiper-button-prev.text-.mx-4_8 {
+  margin-right: 2.75rem;
+  margin-left: 2.75rem;
 }
 
 .mx-4_8 {
@@ -19656,29 +19720,10 @@ progress {
   margin-left: 2.75rem;
 }
 
-.my-4_8 {
-  margin-top: 2.75rem;
-  margin-bottom: 2.75rem;
-}
-
-.mt-4_8 {
-  margin-top: 2.75rem;
-}
-
-.me-4_8 {
-  margin-right: 2.75rem;
-}
-
-.mb-4_8 {
-  margin-bottom: 2.75rem;
-}
-
-.ms-4_8 {
-  margin-left: 2.75rem;
-}
-
-.m-5_5 {
-  margin: 3.5rem;
+.swiper-button-next.text-.mx-5_5,
+.swiper-button-prev.text-.mx-5_5 {
+  margin-right: 3.5rem;
+  margin-left: 3.5rem;
 }
 
 .mx-5_5 {
@@ -19686,29 +19731,10 @@ progress {
   margin-left: 3.5rem;
 }
 
-.my-5_5 {
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
-}
-
-.mt-5_5 {
-  margin-top: 3.5rem;
-}
-
-.me-5_5 {
-  margin-right: 3.5rem;
-}
-
-.mb-5_5 {
-  margin-bottom: 3.5rem;
-}
-
-.ms-5_5 {
-  margin-left: 3.5rem;
-}
-
-.m-6 {
-  margin: 4rem;
+.swiper-button-next.text-.mx-6,
+.swiper-button-prev.text-.mx-6 {
+  margin-right: 4rem;
+  margin-left: 4rem;
 }
 
 .mx-6 {
@@ -19716,29 +19742,10 @@ progress {
   margin-left: 4rem;
 }
 
-.my-6 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-.mt-6 {
-  margin-top: 4rem;
-}
-
-.me-6 {
-  margin-right: 4rem;
-}
-
-.mb-6 {
-  margin-bottom: 4rem;
-}
-
-.ms-6 {
-  margin-left: 4rem;
-}
-
-.m-7 {
-  margin: 5rem;
+.swiper-button-next.text-.mx-7,
+.swiper-button-prev.text-.mx-7 {
+  margin-right: 5rem;
+  margin-left: 5rem;
 }
 
 .mx-7 {
@@ -19746,29 +19753,10 @@ progress {
   margin-left: 5rem;
 }
 
-.my-7 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.mt-7 {
-  margin-top: 5rem;
-}
-
-.me-7 {
-  margin-right: 5rem;
-}
-
-.mb-7 {
-  margin-bottom: 5rem;
-}
-
-.ms-7 {
-  margin-left: 5rem;
-}
-
-.m-8 {
-  margin: 6rem;
+.swiper-button-next.text-.mx-8,
+.swiper-button-prev.text-.mx-8 {
+  margin-right: 6rem;
+  margin-left: 6rem;
 }
 
 .mx-8 {
@@ -19776,29 +19764,10 @@ progress {
   margin-left: 6rem;
 }
 
-.my-8 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-
-.mt-8 {
-  margin-top: 6rem;
-}
-
-.me-8 {
-  margin-right: 6rem;
-}
-
-.mb-8 {
-  margin-bottom: 6rem;
-}
-
-.ms-8 {
-  margin-left: 6rem;
-}
-
-.m-9 {
-  margin: 7rem;
+.swiper-button-next.text-.mx-9,
+.swiper-button-prev.text-.mx-9 {
+  margin-right: 7rem;
+  margin-left: 7rem;
 }
 
 .mx-9 {
@@ -19806,29 +19775,10 @@ progress {
   margin-left: 7rem;
 }
 
-.my-9 {
-  margin-top: 7rem;
-  margin-bottom: 7rem;
-}
-
-.mt-9 {
-  margin-top: 7rem;
-}
-
-.me-9 {
-  margin-right: 7rem;
-}
-
-.mb-9 {
-  margin-bottom: 7rem;
-}
-
-.ms-9 {
-  margin-left: 7rem;
-}
-
-.m-10 {
-  margin: 8rem;
+.swiper-button-next.text-.mx-10,
+.swiper-button-prev.text-.mx-10 {
+  margin-right: 8rem;
+  margin-left: 8rem;
 }
 
 .mx-10 {
@@ -19836,29 +19786,10 @@ progress {
   margin-left: 8rem;
 }
 
-.my-10 {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-}
-
-.mt-10 {
-  margin-top: 8rem;
-}
-
-.me-10 {
-  margin-right: 8rem;
-}
-
-.mb-10 {
-  margin-bottom: 8rem;
-}
-
-.ms-10 {
-  margin-left: 8rem;
-}
-
-.m-11 {
-  margin: 9rem;
+.swiper-button-next.text-.mx-11,
+.swiper-button-prev.text-.mx-11 {
+  margin-right: 9rem;
+  margin-left: 9rem;
 }
 
 .mx-11 {
@@ -19866,29 +19797,10 @@ progress {
   margin-left: 9rem;
 }
 
-.my-11 {
-  margin-top: 9rem;
-  margin-bottom: 9rem;
-}
-
-.mt-11 {
-  margin-top: 9rem;
-}
-
-.me-11 {
-  margin-right: 9rem;
-}
-
-.mb-11 {
-  margin-bottom: 9rem;
-}
-
-.ms-11 {
-  margin-left: 9rem;
-}
-
-.m-12 {
-  margin: 10rem;
+.swiper-button-next.text-.mx-12,
+.swiper-button-prev.text-.mx-12 {
+  margin-right: 10rem;
+  margin-left: 10rem;
 }
 
 .mx-12 {
@@ -19896,29 +19808,10 @@ progress {
   margin-left: 10rem;
 }
 
-.my-12 {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-}
-
-.mt-12 {
-  margin-top: 10rem;
-}
-
-.me-12 {
-  margin-right: 10rem;
-}
-
-.mb-12 {
-  margin-bottom: 10rem;
-}
-
-.ms-12 {
-  margin-left: 10rem;
-}
-
-.m-13 {
-  margin: 11rem;
+.swiper-button-next.text-.mx-13,
+.swiper-button-prev.text-.mx-13 {
+  margin-right: 11rem;
+  margin-left: 11rem;
 }
 
 .mx-13 {
@@ -19926,29 +19819,10 @@ progress {
   margin-left: 11rem;
 }
 
-.my-13 {
-  margin-top: 11rem;
-  margin-bottom: 11rem;
-}
-
-.mt-13 {
-  margin-top: 11rem;
-}
-
-.me-13 {
-  margin-right: 11rem;
-}
-
-.mb-13 {
-  margin-bottom: 11rem;
-}
-
-.ms-13 {
-  margin-left: 11rem;
-}
-
-.m-14 {
-  margin: 12rem;
+.swiper-button-next.text-.mx-14,
+.swiper-button-prev.text-.mx-14 {
+  margin-right: 12rem;
+  margin-left: 12rem;
 }
 
 .mx-14 {
@@ -19956,29 +19830,10 @@ progress {
   margin-left: 12rem;
 }
 
-.my-14 {
-  margin-top: 12rem;
-  margin-bottom: 12rem;
-}
-
-.mt-14 {
-  margin-top: 12rem;
-}
-
-.me-14 {
-  margin-right: 12rem;
-}
-
-.mb-14 {
-  margin-bottom: 12rem;
-}
-
-.ms-14 {
-  margin-left: 12rem;
-}
-
-.m-15 {
-  margin: 13rem;
+.swiper-button-next.text-.mx-15,
+.swiper-button-prev.text-.mx-15 {
+  margin-right: 13rem;
+  margin-left: 13rem;
 }
 
 .mx-15 {
@@ -19986,29 +19841,10 @@ progress {
   margin-left: 13rem;
 }
 
-.my-15 {
-  margin-top: 13rem;
-  margin-bottom: 13rem;
-}
-
-.mt-15 {
-  margin-top: 13rem;
-}
-
-.me-15 {
-  margin-right: 13rem;
-}
-
-.mb-15 {
-  margin-bottom: 13rem;
-}
-
-.ms-15 {
-  margin-left: 13rem;
-}
-
-.m-16 {
-  margin: 14rem;
+.swiper-button-next.text-.mx-16,
+.swiper-button-prev.text-.mx-16 {
+  margin-right: 14rem;
+  margin-left: 14rem;
 }
 
 .mx-16 {
@@ -20016,29 +19852,10 @@ progress {
   margin-left: 14rem;
 }
 
-.my-16 {
-  margin-top: 14rem;
-  margin-bottom: 14rem;
-}
-
-.mt-16 {
-  margin-top: 14rem;
-}
-
-.me-16 {
-  margin-right: 14rem;
-}
-
-.mb-16 {
-  margin-bottom: 14rem;
-}
-
-.ms-16 {
-  margin-left: 14rem;
-}
-
-.m-17 {
-  margin: 15rem;
+.swiper-button-next.text-.mx-17,
+.swiper-button-prev.text-.mx-17 {
+  margin-right: 15rem;
+  margin-left: 15rem;
 }
 
 .mx-17 {
@@ -20046,29 +19863,10 @@ progress {
   margin-left: 15rem;
 }
 
-.my-17 {
-  margin-top: 15rem;
-  margin-bottom: 15rem;
-}
-
-.mt-17 {
-  margin-top: 15rem;
-}
-
-.me-17 {
-  margin-right: 15rem;
-}
-
-.mb-17 {
-  margin-bottom: 15rem;
-}
-
-.ms-17 {
-  margin-left: 15rem;
-}
-
-.m-18 {
-  margin: 16rem;
+.swiper-button-next.text-.mx-18,
+.swiper-button-prev.text-.mx-18 {
+  margin-right: 16rem;
+  margin-left: 16rem;
 }
 
 .mx-18 {
@@ -20076,29 +19874,10 @@ progress {
   margin-left: 16rem;
 }
 
-.my-18 {
-  margin-top: 16rem;
-  margin-bottom: 16rem;
-}
-
-.mt-18 {
-  margin-top: 16rem;
-}
-
-.me-18 {
-  margin-right: 16rem;
-}
-
-.mb-18 {
-  margin-bottom: 16rem;
-}
-
-.ms-18 {
-  margin-left: 16rem;
-}
-
-.m-19 {
-  margin: 18rem;
+.swiper-button-next.text-.mx-19,
+.swiper-button-prev.text-.mx-19 {
+  margin-right: 18rem;
+  margin-left: 18rem;
 }
 
 .mx-19 {
@@ -20106,29 +19885,10 @@ progress {
   margin-left: 18rem;
 }
 
-.my-19 {
-  margin-top: 18rem;
-  margin-bottom: 18rem;
-}
-
-.mt-19 {
-  margin-top: 18rem;
-}
-
-.me-19 {
-  margin-right: 18rem;
-}
-
-.mb-19 {
-  margin-bottom: 18rem;
-}
-
-.ms-19 {
-  margin-left: 18rem;
-}
-
-.m-20 {
-  margin: 20rem;
+.swiper-button-next.text-.mx-20,
+.swiper-button-prev.text-.mx-20 {
+  margin-right: 20rem;
+  margin-left: 20rem;
 }
 
 .mx-20 {
@@ -20136,29 +19896,10 @@ progress {
   margin-left: 20rem;
 }
 
-.my-20 {
-  margin-top: 20rem;
-  margin-bottom: 20rem;
-}
-
-.mt-20 {
-  margin-top: 20rem;
-}
-
-.me-20 {
-  margin-right: 20rem;
-}
-
-.mb-20 {
-  margin-bottom: 20rem;
-}
-
-.ms-20 {
-  margin-left: 20rem;
-}
-
-.m-21 {
-  margin: 24rem;
+.swiper-button-next.text-.mx-21,
+.swiper-button-prev.text-.mx-21 {
+  margin-right: 24rem;
+  margin-left: 24rem;
 }
 
 .mx-21 {
@@ -20166,29 +19907,1578 @@ progress {
   margin-left: 24rem;
 }
 
+.swiper-button-next.text-.my-0_5,
+.swiper-button-prev.text-.my-0_5 {
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
+}
+
+.my-0_5 {
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
+}
+
+.swiper-button-next.text-.my-1_5,
+.swiper-button-prev.text-.my-1_5 {
+  margin-top: 0.375rem;
+  margin-bottom: 0.375rem;
+}
+
+.my-1_5 {
+  margin-top: 0.375rem;
+  margin-bottom: 0.375rem;
+}
+
+.swiper-button-next.text-.my-2_25,
+.swiper-button-prev.text-.my-2_25 {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.my-2_25 {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.swiper-button-next.text-.my-2_5,
+.swiper-button-prev.text-.my-2_5 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.my-2_5 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.swiper-button-next.text-.my-2_75,
+.swiper-button-prev.text-.my-2_75 {
+  margin-top: 0.875rem;
+  margin-bottom: 0.875rem;
+}
+
+.my-2_75 {
+  margin-top: 0.875rem;
+  margin-bottom: 0.875rem;
+}
+
+.swiper-button-next.text-.my-3_5,
+.swiper-button-prev.text-.my-3_5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-3_5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.swiper-button-next.text-.my-4_2,
+.swiper-button-prev.text-.my-4_2 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.my-4_2 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.swiper-button-next.text-.my-4_4,
+.swiper-button-prev.text-.my-4_4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-4_4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.swiper-button-next.text-.my-4_5,
+.swiper-button-prev.text-.my-4_5 {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.my-4_5 {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.swiper-button-next.text-.my-4_6,
+.swiper-button-prev.text-.my-4_6 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-4_6 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.swiper-button-next.text-.my-4_8,
+.swiper-button-prev.text-.my-4_8 {
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.my-4_8 {
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.swiper-button-next.text-.my-5_5,
+.swiper-button-prev.text-.my-5_5 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.my-5_5 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.swiper-button-next.text-.my-6,
+.swiper-button-prev.text-.my-6 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.my-6 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.swiper-button-next.text-.my-7,
+.swiper-button-prev.text-.my-7 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.my-7 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.swiper-button-next.text-.my-8,
+.swiper-button-prev.text-.my-8 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.my-8 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.swiper-button-next.text-.my-9,
+.swiper-button-prev.text-.my-9 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.my-9 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.swiper-button-next.text-.my-10,
+.swiper-button-prev.text-.my-10 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.my-10 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.swiper-button-next.text-.my-11,
+.swiper-button-prev.text-.my-11 {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+
+.my-11 {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+
+.swiper-button-next.text-.my-12,
+.swiper-button-prev.text-.my-12 {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.my-12 {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.swiper-button-next.text-.my-13,
+.swiper-button-prev.text-.my-13 {
+  margin-top: 11rem;
+  margin-bottom: 11rem;
+}
+
+.my-13 {
+  margin-top: 11rem;
+  margin-bottom: 11rem;
+}
+
+.swiper-button-next.text-.my-14,
+.swiper-button-prev.text-.my-14 {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+.my-14 {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+.swiper-button-next.text-.my-15,
+.swiper-button-prev.text-.my-15 {
+  margin-top: 13rem;
+  margin-bottom: 13rem;
+}
+
+.my-15 {
+  margin-top: 13rem;
+  margin-bottom: 13rem;
+}
+
+.swiper-button-next.text-.my-16,
+.swiper-button-prev.text-.my-16 {
+  margin-top: 14rem;
+  margin-bottom: 14rem;
+}
+
+.my-16 {
+  margin-top: 14rem;
+  margin-bottom: 14rem;
+}
+
+.swiper-button-next.text-.my-17,
+.swiper-button-prev.text-.my-17 {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.my-17 {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.swiper-button-next.text-.my-18,
+.swiper-button-prev.text-.my-18 {
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+}
+
+.my-18 {
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+}
+
+.swiper-button-next.text-.my-19,
+.swiper-button-prev.text-.my-19 {
+  margin-top: 18rem;
+  margin-bottom: 18rem;
+}
+
+.my-19 {
+  margin-top: 18rem;
+  margin-bottom: 18rem;
+}
+
+.swiper-button-next.text-.my-20,
+.swiper-button-prev.text-.my-20 {
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+}
+
+.my-20 {
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+}
+
+.swiper-button-next.text-.my-21,
+.swiper-button-prev.text-.my-21 {
+  margin-top: 24rem;
+  margin-bottom: 24rem;
+}
+
 .my-21 {
   margin-top: 24rem;
   margin-bottom: 24rem;
+}
+
+.swiper-button-next.text-.mt-0_5,
+.swiper-button-prev.text-.mt-0_5 {
+  margin-top: 0.125rem;
+}
+
+.mt-0_5 {
+  margin-top: 0.125rem;
+}
+
+.swiper-button-next.text-.mt-1_5,
+.swiper-button-prev.text-.mt-1_5 {
+  margin-top: 0.375rem;
+}
+
+.mt-1_5 {
+  margin-top: 0.375rem;
+}
+
+.swiper-button-next.text-.mt-2_25,
+.swiper-button-prev.text-.mt-2_25 {
+  margin-top: 0.625rem;
+}
+
+.mt-2_25 {
+  margin-top: 0.625rem;
+}
+
+.swiper-button-next.text-.mt-2_5,
+.swiper-button-prev.text-.mt-2_5 {
+  margin-top: 0.75rem;
+}
+
+.mt-2_5 {
+  margin-top: 0.75rem;
+}
+
+.swiper-button-next.text-.mt-2_75,
+.swiper-button-prev.text-.mt-2_75 {
+  margin-top: 0.875rem;
+}
+
+.mt-2_75 {
+  margin-top: 0.875rem;
+}
+
+.swiper-button-next.text-.mt-3_5,
+.swiper-button-prev.text-.mt-3_5 {
+  margin-top: 1.25rem;
+}
+
+.mt-3_5 {
+  margin-top: 1.25rem;
+}
+
+.swiper-button-next.text-.mt-4_2,
+.swiper-button-prev.text-.mt-4_2 {
+  margin-top: 1.75rem;
+}
+
+.mt-4_2 {
+  margin-top: 1.75rem;
+}
+
+.swiper-button-next.text-.mt-4_4,
+.swiper-button-prev.text-.mt-4_4 {
+  margin-top: 2rem;
+}
+
+.mt-4_4 {
+  margin-top: 2rem;
+}
+
+.swiper-button-next.text-.mt-4_5,
+.swiper-button-prev.text-.mt-4_5 {
+  margin-top: 2.25rem;
+}
+
+.mt-4_5 {
+  margin-top: 2.25rem;
+}
+
+.swiper-button-next.text-.mt-4_6,
+.swiper-button-prev.text-.mt-4_6 {
+  margin-top: 2.5rem;
+}
+
+.mt-4_6 {
+  margin-top: 2.5rem;
+}
+
+.swiper-button-next.text-.mt-4_8,
+.swiper-button-prev.text-.mt-4_8 {
+  margin-top: 2.75rem;
+}
+
+.mt-4_8 {
+  margin-top: 2.75rem;
+}
+
+.swiper-button-next.text-.mt-5_5,
+.swiper-button-prev.text-.mt-5_5 {
+  margin-top: 3.5rem;
+}
+
+.mt-5_5 {
+  margin-top: 3.5rem;
+}
+
+.swiper-button-next.text-.mt-6,
+.swiper-button-prev.text-.mt-6 {
+  margin-top: 4rem;
+}
+
+.mt-6 {
+  margin-top: 4rem;
+}
+
+.swiper-button-next.text-.mt-7,
+.swiper-button-prev.text-.mt-7 {
+  margin-top: 5rem;
+}
+
+.mt-7 {
+  margin-top: 5rem;
+}
+
+.swiper-button-next.text-.mt-8,
+.swiper-button-prev.text-.mt-8 {
+  margin-top: 6rem;
+}
+
+.mt-8 {
+  margin-top: 6rem;
+}
+
+.swiper-button-next.text-.mt-9,
+.swiper-button-prev.text-.mt-9 {
+  margin-top: 7rem;
+}
+
+.mt-9 {
+  margin-top: 7rem;
+}
+
+.swiper-button-next.text-.mt-10,
+.swiper-button-prev.text-.mt-10 {
+  margin-top: 8rem;
+}
+
+.mt-10 {
+  margin-top: 8rem;
+}
+
+.swiper-button-next.text-.mt-11,
+.swiper-button-prev.text-.mt-11 {
+  margin-top: 9rem;
+}
+
+.mt-11 {
+  margin-top: 9rem;
+}
+
+.swiper-button-next.text-.mt-12,
+.swiper-button-prev.text-.mt-12 {
+  margin-top: 10rem;
+}
+
+.mt-12 {
+  margin-top: 10rem;
+}
+
+.swiper-button-next.text-.mt-13,
+.swiper-button-prev.text-.mt-13 {
+  margin-top: 11rem;
+}
+
+.mt-13 {
+  margin-top: 11rem;
+}
+
+.swiper-button-next.text-.mt-14,
+.swiper-button-prev.text-.mt-14 {
+  margin-top: 12rem;
+}
+
+.mt-14 {
+  margin-top: 12rem;
+}
+
+.swiper-button-next.text-.mt-15,
+.swiper-button-prev.text-.mt-15 {
+  margin-top: 13rem;
+}
+
+.mt-15 {
+  margin-top: 13rem;
+}
+
+.swiper-button-next.text-.mt-16,
+.swiper-button-prev.text-.mt-16 {
+  margin-top: 14rem;
+}
+
+.mt-16 {
+  margin-top: 14rem;
+}
+
+.swiper-button-next.text-.mt-17,
+.swiper-button-prev.text-.mt-17 {
+  margin-top: 15rem;
+}
+
+.mt-17 {
+  margin-top: 15rem;
+}
+
+.swiper-button-next.text-.mt-18,
+.swiper-button-prev.text-.mt-18 {
+  margin-top: 16rem;
+}
+
+.mt-18 {
+  margin-top: 16rem;
+}
+
+.swiper-button-next.text-.mt-19,
+.swiper-button-prev.text-.mt-19 {
+  margin-top: 18rem;
+}
+
+.mt-19 {
+  margin-top: 18rem;
+}
+
+.swiper-button-next.text-.mt-20,
+.swiper-button-prev.text-.mt-20 {
+  margin-top: 20rem;
+}
+
+.mt-20 {
+  margin-top: 20rem;
+}
+
+.swiper-button-next.text-.mt-21,
+.swiper-button-prev.text-.mt-21 {
+  margin-top: 24rem;
 }
 
 .mt-21 {
   margin-top: 24rem;
 }
 
+.swiper-button-next.text-.me-0_5,
+.swiper-button-prev.text-.me-0_5 {
+  margin-right: 0.125rem;
+}
+
+.me-0_5 {
+  margin-right: 0.125rem;
+}
+
+.swiper-button-next.text-.me-1_5,
+.swiper-button-prev.text-.me-1_5 {
+  margin-right: 0.375rem;
+}
+
+.me-1_5 {
+  margin-right: 0.375rem;
+}
+
+.swiper-button-next.text-.me-2_25,
+.swiper-button-prev.text-.me-2_25 {
+  margin-right: 0.625rem;
+}
+
+.me-2_25 {
+  margin-right: 0.625rem;
+}
+
+.swiper-button-next.text-.me-2_5,
+.swiper-button-prev.text-.me-2_5 {
+  margin-right: 0.75rem;
+}
+
+.me-2_5 {
+  margin-right: 0.75rem;
+}
+
+.swiper-button-next.text-.me-2_75,
+.swiper-button-prev.text-.me-2_75 {
+  margin-right: 0.875rem;
+}
+
+.me-2_75 {
+  margin-right: 0.875rem;
+}
+
+.swiper-button-next.text-.me-3_5,
+.swiper-button-prev.text-.me-3_5 {
+  margin-right: 1.25rem;
+}
+
+.me-3_5 {
+  margin-right: 1.25rem;
+}
+
+.swiper-button-next.text-.me-4_2,
+.swiper-button-prev.text-.me-4_2 {
+  margin-right: 1.75rem;
+}
+
+.me-4_2 {
+  margin-right: 1.75rem;
+}
+
+.swiper-button-next.text-.me-4_4,
+.swiper-button-prev.text-.me-4_4 {
+  margin-right: 2rem;
+}
+
+.me-4_4 {
+  margin-right: 2rem;
+}
+
+.swiper-button-next.text-.me-4_5,
+.swiper-button-prev.text-.me-4_5 {
+  margin-right: 2.25rem;
+}
+
+.me-4_5 {
+  margin-right: 2.25rem;
+}
+
+.swiper-button-next.text-.me-4_6,
+.swiper-button-prev.text-.me-4_6 {
+  margin-right: 2.5rem;
+}
+
+.me-4_6 {
+  margin-right: 2.5rem;
+}
+
+.swiper-button-next.text-.me-4_8,
+.swiper-button-prev.text-.me-4_8 {
+  margin-right: 2.75rem;
+}
+
+.me-4_8 {
+  margin-right: 2.75rem;
+}
+
+.swiper-button-next.text-.me-5_5,
+.swiper-button-prev.text-.me-5_5 {
+  margin-right: 3.5rem;
+}
+
+.me-5_5 {
+  margin-right: 3.5rem;
+}
+
+.swiper-button-next.text-.me-6,
+.swiper-button-prev.text-.me-6 {
+  margin-right: 4rem;
+}
+
+.me-6 {
+  margin-right: 4rem;
+}
+
+.swiper-button-next.text-.me-7,
+.swiper-button-prev.text-.me-7 {
+  margin-right: 5rem;
+}
+
+.me-7 {
+  margin-right: 5rem;
+}
+
+.swiper-button-next.text-.me-8,
+.swiper-button-prev.text-.me-8 {
+  margin-right: 6rem;
+}
+
+.me-8 {
+  margin-right: 6rem;
+}
+
+.swiper-button-next.text-.me-9,
+.swiper-button-prev.text-.me-9 {
+  margin-right: 7rem;
+}
+
+.me-9 {
+  margin-right: 7rem;
+}
+
+.swiper-button-next.text-.me-10,
+.swiper-button-prev.text-.me-10 {
+  margin-right: 8rem;
+}
+
+.me-10 {
+  margin-right: 8rem;
+}
+
+.swiper-button-next.text-.me-11,
+.swiper-button-prev.text-.me-11 {
+  margin-right: 9rem;
+}
+
+.me-11 {
+  margin-right: 9rem;
+}
+
+.swiper-button-next.text-.me-12,
+.swiper-button-prev.text-.me-12 {
+  margin-right: 10rem;
+}
+
+.me-12 {
+  margin-right: 10rem;
+}
+
+.swiper-button-next.text-.me-13,
+.swiper-button-prev.text-.me-13 {
+  margin-right: 11rem;
+}
+
+.me-13 {
+  margin-right: 11rem;
+}
+
+.swiper-button-next.text-.me-14,
+.swiper-button-prev.text-.me-14 {
+  margin-right: 12rem;
+}
+
+.me-14 {
+  margin-right: 12rem;
+}
+
+.swiper-button-next.text-.me-15,
+.swiper-button-prev.text-.me-15 {
+  margin-right: 13rem;
+}
+
+.me-15 {
+  margin-right: 13rem;
+}
+
+.swiper-button-next.text-.me-16,
+.swiper-button-prev.text-.me-16 {
+  margin-right: 14rem;
+}
+
+.me-16 {
+  margin-right: 14rem;
+}
+
+.swiper-button-next.text-.me-17,
+.swiper-button-prev.text-.me-17 {
+  margin-right: 15rem;
+}
+
+.me-17 {
+  margin-right: 15rem;
+}
+
+.swiper-button-next.text-.me-18,
+.swiper-button-prev.text-.me-18 {
+  margin-right: 16rem;
+}
+
+.me-18 {
+  margin-right: 16rem;
+}
+
+.swiper-button-next.text-.me-19,
+.swiper-button-prev.text-.me-19 {
+  margin-right: 18rem;
+}
+
+.me-19 {
+  margin-right: 18rem;
+}
+
+.swiper-button-next.text-.me-20,
+.swiper-button-prev.text-.me-20 {
+  margin-right: 20rem;
+}
+
+.me-20 {
+  margin-right: 20rem;
+}
+
+.swiper-button-next.text-.me-21,
+.swiper-button-prev.text-.me-21 {
+  margin-right: 24rem;
+}
+
 .me-21 {
   margin-right: 24rem;
+}
+
+.swiper-button-next.text-.mb-0_5,
+.swiper-button-prev.text-.mb-0_5 {
+  margin-bottom: 0.125rem;
+}
+
+.mb-0_5 {
+  margin-bottom: 0.125rem;
+}
+
+.swiper-button-next.text-.mb-1_5,
+.swiper-button-prev.text-.mb-1_5 {
+  margin-bottom: 0.375rem;
+}
+
+.mb-1_5 {
+  margin-bottom: 0.375rem;
+}
+
+.swiper-button-next.text-.mb-2_25,
+.swiper-button-prev.text-.mb-2_25 {
+  margin-bottom: 0.625rem;
+}
+
+.mb-2_25 {
+  margin-bottom: 0.625rem;
+}
+
+.swiper-button-next.text-.mb-2_5,
+.swiper-button-prev.text-.mb-2_5 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-2_5 {
+  margin-bottom: 0.75rem;
+}
+
+.swiper-button-next.text-.mb-2_75,
+.swiper-button-prev.text-.mb-2_75 {
+  margin-bottom: 0.875rem;
+}
+
+.mb-2_75 {
+  margin-bottom: 0.875rem;
+}
+
+.swiper-button-next.text-.mb-3_5,
+.swiper-button-prev.text-.mb-3_5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-3_5 {
+  margin-bottom: 1.25rem;
+}
+
+.swiper-button-next.text-.mb-4_2,
+.swiper-button-prev.text-.mb-4_2 {
+  margin-bottom: 1.75rem;
+}
+
+.mb-4_2 {
+  margin-bottom: 1.75rem;
+}
+
+.swiper-button-next.text-.mb-4_4,
+.swiper-button-prev.text-.mb-4_4 {
+  margin-bottom: 2rem;
+}
+
+.mb-4_4 {
+  margin-bottom: 2rem;
+}
+
+.swiper-button-next.text-.mb-4_5,
+.swiper-button-prev.text-.mb-4_5 {
+  margin-bottom: 2.25rem;
+}
+
+.mb-4_5 {
+  margin-bottom: 2.25rem;
+}
+
+.swiper-button-next.text-.mb-4_6,
+.swiper-button-prev.text-.mb-4_6 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-4_6 {
+  margin-bottom: 2.5rem;
+}
+
+.swiper-button-next.text-.mb-4_8,
+.swiper-button-prev.text-.mb-4_8 {
+  margin-bottom: 2.75rem;
+}
+
+.mb-4_8 {
+  margin-bottom: 2.75rem;
+}
+
+.swiper-button-next.text-.mb-5_5,
+.swiper-button-prev.text-.mb-5_5 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-5_5 {
+  margin-bottom: 3.5rem;
+}
+
+.swiper-button-next.text-.mb-6,
+.swiper-button-prev.text-.mb-6 {
+  margin-bottom: 4rem;
+}
+
+.mb-6 {
+  margin-bottom: 4rem;
+}
+
+.swiper-button-next.text-.mb-7,
+.swiper-button-prev.text-.mb-7 {
+  margin-bottom: 5rem;
+}
+
+.mb-7 {
+  margin-bottom: 5rem;
+}
+
+.swiper-button-next.text-.mb-8,
+.swiper-button-prev.text-.mb-8 {
+  margin-bottom: 6rem;
+}
+
+.mb-8 {
+  margin-bottom: 6rem;
+}
+
+.swiper-button-next.text-.mb-9,
+.swiper-button-prev.text-.mb-9 {
+  margin-bottom: 7rem;
+}
+
+.mb-9 {
+  margin-bottom: 7rem;
+}
+
+.swiper-button-next.text-.mb-10,
+.swiper-button-prev.text-.mb-10 {
+  margin-bottom: 8rem;
+}
+
+.mb-10 {
+  margin-bottom: 8rem;
+}
+
+.swiper-button-next.text-.mb-11,
+.swiper-button-prev.text-.mb-11 {
+  margin-bottom: 9rem;
+}
+
+.mb-11 {
+  margin-bottom: 9rem;
+}
+
+.swiper-button-next.text-.mb-12,
+.swiper-button-prev.text-.mb-12 {
+  margin-bottom: 10rem;
+}
+
+.mb-12 {
+  margin-bottom: 10rem;
+}
+
+.swiper-button-next.text-.mb-13,
+.swiper-button-prev.text-.mb-13 {
+  margin-bottom: 11rem;
+}
+
+.mb-13 {
+  margin-bottom: 11rem;
+}
+
+.swiper-button-next.text-.mb-14,
+.swiper-button-prev.text-.mb-14 {
+  margin-bottom: 12rem;
+}
+
+.mb-14 {
+  margin-bottom: 12rem;
+}
+
+.swiper-button-next.text-.mb-15,
+.swiper-button-prev.text-.mb-15 {
+  margin-bottom: 13rem;
+}
+
+.mb-15 {
+  margin-bottom: 13rem;
+}
+
+.swiper-button-next.text-.mb-16,
+.swiper-button-prev.text-.mb-16 {
+  margin-bottom: 14rem;
+}
+
+.mb-16 {
+  margin-bottom: 14rem;
+}
+
+.swiper-button-next.text-.mb-17,
+.swiper-button-prev.text-.mb-17 {
+  margin-bottom: 15rem;
+}
+
+.mb-17 {
+  margin-bottom: 15rem;
+}
+
+.swiper-button-next.text-.mb-18,
+.swiper-button-prev.text-.mb-18 {
+  margin-bottom: 16rem;
+}
+
+.mb-18 {
+  margin-bottom: 16rem;
+}
+
+.swiper-button-next.text-.mb-19,
+.swiper-button-prev.text-.mb-19 {
+  margin-bottom: 18rem;
+}
+
+.mb-19 {
+  margin-bottom: 18rem;
+}
+
+.swiper-button-next.text-.mb-20,
+.swiper-button-prev.text-.mb-20 {
+  margin-bottom: 20rem;
+}
+
+.mb-20 {
+  margin-bottom: 20rem;
+}
+
+.swiper-button-next.text-.mb-21,
+.swiper-button-prev.text-.mb-21 {
+  margin-bottom: 24rem;
 }
 
 .mb-21 {
   margin-bottom: 24rem;
 }
 
+.swiper-button-next.text-.ms-0_5,
+.swiper-button-prev.text-.ms-0_5 {
+  margin-left: 0.125rem;
+}
+
+.ms-0_5 {
+  margin-left: 0.125rem;
+}
+
+.swiper-button-next.text-.ms-1_5,
+.swiper-button-prev.text-.ms-1_5 {
+  margin-left: 0.375rem;
+}
+
+.ms-1_5 {
+  margin-left: 0.375rem;
+}
+
+.swiper-button-next.text-.ms-2_25,
+.swiper-button-prev.text-.ms-2_25 {
+  margin-left: 0.625rem;
+}
+
+.ms-2_25 {
+  margin-left: 0.625rem;
+}
+
+.swiper-button-next.text-.ms-2_5,
+.swiper-button-prev.text-.ms-2_5 {
+  margin-left: 0.75rem;
+}
+
+.ms-2_5 {
+  margin-left: 0.75rem;
+}
+
+.swiper-button-next.text-.ms-2_75,
+.swiper-button-prev.text-.ms-2_75 {
+  margin-left: 0.875rem;
+}
+
+.ms-2_75 {
+  margin-left: 0.875rem;
+}
+
+.swiper-button-next.text-.ms-3_5,
+.swiper-button-prev.text-.ms-3_5 {
+  margin-left: 1.25rem;
+}
+
+.ms-3_5 {
+  margin-left: 1.25rem;
+}
+
+.swiper-button-next.text-.ms-4_2,
+.swiper-button-prev.text-.ms-4_2 {
+  margin-left: 1.75rem;
+}
+
+.ms-4_2 {
+  margin-left: 1.75rem;
+}
+
+.swiper-button-next.text-.ms-4_4,
+.swiper-button-prev.text-.ms-4_4 {
+  margin-left: 2rem;
+}
+
+.ms-4_4 {
+  margin-left: 2rem;
+}
+
+.swiper-button-next.text-.ms-4_5,
+.swiper-button-prev.text-.ms-4_5 {
+  margin-left: 2.25rem;
+}
+
+.ms-4_5 {
+  margin-left: 2.25rem;
+}
+
+.swiper-button-next.text-.ms-4_6,
+.swiper-button-prev.text-.ms-4_6 {
+  margin-left: 2.5rem;
+}
+
+.ms-4_6 {
+  margin-left: 2.5rem;
+}
+
+.swiper-button-next.text-.ms-4_8,
+.swiper-button-prev.text-.ms-4_8 {
+  margin-left: 2.75rem;
+}
+
+.ms-4_8 {
+  margin-left: 2.75rem;
+}
+
+.swiper-button-next.text-.ms-5_5,
+.swiper-button-prev.text-.ms-5_5 {
+  margin-left: 3.5rem;
+}
+
+.ms-5_5 {
+  margin-left: 3.5rem;
+}
+
+.swiper-button-next.text-.ms-6,
+.swiper-button-prev.text-.ms-6 {
+  margin-left: 4rem;
+}
+
+.ms-6 {
+  margin-left: 4rem;
+}
+
+.swiper-button-next.text-.ms-7,
+.swiper-button-prev.text-.ms-7 {
+  margin-left: 5rem;
+}
+
+.ms-7 {
+  margin-left: 5rem;
+}
+
+.swiper-button-next.text-.ms-8,
+.swiper-button-prev.text-.ms-8 {
+  margin-left: 6rem;
+}
+
+.ms-8 {
+  margin-left: 6rem;
+}
+
+.swiper-button-next.text-.ms-9,
+.swiper-button-prev.text-.ms-9 {
+  margin-left: 7rem;
+}
+
+.ms-9 {
+  margin-left: 7rem;
+}
+
+.swiper-button-next.text-.ms-10,
+.swiper-button-prev.text-.ms-10 {
+  margin-left: 8rem;
+}
+
+.ms-10 {
+  margin-left: 8rem;
+}
+
+.swiper-button-next.text-.ms-11,
+.swiper-button-prev.text-.ms-11 {
+  margin-left: 9rem;
+}
+
+.ms-11 {
+  margin-left: 9rem;
+}
+
+.swiper-button-next.text-.ms-12,
+.swiper-button-prev.text-.ms-12 {
+  margin-left: 10rem;
+}
+
+.ms-12 {
+  margin-left: 10rem;
+}
+
+.swiper-button-next.text-.ms-13,
+.swiper-button-prev.text-.ms-13 {
+  margin-left: 11rem;
+}
+
+.ms-13 {
+  margin-left: 11rem;
+}
+
+.swiper-button-next.text-.ms-14,
+.swiper-button-prev.text-.ms-14 {
+  margin-left: 12rem;
+}
+
+.ms-14 {
+  margin-left: 12rem;
+}
+
+.swiper-button-next.text-.ms-15,
+.swiper-button-prev.text-.ms-15 {
+  margin-left: 13rem;
+}
+
+.ms-15 {
+  margin-left: 13rem;
+}
+
+.swiper-button-next.text-.ms-16,
+.swiper-button-prev.text-.ms-16 {
+  margin-left: 14rem;
+}
+
+.ms-16 {
+  margin-left: 14rem;
+}
+
+.swiper-button-next.text-.ms-17,
+.swiper-button-prev.text-.ms-17 {
+  margin-left: 15rem;
+}
+
+.ms-17 {
+  margin-left: 15rem;
+}
+
+.swiper-button-next.text-.ms-18,
+.swiper-button-prev.text-.ms-18 {
+  margin-left: 16rem;
+}
+
+.ms-18 {
+  margin-left: 16rem;
+}
+
+.swiper-button-next.text-.ms-19,
+.swiper-button-prev.text-.ms-19 {
+  margin-left: 18rem;
+}
+
+.ms-19 {
+  margin-left: 18rem;
+}
+
+.swiper-button-next.text-.ms-20,
+.swiper-button-prev.text-.ms-20 {
+  margin-left: 20rem;
+}
+
+.ms-20 {
+  margin-left: 20rem;
+}
+
+.swiper-button-next.text-.ms-21,
+.swiper-button-prev.text-.ms-21 {
+  margin-left: 24rem;
+}
+
 .ms-21 {
   margin-left: 24rem;
 }
 
+.swiper-button-next.text-.p-0_5,
+.swiper-button-prev.text-.p-0_5 {
+  padding: 0.125rem;
+}
+
 .p-0_5 {
   padding: 0.125rem;
+}
+
+.swiper-button-next.text-.p-1_5,
+.swiper-button-prev.text-.p-1_5 {
+  padding: 0.375rem;
+}
+
+.p-1_5 {
+  padding: 0.375rem;
+}
+
+.swiper-button-next.text-.p-2_25,
+.swiper-button-prev.text-.p-2_25 {
+  padding: 0.625rem;
+}
+
+.p-2_25 {
+  padding: 0.625rem;
+}
+
+.swiper-button-next.text-.p-2_5,
+.swiper-button-prev.text-.p-2_5 {
+  padding: 0.75rem;
+}
+
+.p-2_5 {
+  padding: 0.75rem;
+}
+
+.swiper-button-next.text-.p-2_75,
+.swiper-button-prev.text-.p-2_75 {
+  padding: 0.875rem;
+}
+
+.p-2_75 {
+  padding: 0.875rem;
+}
+
+.swiper-button-next.text-.p-3_5,
+.swiper-button-prev.text-.p-3_5 {
+  padding: 1.25rem;
+}
+
+.p-3_5 {
+  padding: 1.25rem;
+}
+
+.swiper-button-next.text-.p-4_2,
+.swiper-button-prev.text-.p-4_2 {
+  padding: 1.75rem;
+}
+
+.p-4_2 {
+  padding: 1.75rem;
+}
+
+.swiper-button-next.text-.p-4_4,
+.swiper-button-prev.text-.p-4_4 {
+  padding: 2rem;
+}
+
+.p-4_4 {
+  padding: 2rem;
+}
+
+.swiper-button-next.text-.p-4_5,
+.swiper-button-prev.text-.p-4_5 {
+  padding: 2.25rem;
+}
+
+.p-4_5 {
+  padding: 2.25rem;
+}
+
+.swiper-button-next.text-.p-4_6,
+.swiper-button-prev.text-.p-4_6 {
+  padding: 2.5rem;
+}
+
+.p-4_6 {
+  padding: 2.5rem;
+}
+
+.swiper-button-next.text-.p-4_8,
+.swiper-button-prev.text-.p-4_8 {
+  padding: 2.75rem;
+}
+
+.p-4_8 {
+  padding: 2.75rem;
+}
+
+.swiper-button-next.text-.p-5_5,
+.swiper-button-prev.text-.p-5_5 {
+  padding: 3.5rem;
+}
+
+.p-5_5 {
+  padding: 3.5rem;
+}
+
+.swiper-button-next.text-.p-6,
+.swiper-button-prev.text-.p-6 {
+  padding: 4rem;
+}
+
+.p-6 {
+  padding: 4rem;
+}
+
+.swiper-button-next.text-.p-7,
+.swiper-button-prev.text-.p-7 {
+  padding: 5rem;
+}
+
+.p-7 {
+  padding: 5rem;
+}
+
+.swiper-button-next.text-.p-8,
+.swiper-button-prev.text-.p-8 {
+  padding: 6rem;
+}
+
+.p-8 {
+  padding: 6rem;
+}
+
+.swiper-button-next.text-.p-9,
+.swiper-button-prev.text-.p-9 {
+  padding: 7rem;
+}
+
+.p-9 {
+  padding: 7rem;
+}
+
+.swiper-button-next.text-.p-10,
+.swiper-button-prev.text-.p-10 {
+  padding: 8rem;
+}
+
+.p-10 {
+  padding: 8rem;
+}
+
+.swiper-button-next.text-.p-11,
+.swiper-button-prev.text-.p-11 {
+  padding: 9rem;
+}
+
+.p-11 {
+  padding: 9rem;
+}
+
+.swiper-button-next.text-.p-12,
+.swiper-button-prev.text-.p-12 {
+  padding: 10rem;
+}
+
+.p-12 {
+  padding: 10rem;
+}
+
+.swiper-button-next.text-.p-13,
+.swiper-button-prev.text-.p-13 {
+  padding: 11rem;
+}
+
+.p-13 {
+  padding: 11rem;
+}
+
+.swiper-button-next.text-.p-14,
+.swiper-button-prev.text-.p-14 {
+  padding: 12rem;
+}
+
+.p-14 {
+  padding: 12rem;
+}
+
+.swiper-button-next.text-.p-15,
+.swiper-button-prev.text-.p-15 {
+  padding: 13rem;
+}
+
+.p-15 {
+  padding: 13rem;
+}
+
+.swiper-button-next.text-.p-16,
+.swiper-button-prev.text-.p-16 {
+  padding: 14rem;
+}
+
+.p-16 {
+  padding: 14rem;
+}
+
+.swiper-button-next.text-.p-17,
+.swiper-button-prev.text-.p-17 {
+  padding: 15rem;
+}
+
+.p-17 {
+  padding: 15rem;
+}
+
+.swiper-button-next.text-.p-18,
+.swiper-button-prev.text-.p-18 {
+  padding: 16rem;
+}
+
+.p-18 {
+  padding: 16rem;
+}
+
+.swiper-button-next.text-.p-19,
+.swiper-button-prev.text-.p-19 {
+  padding: 18rem;
+}
+
+.p-19 {
+  padding: 18rem;
+}
+
+.swiper-button-next.text-.p-20,
+.swiper-button-prev.text-.p-20 {
+  padding: 20rem;
+}
+
+.p-20 {
+  padding: 20rem;
+}
+
+.swiper-button-next.text-.p-21,
+.swiper-button-prev.text-.p-21 {
+  padding: 24rem;
+}
+
+.p-21 {
+  padding: 24rem;
+}
+
+.swiper-button-next.text-.px-0_5,
+.swiper-button-prev.text-.px-0_5 {
+  padding-right: 0.125rem;
+  padding-left: 0.125rem;
 }
 
 .px-0_5 {
@@ -20196,29 +21486,10 @@ progress {
   padding-left: 0.125rem;
 }
 
-.py-0_5 {
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
-}
-
-.pt-0_5 {
-  padding-top: 0.125rem;
-}
-
-.pe-0_5 {
-  padding-right: 0.125rem;
-}
-
-.pb-0_5 {
-  padding-bottom: 0.125rem;
-}
-
-.ps-0_5 {
-  padding-left: 0.125rem;
-}
-
-.p-1_5 {
-  padding: 0.375rem;
+.swiper-button-next.text-.px-1_5,
+.swiper-button-prev.text-.px-1_5 {
+  padding-right: 0.375rem;
+  padding-left: 0.375rem;
 }
 
 .px-1_5 {
@@ -20226,29 +21497,10 @@ progress {
   padding-left: 0.375rem;
 }
 
-.py-1_5 {
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-}
-
-.pt-1_5 {
-  padding-top: 0.375rem;
-}
-
-.pe-1_5 {
-  padding-right: 0.375rem;
-}
-
-.pb-1_5 {
-  padding-bottom: 0.375rem;
-}
-
-.ps-1_5 {
-  padding-left: 0.375rem;
-}
-
-.p-2_25 {
-  padding: 0.625rem;
+.swiper-button-next.text-.px-2_25,
+.swiper-button-prev.text-.px-2_25 {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
 }
 
 .px-2_25 {
@@ -20256,29 +21508,10 @@ progress {
   padding-left: 0.625rem;
 }
 
-.py-2_25 {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
-
-.pt-2_25 {
-  padding-top: 0.625rem;
-}
-
-.pe-2_25 {
-  padding-right: 0.625rem;
-}
-
-.pb-2_25 {
-  padding-bottom: 0.625rem;
-}
-
-.ps-2_25 {
-  padding-left: 0.625rem;
-}
-
-.p-2_5 {
-  padding: 0.75rem;
+.swiper-button-next.text-.px-2_5,
+.swiper-button-prev.text-.px-2_5 {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 
 .px-2_5 {
@@ -20286,29 +21519,10 @@ progress {
   padding-left: 0.75rem;
 }
 
-.py-2_5 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.pt-2_5 {
-  padding-top: 0.75rem;
-}
-
-.pe-2_5 {
-  padding-right: 0.75rem;
-}
-
-.pb-2_5 {
-  padding-bottom: 0.75rem;
-}
-
-.ps-2_5 {
-  padding-left: 0.75rem;
-}
-
-.p-2_75 {
-  padding: 0.875rem;
+.swiper-button-next.text-.px-2_75,
+.swiper-button-prev.text-.px-2_75 {
+  padding-right: 0.875rem;
+  padding-left: 0.875rem;
 }
 
 .px-2_75 {
@@ -20316,29 +21530,10 @@ progress {
   padding-left: 0.875rem;
 }
 
-.py-2_75 {
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
-}
-
-.pt-2_75 {
-  padding-top: 0.875rem;
-}
-
-.pe-2_75 {
-  padding-right: 0.875rem;
-}
-
-.pb-2_75 {
-  padding-bottom: 0.875rem;
-}
-
-.ps-2_75 {
-  padding-left: 0.875rem;
-}
-
-.p-3_5 {
-  padding: 1.25rem;
+.swiper-button-next.text-.px-3_5,
+.swiper-button-prev.text-.px-3_5 {
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
 }
 
 .px-3_5 {
@@ -20346,29 +21541,10 @@ progress {
   padding-left: 1.25rem;
 }
 
-.py-3_5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.pt-3_5 {
-  padding-top: 1.25rem;
-}
-
-.pe-3_5 {
-  padding-right: 1.25rem;
-}
-
-.pb-3_5 {
-  padding-bottom: 1.25rem;
-}
-
-.ps-3_5 {
-  padding-left: 1.25rem;
-}
-
-.p-4_2 {
-  padding: 1.75rem;
+.swiper-button-next.text-.px-4_2,
+.swiper-button-prev.text-.px-4_2 {
+  padding-right: 1.75rem;
+  padding-left: 1.75rem;
 }
 
 .px-4_2 {
@@ -20376,29 +21552,10 @@ progress {
   padding-left: 1.75rem;
 }
 
-.py-4_2 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-
-.pt-4_2 {
-  padding-top: 1.75rem;
-}
-
-.pe-4_2 {
-  padding-right: 1.75rem;
-}
-
-.pb-4_2 {
-  padding-bottom: 1.75rem;
-}
-
-.ps-4_2 {
-  padding-left: 1.75rem;
-}
-
-.p-4_4 {
-  padding: 2rem;
+.swiper-button-next.text-.px-4_4,
+.swiper-button-prev.text-.px-4_4 {
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .px-4_4 {
@@ -20406,29 +21563,10 @@ progress {
   padding-left: 2rem;
 }
 
-.py-4_4 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.pt-4_4 {
-  padding-top: 2rem;
-}
-
-.pe-4_4 {
-  padding-right: 2rem;
-}
-
-.pb-4_4 {
-  padding-bottom: 2rem;
-}
-
-.ps-4_4 {
-  padding-left: 2rem;
-}
-
-.p-4_5 {
-  padding: 2.25rem;
+.swiper-button-next.text-.px-4_5,
+.swiper-button-prev.text-.px-4_5 {
+  padding-right: 2.25rem;
+  padding-left: 2.25rem;
 }
 
 .px-4_5 {
@@ -20436,29 +21574,10 @@ progress {
   padding-left: 2.25rem;
 }
 
-.py-4_5 {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-}
-
-.pt-4_5 {
-  padding-top: 2.25rem;
-}
-
-.pe-4_5 {
-  padding-right: 2.25rem;
-}
-
-.pb-4_5 {
-  padding-bottom: 2.25rem;
-}
-
-.ps-4_5 {
-  padding-left: 2.25rem;
-}
-
-.p-4_6 {
-  padding: 2.5rem;
+.swiper-button-next.text-.px-4_6,
+.swiper-button-prev.text-.px-4_6 {
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
 }
 
 .px-4_6 {
@@ -20466,29 +21585,10 @@ progress {
   padding-left: 2.5rem;
 }
 
-.py-4_6 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.pt-4_6 {
-  padding-top: 2.5rem;
-}
-
-.pe-4_6 {
-  padding-right: 2.5rem;
-}
-
-.pb-4_6 {
-  padding-bottom: 2.5rem;
-}
-
-.ps-4_6 {
-  padding-left: 2.5rem;
-}
-
-.p-4_8 {
-  padding: 2.75rem;
+.swiper-button-next.text-.px-4_8,
+.swiper-button-prev.text-.px-4_8 {
+  padding-right: 2.75rem;
+  padding-left: 2.75rem;
 }
 
 .px-4_8 {
@@ -20496,29 +21596,10 @@ progress {
   padding-left: 2.75rem;
 }
 
-.py-4_8 {
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
-}
-
-.pt-4_8 {
-  padding-top: 2.75rem;
-}
-
-.pe-4_8 {
-  padding-right: 2.75rem;
-}
-
-.pb-4_8 {
-  padding-bottom: 2.75rem;
-}
-
-.ps-4_8 {
-  padding-left: 2.75rem;
-}
-
-.p-5_5 {
-  padding: 3.5rem;
+.swiper-button-next.text-.px-5_5,
+.swiper-button-prev.text-.px-5_5 {
+  padding-right: 3.5rem;
+  padding-left: 3.5rem;
 }
 
 .px-5_5 {
@@ -20526,29 +21607,10 @@ progress {
   padding-left: 3.5rem;
 }
 
-.py-5_5 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
-.pt-5_5 {
-  padding-top: 3.5rem;
-}
-
-.pe-5_5 {
-  padding-right: 3.5rem;
-}
-
-.pb-5_5 {
-  padding-bottom: 3.5rem;
-}
-
-.ps-5_5 {
-  padding-left: 3.5rem;
-}
-
-.p-6 {
-  padding: 4rem;
+.swiper-button-next.text-.px-6,
+.swiper-button-prev.text-.px-6 {
+  padding-right: 4rem;
+  padding-left: 4rem;
 }
 
 .px-6 {
@@ -20556,29 +21618,10 @@ progress {
   padding-left: 4rem;
 }
 
-.py-6 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.pt-6 {
-  padding-top: 4rem;
-}
-
-.pe-6 {
-  padding-right: 4rem;
-}
-
-.pb-6 {
-  padding-bottom: 4rem;
-}
-
-.ps-6 {
-  padding-left: 4rem;
-}
-
-.p-7 {
-  padding: 5rem;
+.swiper-button-next.text-.px-7,
+.swiper-button-prev.text-.px-7 {
+  padding-right: 5rem;
+  padding-left: 5rem;
 }
 
 .px-7 {
@@ -20586,29 +21629,10 @@ progress {
   padding-left: 5rem;
 }
 
-.py-7 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.pt-7 {
-  padding-top: 5rem;
-}
-
-.pe-7 {
-  padding-right: 5rem;
-}
-
-.pb-7 {
-  padding-bottom: 5rem;
-}
-
-.ps-7 {
-  padding-left: 5rem;
-}
-
-.p-8 {
-  padding: 6rem;
+.swiper-button-next.text-.px-8,
+.swiper-button-prev.text-.px-8 {
+  padding-right: 6rem;
+  padding-left: 6rem;
 }
 
 .px-8 {
@@ -20616,29 +21640,10 @@ progress {
   padding-left: 6rem;
 }
 
-.py-8 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.pt-8 {
-  padding-top: 6rem;
-}
-
-.pe-8 {
-  padding-right: 6rem;
-}
-
-.pb-8 {
-  padding-bottom: 6rem;
-}
-
-.ps-8 {
-  padding-left: 6rem;
-}
-
-.p-9 {
-  padding: 7rem;
+.swiper-button-next.text-.px-9,
+.swiper-button-prev.text-.px-9 {
+  padding-right: 7rem;
+  padding-left: 7rem;
 }
 
 .px-9 {
@@ -20646,29 +21651,10 @@ progress {
   padding-left: 7rem;
 }
 
-.py-9 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.pt-9 {
-  padding-top: 7rem;
-}
-
-.pe-9 {
-  padding-right: 7rem;
-}
-
-.pb-9 {
-  padding-bottom: 7rem;
-}
-
-.ps-9 {
-  padding-left: 7rem;
-}
-
-.p-10 {
-  padding: 8rem;
+.swiper-button-next.text-.px-10,
+.swiper-button-prev.text-.px-10 {
+  padding-right: 8rem;
+  padding-left: 8rem;
 }
 
 .px-10 {
@@ -20676,29 +21662,10 @@ progress {
   padding-left: 8rem;
 }
 
-.py-10 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
-.pt-10 {
-  padding-top: 8rem;
-}
-
-.pe-10 {
-  padding-right: 8rem;
-}
-
-.pb-10 {
-  padding-bottom: 8rem;
-}
-
-.ps-10 {
-  padding-left: 8rem;
-}
-
-.p-11 {
-  padding: 9rem;
+.swiper-button-next.text-.px-11,
+.swiper-button-prev.text-.px-11 {
+  padding-right: 9rem;
+  padding-left: 9rem;
 }
 
 .px-11 {
@@ -20706,29 +21673,10 @@ progress {
   padding-left: 9rem;
 }
 
-.py-11 {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-}
-
-.pt-11 {
-  padding-top: 9rem;
-}
-
-.pe-11 {
-  padding-right: 9rem;
-}
-
-.pb-11 {
-  padding-bottom: 9rem;
-}
-
-.ps-11 {
-  padding-left: 9rem;
-}
-
-.p-12 {
-  padding: 10rem;
+.swiper-button-next.text-.px-12,
+.swiper-button-prev.text-.px-12 {
+  padding-right: 10rem;
+  padding-left: 10rem;
 }
 
 .px-12 {
@@ -20736,29 +21684,10 @@ progress {
   padding-left: 10rem;
 }
 
-.py-12 {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-.pt-12 {
-  padding-top: 10rem;
-}
-
-.pe-12 {
-  padding-right: 10rem;
-}
-
-.pb-12 {
-  padding-bottom: 10rem;
-}
-
-.ps-12 {
-  padding-left: 10rem;
-}
-
-.p-13 {
-  padding: 11rem;
+.swiper-button-next.text-.px-13,
+.swiper-button-prev.text-.px-13 {
+  padding-right: 11rem;
+  padding-left: 11rem;
 }
 
 .px-13 {
@@ -20766,29 +21695,10 @@ progress {
   padding-left: 11rem;
 }
 
-.py-13 {
-  padding-top: 11rem;
-  padding-bottom: 11rem;
-}
-
-.pt-13 {
-  padding-top: 11rem;
-}
-
-.pe-13 {
-  padding-right: 11rem;
-}
-
-.pb-13 {
-  padding-bottom: 11rem;
-}
-
-.ps-13 {
-  padding-left: 11rem;
-}
-
-.p-14 {
-  padding: 12rem;
+.swiper-button-next.text-.px-14,
+.swiper-button-prev.text-.px-14 {
+  padding-right: 12rem;
+  padding-left: 12rem;
 }
 
 .px-14 {
@@ -20796,29 +21706,10 @@ progress {
   padding-left: 12rem;
 }
 
-.py-14 {
-  padding-top: 12rem;
-  padding-bottom: 12rem;
-}
-
-.pt-14 {
-  padding-top: 12rem;
-}
-
-.pe-14 {
-  padding-right: 12rem;
-}
-
-.pb-14 {
-  padding-bottom: 12rem;
-}
-
-.ps-14 {
-  padding-left: 12rem;
-}
-
-.p-15 {
-  padding: 13rem;
+.swiper-button-next.text-.px-15,
+.swiper-button-prev.text-.px-15 {
+  padding-right: 13rem;
+  padding-left: 13rem;
 }
 
 .px-15 {
@@ -20826,29 +21717,10 @@ progress {
   padding-left: 13rem;
 }
 
-.py-15 {
-  padding-top: 13rem;
-  padding-bottom: 13rem;
-}
-
-.pt-15 {
-  padding-top: 13rem;
-}
-
-.pe-15 {
-  padding-right: 13rem;
-}
-
-.pb-15 {
-  padding-bottom: 13rem;
-}
-
-.ps-15 {
-  padding-left: 13rem;
-}
-
-.p-16 {
-  padding: 14rem;
+.swiper-button-next.text-.px-16,
+.swiper-button-prev.text-.px-16 {
+  padding-right: 14rem;
+  padding-left: 14rem;
 }
 
 .px-16 {
@@ -20856,29 +21728,10 @@ progress {
   padding-left: 14rem;
 }
 
-.py-16 {
-  padding-top: 14rem;
-  padding-bottom: 14rem;
-}
-
-.pt-16 {
-  padding-top: 14rem;
-}
-
-.pe-16 {
-  padding-right: 14rem;
-}
-
-.pb-16 {
-  padding-bottom: 14rem;
-}
-
-.ps-16 {
-  padding-left: 14rem;
-}
-
-.p-17 {
-  padding: 15rem;
+.swiper-button-next.text-.px-17,
+.swiper-button-prev.text-.px-17 {
+  padding-right: 15rem;
+  padding-left: 15rem;
 }
 
 .px-17 {
@@ -20886,29 +21739,10 @@ progress {
   padding-left: 15rem;
 }
 
-.py-17 {
-  padding-top: 15rem;
-  padding-bottom: 15rem;
-}
-
-.pt-17 {
-  padding-top: 15rem;
-}
-
-.pe-17 {
-  padding-right: 15rem;
-}
-
-.pb-17 {
-  padding-bottom: 15rem;
-}
-
-.ps-17 {
-  padding-left: 15rem;
-}
-
-.p-18 {
-  padding: 16rem;
+.swiper-button-next.text-.px-18,
+.swiper-button-prev.text-.px-18 {
+  padding-right: 16rem;
+  padding-left: 16rem;
 }
 
 .px-18 {
@@ -20916,29 +21750,10 @@ progress {
   padding-left: 16rem;
 }
 
-.py-18 {
-  padding-top: 16rem;
-  padding-bottom: 16rem;
-}
-
-.pt-18 {
-  padding-top: 16rem;
-}
-
-.pe-18 {
-  padding-right: 16rem;
-}
-
-.pb-18 {
-  padding-bottom: 16rem;
-}
-
-.ps-18 {
-  padding-left: 16rem;
-}
-
-.p-19 {
-  padding: 18rem;
+.swiper-button-next.text-.px-19,
+.swiper-button-prev.text-.px-19 {
+  padding-right: 18rem;
+  padding-left: 18rem;
 }
 
 .px-19 {
@@ -20946,29 +21761,10 @@ progress {
   padding-left: 18rem;
 }
 
-.py-19 {
-  padding-top: 18rem;
-  padding-bottom: 18rem;
-}
-
-.pt-19 {
-  padding-top: 18rem;
-}
-
-.pe-19 {
-  padding-right: 18rem;
-}
-
-.pb-19 {
-  padding-bottom: 18rem;
-}
-
-.ps-19 {
-  padding-left: 18rem;
-}
-
-.p-20 {
-  padding: 20rem;
+.swiper-button-next.text-.px-20,
+.swiper-button-prev.text-.px-20 {
+  padding-right: 20rem;
+  padding-left: 20rem;
 }
 
 .px-20 {
@@ -20976,29 +21772,10 @@ progress {
   padding-left: 20rem;
 }
 
-.py-20 {
-  padding-top: 20rem;
-  padding-bottom: 20rem;
-}
-
-.pt-20 {
-  padding-top: 20rem;
-}
-
-.pe-20 {
-  padding-right: 20rem;
-}
-
-.pb-20 {
-  padding-bottom: 20rem;
-}
-
-.ps-20 {
-  padding-left: 20rem;
-}
-
-.p-21 {
-  padding: 24rem;
+.swiper-button-next.text-.px-21,
+.swiper-button-prev.text-.px-21 {
+  padding-right: 24rem;
+  padding-left: 24rem;
 }
 
 .px-21 {
@@ -21006,25 +21783,1325 @@ progress {
   padding-left: 24rem;
 }
 
+.swiper-button-next.text-.py-0_5,
+.swiper-button-prev.text-.py-0_5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.py-0_5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.swiper-button-next.text-.py-1_5,
+.swiper-button-prev.text-.py-1_5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.py-1_5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.swiper-button-next.text-.py-2_25,
+.swiper-button-prev.text-.py-2_25 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.py-2_25 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.swiper-button-next.text-.py-2_5,
+.swiper-button-prev.text-.py-2_5 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-2_5 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.swiper-button-next.text-.py-2_75,
+.swiper-button-prev.text-.py-2_75 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
+.py-2_75 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
+.swiper-button-next.text-.py-3_5,
+.swiper-button-prev.text-.py-3_5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-3_5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.swiper-button-next.text-.py-4_2,
+.swiper-button-prev.text-.py-4_2 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.py-4_2 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.swiper-button-next.text-.py-4_4,
+.swiper-button-prev.text-.py-4_4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-4_4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.swiper-button-next.text-.py-4_5,
+.swiper-button-prev.text-.py-4_5 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.py-4_5 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.swiper-button-next.text-.py-4_6,
+.swiper-button-prev.text-.py-4_6 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-4_6 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.swiper-button-next.text-.py-4_8,
+.swiper-button-prev.text-.py-4_8 {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
+.py-4_8 {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
+.swiper-button-next.text-.py-5_5,
+.swiper-button-prev.text-.py-5_5 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.py-5_5 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.swiper-button-next.text-.py-6,
+.swiper-button-prev.text-.py-6 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-6 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.swiper-button-next.text-.py-7,
+.swiper-button-prev.text-.py-7 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-7 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.swiper-button-next.text-.py-8,
+.swiper-button-prev.text-.py-8 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-8 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.swiper-button-next.text-.py-9,
+.swiper-button-prev.text-.py-9 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.py-9 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.swiper-button-next.text-.py-10,
+.swiper-button-prev.text-.py-10 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-10 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.swiper-button-next.text-.py-11,
+.swiper-button-prev.text-.py-11 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.py-11 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.swiper-button-next.text-.py-12,
+.swiper-button-prev.text-.py-12 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.py-12 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.swiper-button-next.text-.py-13,
+.swiper-button-prev.text-.py-13 {
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+}
+
+.py-13 {
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+}
+
+.swiper-button-next.text-.py-14,
+.swiper-button-prev.text-.py-14 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.py-14 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.swiper-button-next.text-.py-15,
+.swiper-button-prev.text-.py-15 {
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+}
+
+.py-15 {
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+}
+
+.swiper-button-next.text-.py-16,
+.swiper-button-prev.text-.py-16 {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+
+.py-16 {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+
+.swiper-button-next.text-.py-17,
+.swiper-button-prev.text-.py-17 {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.py-17 {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.swiper-button-next.text-.py-18,
+.swiper-button-prev.text-.py-18 {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.py-18 {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.swiper-button-next.text-.py-19,
+.swiper-button-prev.text-.py-19 {
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+}
+
+.py-19 {
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+}
+
+.swiper-button-next.text-.py-20,
+.swiper-button-prev.text-.py-20 {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+
+.py-20 {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+
+.swiper-button-next.text-.py-21,
+.swiper-button-prev.text-.py-21 {
+  padding-top: 24rem;
+  padding-bottom: 24rem;
+}
+
 .py-21 {
   padding-top: 24rem;
   padding-bottom: 24rem;
+}
+
+.swiper-button-next.text-.pt-0_5,
+.swiper-button-prev.text-.pt-0_5 {
+  padding-top: 0.125rem;
+}
+
+.pt-0_5 {
+  padding-top: 0.125rem;
+}
+
+.swiper-button-next.text-.pt-1_5,
+.swiper-button-prev.text-.pt-1_5 {
+  padding-top: 0.375rem;
+}
+
+.pt-1_5 {
+  padding-top: 0.375rem;
+}
+
+.swiper-button-next.text-.pt-2_25,
+.swiper-button-prev.text-.pt-2_25 {
+  padding-top: 0.625rem;
+}
+
+.pt-2_25 {
+  padding-top: 0.625rem;
+}
+
+.swiper-button-next.text-.pt-2_5,
+.swiper-button-prev.text-.pt-2_5 {
+  padding-top: 0.75rem;
+}
+
+.pt-2_5 {
+  padding-top: 0.75rem;
+}
+
+.swiper-button-next.text-.pt-2_75,
+.swiper-button-prev.text-.pt-2_75 {
+  padding-top: 0.875rem;
+}
+
+.pt-2_75 {
+  padding-top: 0.875rem;
+}
+
+.swiper-button-next.text-.pt-3_5,
+.swiper-button-prev.text-.pt-3_5 {
+  padding-top: 1.25rem;
+}
+
+.pt-3_5 {
+  padding-top: 1.25rem;
+}
+
+.swiper-button-next.text-.pt-4_2,
+.swiper-button-prev.text-.pt-4_2 {
+  padding-top: 1.75rem;
+}
+
+.pt-4_2 {
+  padding-top: 1.75rem;
+}
+
+.swiper-button-next.text-.pt-4_4,
+.swiper-button-prev.text-.pt-4_4 {
+  padding-top: 2rem;
+}
+
+.pt-4_4 {
+  padding-top: 2rem;
+}
+
+.swiper-button-next.text-.pt-4_5,
+.swiper-button-prev.text-.pt-4_5 {
+  padding-top: 2.25rem;
+}
+
+.pt-4_5 {
+  padding-top: 2.25rem;
+}
+
+.swiper-button-next.text-.pt-4_6,
+.swiper-button-prev.text-.pt-4_6 {
+  padding-top: 2.5rem;
+}
+
+.pt-4_6 {
+  padding-top: 2.5rem;
+}
+
+.swiper-button-next.text-.pt-4_8,
+.swiper-button-prev.text-.pt-4_8 {
+  padding-top: 2.75rem;
+}
+
+.pt-4_8 {
+  padding-top: 2.75rem;
+}
+
+.swiper-button-next.text-.pt-5_5,
+.swiper-button-prev.text-.pt-5_5 {
+  padding-top: 3.5rem;
+}
+
+.pt-5_5 {
+  padding-top: 3.5rem;
+}
+
+.swiper-button-next.text-.pt-6,
+.swiper-button-prev.text-.pt-6 {
+  padding-top: 4rem;
+}
+
+.pt-6 {
+  padding-top: 4rem;
+}
+
+.swiper-button-next.text-.pt-7,
+.swiper-button-prev.text-.pt-7 {
+  padding-top: 5rem;
+}
+
+.pt-7 {
+  padding-top: 5rem;
+}
+
+.swiper-button-next.text-.pt-8,
+.swiper-button-prev.text-.pt-8 {
+  padding-top: 6rem;
+}
+
+.pt-8 {
+  padding-top: 6rem;
+}
+
+.swiper-button-next.text-.pt-9,
+.swiper-button-prev.text-.pt-9 {
+  padding-top: 7rem;
+}
+
+.pt-9 {
+  padding-top: 7rem;
+}
+
+.swiper-button-next.text-.pt-10,
+.swiper-button-prev.text-.pt-10 {
+  padding-top: 8rem;
+}
+
+.pt-10 {
+  padding-top: 8rem;
+}
+
+.swiper-button-next.text-.pt-11,
+.swiper-button-prev.text-.pt-11 {
+  padding-top: 9rem;
+}
+
+.pt-11 {
+  padding-top: 9rem;
+}
+
+.swiper-button-next.text-.pt-12,
+.swiper-button-prev.text-.pt-12 {
+  padding-top: 10rem;
+}
+
+.pt-12 {
+  padding-top: 10rem;
+}
+
+.swiper-button-next.text-.pt-13,
+.swiper-button-prev.text-.pt-13 {
+  padding-top: 11rem;
+}
+
+.pt-13 {
+  padding-top: 11rem;
+}
+
+.swiper-button-next.text-.pt-14,
+.swiper-button-prev.text-.pt-14 {
+  padding-top: 12rem;
+}
+
+.pt-14 {
+  padding-top: 12rem;
+}
+
+.swiper-button-next.text-.pt-15,
+.swiper-button-prev.text-.pt-15 {
+  padding-top: 13rem;
+}
+
+.pt-15 {
+  padding-top: 13rem;
+}
+
+.swiper-button-next.text-.pt-16,
+.swiper-button-prev.text-.pt-16 {
+  padding-top: 14rem;
+}
+
+.pt-16 {
+  padding-top: 14rem;
+}
+
+.swiper-button-next.text-.pt-17,
+.swiper-button-prev.text-.pt-17 {
+  padding-top: 15rem;
+}
+
+.pt-17 {
+  padding-top: 15rem;
+}
+
+.swiper-button-next.text-.pt-18,
+.swiper-button-prev.text-.pt-18 {
+  padding-top: 16rem;
+}
+
+.pt-18 {
+  padding-top: 16rem;
+}
+
+.swiper-button-next.text-.pt-19,
+.swiper-button-prev.text-.pt-19 {
+  padding-top: 18rem;
+}
+
+.pt-19 {
+  padding-top: 18rem;
+}
+
+.swiper-button-next.text-.pt-20,
+.swiper-button-prev.text-.pt-20 {
+  padding-top: 20rem;
+}
+
+.pt-20 {
+  padding-top: 20rem;
+}
+
+.swiper-button-next.text-.pt-21,
+.swiper-button-prev.text-.pt-21 {
+  padding-top: 24rem;
 }
 
 .pt-21 {
   padding-top: 24rem;
 }
 
+.swiper-button-next.text-.pe-0_5,
+.swiper-button-prev.text-.pe-0_5 {
+  padding-right: 0.125rem;
+}
+
+.pe-0_5 {
+  padding-right: 0.125rem;
+}
+
+.swiper-button-next.text-.pe-1_5,
+.swiper-button-prev.text-.pe-1_5 {
+  padding-right: 0.375rem;
+}
+
+.pe-1_5 {
+  padding-right: 0.375rem;
+}
+
+.swiper-button-next.text-.pe-2_25,
+.swiper-button-prev.text-.pe-2_25 {
+  padding-right: 0.625rem;
+}
+
+.pe-2_25 {
+  padding-right: 0.625rem;
+}
+
+.swiper-button-next.text-.pe-2_5,
+.swiper-button-prev.text-.pe-2_5 {
+  padding-right: 0.75rem;
+}
+
+.pe-2_5 {
+  padding-right: 0.75rem;
+}
+
+.swiper-button-next.text-.pe-2_75,
+.swiper-button-prev.text-.pe-2_75 {
+  padding-right: 0.875rem;
+}
+
+.pe-2_75 {
+  padding-right: 0.875rem;
+}
+
+.swiper-button-next.text-.pe-3_5,
+.swiper-button-prev.text-.pe-3_5 {
+  padding-right: 1.25rem;
+}
+
+.pe-3_5 {
+  padding-right: 1.25rem;
+}
+
+.swiper-button-next.text-.pe-4_2,
+.swiper-button-prev.text-.pe-4_2 {
+  padding-right: 1.75rem;
+}
+
+.pe-4_2 {
+  padding-right: 1.75rem;
+}
+
+.swiper-button-next.text-.pe-4_4,
+.swiper-button-prev.text-.pe-4_4 {
+  padding-right: 2rem;
+}
+
+.pe-4_4 {
+  padding-right: 2rem;
+}
+
+.swiper-button-next.text-.pe-4_5,
+.swiper-button-prev.text-.pe-4_5 {
+  padding-right: 2.25rem;
+}
+
+.pe-4_5 {
+  padding-right: 2.25rem;
+}
+
+.swiper-button-next.text-.pe-4_6,
+.swiper-button-prev.text-.pe-4_6 {
+  padding-right: 2.5rem;
+}
+
+.pe-4_6 {
+  padding-right: 2.5rem;
+}
+
+.swiper-button-next.text-.pe-4_8,
+.swiper-button-prev.text-.pe-4_8 {
+  padding-right: 2.75rem;
+}
+
+.pe-4_8 {
+  padding-right: 2.75rem;
+}
+
+.swiper-button-next.text-.pe-5_5,
+.swiper-button-prev.text-.pe-5_5 {
+  padding-right: 3.5rem;
+}
+
+.pe-5_5 {
+  padding-right: 3.5rem;
+}
+
+.swiper-button-next.text-.pe-6,
+.swiper-button-prev.text-.pe-6 {
+  padding-right: 4rem;
+}
+
+.pe-6 {
+  padding-right: 4rem;
+}
+
+.swiper-button-next.text-.pe-7,
+.swiper-button-prev.text-.pe-7 {
+  padding-right: 5rem;
+}
+
+.pe-7 {
+  padding-right: 5rem;
+}
+
+.swiper-button-next.text-.pe-8,
+.swiper-button-prev.text-.pe-8 {
+  padding-right: 6rem;
+}
+
+.pe-8 {
+  padding-right: 6rem;
+}
+
+.swiper-button-next.text-.pe-9,
+.swiper-button-prev.text-.pe-9 {
+  padding-right: 7rem;
+}
+
+.pe-9 {
+  padding-right: 7rem;
+}
+
+.swiper-button-next.text-.pe-10,
+.swiper-button-prev.text-.pe-10 {
+  padding-right: 8rem;
+}
+
+.pe-10 {
+  padding-right: 8rem;
+}
+
+.swiper-button-next.text-.pe-11,
+.swiper-button-prev.text-.pe-11 {
+  padding-right: 9rem;
+}
+
+.pe-11 {
+  padding-right: 9rem;
+}
+
+.swiper-button-next.text-.pe-12,
+.swiper-button-prev.text-.pe-12 {
+  padding-right: 10rem;
+}
+
+.pe-12 {
+  padding-right: 10rem;
+}
+
+.swiper-button-next.text-.pe-13,
+.swiper-button-prev.text-.pe-13 {
+  padding-right: 11rem;
+}
+
+.pe-13 {
+  padding-right: 11rem;
+}
+
+.swiper-button-next.text-.pe-14,
+.swiper-button-prev.text-.pe-14 {
+  padding-right: 12rem;
+}
+
+.pe-14 {
+  padding-right: 12rem;
+}
+
+.swiper-button-next.text-.pe-15,
+.swiper-button-prev.text-.pe-15 {
+  padding-right: 13rem;
+}
+
+.pe-15 {
+  padding-right: 13rem;
+}
+
+.swiper-button-next.text-.pe-16,
+.swiper-button-prev.text-.pe-16 {
+  padding-right: 14rem;
+}
+
+.pe-16 {
+  padding-right: 14rem;
+}
+
+.swiper-button-next.text-.pe-17,
+.swiper-button-prev.text-.pe-17 {
+  padding-right: 15rem;
+}
+
+.pe-17 {
+  padding-right: 15rem;
+}
+
+.swiper-button-next.text-.pe-18,
+.swiper-button-prev.text-.pe-18 {
+  padding-right: 16rem;
+}
+
+.pe-18 {
+  padding-right: 16rem;
+}
+
+.swiper-button-next.text-.pe-19,
+.swiper-button-prev.text-.pe-19 {
+  padding-right: 18rem;
+}
+
+.pe-19 {
+  padding-right: 18rem;
+}
+
+.swiper-button-next.text-.pe-20,
+.swiper-button-prev.text-.pe-20 {
+  padding-right: 20rem;
+}
+
+.pe-20 {
+  padding-right: 20rem;
+}
+
+.swiper-button-next.text-.pe-21,
+.swiper-button-prev.text-.pe-21 {
+  padding-right: 24rem;
+}
+
 .pe-21 {
   padding-right: 24rem;
+}
+
+.swiper-button-next.text-.pb-0_5,
+.swiper-button-prev.text-.pb-0_5 {
+  padding-bottom: 0.125rem;
+}
+
+.pb-0_5 {
+  padding-bottom: 0.125rem;
+}
+
+.swiper-button-next.text-.pb-1_5,
+.swiper-button-prev.text-.pb-1_5 {
+  padding-bottom: 0.375rem;
+}
+
+.pb-1_5 {
+  padding-bottom: 0.375rem;
+}
+
+.swiper-button-next.text-.pb-2_25,
+.swiper-button-prev.text-.pb-2_25 {
+  padding-bottom: 0.625rem;
+}
+
+.pb-2_25 {
+  padding-bottom: 0.625rem;
+}
+
+.swiper-button-next.text-.pb-2_5,
+.swiper-button-prev.text-.pb-2_5 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-2_5 {
+  padding-bottom: 0.75rem;
+}
+
+.swiper-button-next.text-.pb-2_75,
+.swiper-button-prev.text-.pb-2_75 {
+  padding-bottom: 0.875rem;
+}
+
+.pb-2_75 {
+  padding-bottom: 0.875rem;
+}
+
+.swiper-button-next.text-.pb-3_5,
+.swiper-button-prev.text-.pb-3_5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-3_5 {
+  padding-bottom: 1.25rem;
+}
+
+.swiper-button-next.text-.pb-4_2,
+.swiper-button-prev.text-.pb-4_2 {
+  padding-bottom: 1.75rem;
+}
+
+.pb-4_2 {
+  padding-bottom: 1.75rem;
+}
+
+.swiper-button-next.text-.pb-4_4,
+.swiper-button-prev.text-.pb-4_4 {
+  padding-bottom: 2rem;
+}
+
+.pb-4_4 {
+  padding-bottom: 2rem;
+}
+
+.swiper-button-next.text-.pb-4_5,
+.swiper-button-prev.text-.pb-4_5 {
+  padding-bottom: 2.25rem;
+}
+
+.pb-4_5 {
+  padding-bottom: 2.25rem;
+}
+
+.swiper-button-next.text-.pb-4_6,
+.swiper-button-prev.text-.pb-4_6 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-4_6 {
+  padding-bottom: 2.5rem;
+}
+
+.swiper-button-next.text-.pb-4_8,
+.swiper-button-prev.text-.pb-4_8 {
+  padding-bottom: 2.75rem;
+}
+
+.pb-4_8 {
+  padding-bottom: 2.75rem;
+}
+
+.swiper-button-next.text-.pb-5_5,
+.swiper-button-prev.text-.pb-5_5 {
+  padding-bottom: 3.5rem;
+}
+
+.pb-5_5 {
+  padding-bottom: 3.5rem;
+}
+
+.swiper-button-next.text-.pb-6,
+.swiper-button-prev.text-.pb-6 {
+  padding-bottom: 4rem;
+}
+
+.pb-6 {
+  padding-bottom: 4rem;
+}
+
+.swiper-button-next.text-.pb-7,
+.swiper-button-prev.text-.pb-7 {
+  padding-bottom: 5rem;
+}
+
+.pb-7 {
+  padding-bottom: 5rem;
+}
+
+.swiper-button-next.text-.pb-8,
+.swiper-button-prev.text-.pb-8 {
+  padding-bottom: 6rem;
+}
+
+.pb-8 {
+  padding-bottom: 6rem;
+}
+
+.swiper-button-next.text-.pb-9,
+.swiper-button-prev.text-.pb-9 {
+  padding-bottom: 7rem;
+}
+
+.pb-9 {
+  padding-bottom: 7rem;
+}
+
+.swiper-button-next.text-.pb-10,
+.swiper-button-prev.text-.pb-10 {
+  padding-bottom: 8rem;
+}
+
+.pb-10 {
+  padding-bottom: 8rem;
+}
+
+.swiper-button-next.text-.pb-11,
+.swiper-button-prev.text-.pb-11 {
+  padding-bottom: 9rem;
+}
+
+.pb-11 {
+  padding-bottom: 9rem;
+}
+
+.swiper-button-next.text-.pb-12,
+.swiper-button-prev.text-.pb-12 {
+  padding-bottom: 10rem;
+}
+
+.pb-12 {
+  padding-bottom: 10rem;
+}
+
+.swiper-button-next.text-.pb-13,
+.swiper-button-prev.text-.pb-13 {
+  padding-bottom: 11rem;
+}
+
+.pb-13 {
+  padding-bottom: 11rem;
+}
+
+.swiper-button-next.text-.pb-14,
+.swiper-button-prev.text-.pb-14 {
+  padding-bottom: 12rem;
+}
+
+.pb-14 {
+  padding-bottom: 12rem;
+}
+
+.swiper-button-next.text-.pb-15,
+.swiper-button-prev.text-.pb-15 {
+  padding-bottom: 13rem;
+}
+
+.pb-15 {
+  padding-bottom: 13rem;
+}
+
+.swiper-button-next.text-.pb-16,
+.swiper-button-prev.text-.pb-16 {
+  padding-bottom: 14rem;
+}
+
+.pb-16 {
+  padding-bottom: 14rem;
+}
+
+.swiper-button-next.text-.pb-17,
+.swiper-button-prev.text-.pb-17 {
+  padding-bottom: 15rem;
+}
+
+.pb-17 {
+  padding-bottom: 15rem;
+}
+
+.swiper-button-next.text-.pb-18,
+.swiper-button-prev.text-.pb-18 {
+  padding-bottom: 16rem;
+}
+
+.pb-18 {
+  padding-bottom: 16rem;
+}
+
+.swiper-button-next.text-.pb-19,
+.swiper-button-prev.text-.pb-19 {
+  padding-bottom: 18rem;
+}
+
+.pb-19 {
+  padding-bottom: 18rem;
+}
+
+.swiper-button-next.text-.pb-20,
+.swiper-button-prev.text-.pb-20 {
+  padding-bottom: 20rem;
+}
+
+.pb-20 {
+  padding-bottom: 20rem;
+}
+
+.swiper-button-next.text-.pb-21,
+.swiper-button-prev.text-.pb-21 {
+  padding-bottom: 24rem;
 }
 
 .pb-21 {
   padding-bottom: 24rem;
 }
 
+.swiper-button-next.text-.ps-0_5,
+.swiper-button-prev.text-.ps-0_5 {
+  padding-left: 0.125rem;
+}
+
+.ps-0_5 {
+  padding-left: 0.125rem;
+}
+
+.swiper-button-next.text-.ps-1_5,
+.swiper-button-prev.text-.ps-1_5 {
+  padding-left: 0.375rem;
+}
+
+.ps-1_5 {
+  padding-left: 0.375rem;
+}
+
+.swiper-button-next.text-.ps-2_25,
+.swiper-button-prev.text-.ps-2_25 {
+  padding-left: 0.625rem;
+}
+
+.ps-2_25 {
+  padding-left: 0.625rem;
+}
+
+.swiper-button-next.text-.ps-2_5,
+.swiper-button-prev.text-.ps-2_5 {
+  padding-left: 0.75rem;
+}
+
+.ps-2_5 {
+  padding-left: 0.75rem;
+}
+
+.swiper-button-next.text-.ps-2_75,
+.swiper-button-prev.text-.ps-2_75 {
+  padding-left: 0.875rem;
+}
+
+.ps-2_75 {
+  padding-left: 0.875rem;
+}
+
+.swiper-button-next.text-.ps-3_5,
+.swiper-button-prev.text-.ps-3_5 {
+  padding-left: 1.25rem;
+}
+
+.ps-3_5 {
+  padding-left: 1.25rem;
+}
+
+.swiper-button-next.text-.ps-4_2,
+.swiper-button-prev.text-.ps-4_2 {
+  padding-left: 1.75rem;
+}
+
+.ps-4_2 {
+  padding-left: 1.75rem;
+}
+
+.swiper-button-next.text-.ps-4_4,
+.swiper-button-prev.text-.ps-4_4 {
+  padding-left: 2rem;
+}
+
+.ps-4_4 {
+  padding-left: 2rem;
+}
+
+.swiper-button-next.text-.ps-4_5,
+.swiper-button-prev.text-.ps-4_5 {
+  padding-left: 2.25rem;
+}
+
+.ps-4_5 {
+  padding-left: 2.25rem;
+}
+
+.swiper-button-next.text-.ps-4_6,
+.swiper-button-prev.text-.ps-4_6 {
+  padding-left: 2.5rem;
+}
+
+.ps-4_6 {
+  padding-left: 2.5rem;
+}
+
+.swiper-button-next.text-.ps-4_8,
+.swiper-button-prev.text-.ps-4_8 {
+  padding-left: 2.75rem;
+}
+
+.ps-4_8 {
+  padding-left: 2.75rem;
+}
+
+.swiper-button-next.text-.ps-5_5,
+.swiper-button-prev.text-.ps-5_5 {
+  padding-left: 3.5rem;
+}
+
+.ps-5_5 {
+  padding-left: 3.5rem;
+}
+
+.swiper-button-next.text-.ps-6,
+.swiper-button-prev.text-.ps-6 {
+  padding-left: 4rem;
+}
+
+.ps-6 {
+  padding-left: 4rem;
+}
+
+.swiper-button-next.text-.ps-7,
+.swiper-button-prev.text-.ps-7 {
+  padding-left: 5rem;
+}
+
+.ps-7 {
+  padding-left: 5rem;
+}
+
+.swiper-button-next.text-.ps-8,
+.swiper-button-prev.text-.ps-8 {
+  padding-left: 6rem;
+}
+
+.ps-8 {
+  padding-left: 6rem;
+}
+
+.swiper-button-next.text-.ps-9,
+.swiper-button-prev.text-.ps-9 {
+  padding-left: 7rem;
+}
+
+.ps-9 {
+  padding-left: 7rem;
+}
+
+.swiper-button-next.text-.ps-10,
+.swiper-button-prev.text-.ps-10 {
+  padding-left: 8rem;
+}
+
+.ps-10 {
+  padding-left: 8rem;
+}
+
+.swiper-button-next.text-.ps-11,
+.swiper-button-prev.text-.ps-11 {
+  padding-left: 9rem;
+}
+
+.ps-11 {
+  padding-left: 9rem;
+}
+
+.swiper-button-next.text-.ps-12,
+.swiper-button-prev.text-.ps-12 {
+  padding-left: 10rem;
+}
+
+.ps-12 {
+  padding-left: 10rem;
+}
+
+.swiper-button-next.text-.ps-13,
+.swiper-button-prev.text-.ps-13 {
+  padding-left: 11rem;
+}
+
+.ps-13 {
+  padding-left: 11rem;
+}
+
+.swiper-button-next.text-.ps-14,
+.swiper-button-prev.text-.ps-14 {
+  padding-left: 12rem;
+}
+
+.ps-14 {
+  padding-left: 12rem;
+}
+
+.swiper-button-next.text-.ps-15,
+.swiper-button-prev.text-.ps-15 {
+  padding-left: 13rem;
+}
+
+.ps-15 {
+  padding-left: 13rem;
+}
+
+.swiper-button-next.text-.ps-16,
+.swiper-button-prev.text-.ps-16 {
+  padding-left: 14rem;
+}
+
+.ps-16 {
+  padding-left: 14rem;
+}
+
+.swiper-button-next.text-.ps-17,
+.swiper-button-prev.text-.ps-17 {
+  padding-left: 15rem;
+}
+
+.ps-17 {
+  padding-left: 15rem;
+}
+
+.swiper-button-next.text-.ps-18,
+.swiper-button-prev.text-.ps-18 {
+  padding-left: 16rem;
+}
+
+.ps-18 {
+  padding-left: 16rem;
+}
+
+.swiper-button-next.text-.ps-19,
+.swiper-button-prev.text-.ps-19 {
+  padding-left: 18rem;
+}
+
+.ps-19 {
+  padding-left: 18rem;
+}
+
+.swiper-button-next.text-.ps-20,
+.swiper-button-prev.text-.ps-20 {
+  padding-left: 20rem;
+}
+
+.ps-20 {
+  padding-left: 20rem;
+}
+
+.swiper-button-next.text-.ps-21,
+.swiper-button-prev.text-.ps-21 {
+  padding-left: 24rem;
+}
+
 .ps-21 {
   padding-left: 24rem;
+}
+
+.swiper-button-next.text-yellow,
+.swiper-button-prev.text-yellow {
+  color: #ffff00;
 }
 
 .text-yellow {
