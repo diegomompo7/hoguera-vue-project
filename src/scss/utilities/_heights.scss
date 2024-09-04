@@ -51,6 +51,10 @@ $heights: (
 }
 
 @each $size, $value in $heights {
+  .swiper-button-next.h-#{$size},
+  .swiper-button-prev.h-#{$size} {
+    @include apply-height($size);
+  }
   .h-#{$size} {
     @include apply-height($size);
   }

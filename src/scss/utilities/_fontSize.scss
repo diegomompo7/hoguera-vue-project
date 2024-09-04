@@ -20,7 +20,12 @@ $fontSize: (
 }
 
 @each $size, $value in $fontSize {
+  .swiper-button-next.fs-#{$size},
+  .swiper-button-prev.fs-#{$size} {
+    @include applyFontSize($size);
+  }
   .fs-#{$size} {
     @include applyFontSize($size);
   }
 }
+

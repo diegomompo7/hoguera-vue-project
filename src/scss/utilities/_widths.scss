@@ -51,6 +51,10 @@ $widths: (
 }
 
 @each $size, $value in $widths {
+  .swiper-button-next.w-#{$size},
+  .swiper-button-prev.w-#{$size} {
+    @include apply-width($size);
+  }
   .w-#{$size} {
     @include apply-width($size);
   }

@@ -43,5 +43,5 @@
     "disableSubtitle":  "Desactivar Subtítols",
     "subtitleAdult": "/assets/audio/Valencia/SceneAdult.json",
     "subtitleKid": "/assets/audio/Valencia/SceneKid.json",
-    "subtitleScene1": "/assets/audio/Valencia/Scene1.json"
+    "subtitle1": "/assets/audio/Valencia/Scene1.json"
 }

@@ -193,8 +193,18 @@ watch(showSubtitles, (newValue) => {
                     {{ currentSubtitle.word }}
                 </p>
             </swiper-slide>
-            <div ref="prevButton" class="swiper-button-next text-yellow shadow-shadowYellow2 w-3"></div>
-            <div ref="nextButton" class="swiper-button-prev"></div>
+            <div ref="prevButton" class="swiper-button-next text-yellow shadow-shadowYellow2 w-5 h-4_8"></div>
+            <div ref="nextButton" class="swiper-button-prev text-yellow shadow-shadowYellow2 w-5 h-4_8"></div>
         </swiper>
     </div>
 </template>
+
+<style scoped>
+  .swiper-button-next, .swiper-button-prev{
+    position: absolute;
+    top: auto;
+    --swiper-navigation-size: 1.25rem;
+    position: absolute;
+    bottom:1.25rem;
+  }
+</style>
