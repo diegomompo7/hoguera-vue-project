@@ -37,10 +37,10 @@ let currentSubtitle = ref(null);
 const showSubtitles = ref(false);
 let audio = ref()
 let intervalId = null;
-const getSlideKey = (index) => `${(4 + (index - 1)) % 4 + 1}`;
-const getSceneMessage = (index) => t(`scene${(4 + (index - 1)) % 4 + 1}`);
+const getSlideKey = (index) => `${(4 + (index)) % 4 + 1}`;
+const getSceneMessage = (index) => t(`scene${(4 + (index)) % 4 + 1}`);
 
-console.log(getSlideKey)
+console.log(showSubtitles)
 
 
 console.log(props.language)
@@ -51,7 +51,8 @@ watch(() => props.language, () => {
             audioRef.pause();
             audioRef.currentTime = 0;
             audioRef.load();
-            isPlayed.value = isPlayed.value.map((state, i) => i === index ? false : state); // Reiniciar el estado de reproducción de la 
+            isPlayed.value = isPlayed.value.map((state, i) => i === index ? false : state);
+            showSubtitles.value = false
         }
     });
 
@@ -59,28 +60,30 @@ watch(() => props.language, () => {
 
 
 const handleSlideChange = () => {
-    console.log(audioRefs.value)
     audioRefs.value.forEach((ref, index) => {
-        if (audio && isPlayed[index]) {
-            audio.value.pause();
-            audio.currentTime = 0;
-            isPlayed.value = isPlayed.map((state, i) => i === index ? false : state);
+        if (ref && isPlayed.value[index]) {
+            console.log(sceneNumber.value)
+            console.log(ref)
+            ref.pause();
+            ref.currentTime = 0;
+            isPlayed.value = isPlayed.value.map((state, i) => i === index ? false : state);
+            console.log(isPlayed)
+            showSubtitles.value = false
         }
     });
 };
 
-const controlAudio = (sceneNumber) => {
-    isPlayed.value[sceneNumber] = !isPlayed.value[sceneNumber];
-    sceneNumber = sceneNumber
-    audio = audioRefs.value[sceneNumber];
+const controlAudio = (sceneNumber2) => {
+    console.log(sceneNumber2)
+    isPlayed.value[sceneNumber2] = !isPlayed.value[sceneNumber2];
+    sceneNumber.value = sceneNumber2
+    audio = audioRefs.value[sceneNumber2];
 
-    console.log(audio)
-
-    console.log(isPlayed)
+    console.log(isPlayed.value[sceneNumber2])
 
     if (audio) {
         console.log("1")
-        if (isPlayed.value[sceneNumber]) {
+        if (isPlayed.value[sceneNumber2]) {
             console.log("2")
             audio.play();
         } else {
@@ -91,34 +94,58 @@ const controlAudio = (sceneNumber) => {
 }
 
 const handleAudioEnded = (sceneNumber) => {
+    console.log(sceneNumber)
     isPlayed.value[sceneNumber] = false;
     currentSubtitle.value = null; 
+
 };
 
 
 
-const updateSubtitles = async() => {
-    if (showSubtitles.value) {
-        console.log(sceneNumber.value)
-        const audio = audioRefs.value[sceneNumber.value];
-        const foundWord = audio.id.replace("audioPlayer", "");
-        console.log(foundWord)
-        if (audio) {
-            await fetch(props.messages[`subtitle${foundWord}`])
-            .then(response => response.json())
-            .then(data => {
-                console.log(data)
-                const currentTime = audio.currentTime;
-            currentSubtitle.value = data.stab_segments.find(sub => currentTime >= sub.start && currentTime <= sub.end);
+/*const updateSubtitles = async() => {
     
-            })
+    if (showSubtitles.value) {
+        const audio = audioRefs.value[sceneNumber.value];
+        const foundWord = audio?.id.replace("audioPlayer", "");
+        if (audio) {
+            try {
+                const response = await fetch(props.messages[`subtitle${foundWord}`]);
+                const data = await response.json();
+                const currentTime = audio.currentTime;
+                currentSubtitle.value = data.stab_segments.find(sub => currentTime >= sub.start && currentTime <= sub.end);
+            } catch (error) {
+                console.error("Error fetching subtitles:", error);
+            }
     }
 };
-}
+}*/
 
 
-const toggleSubtitles = () => {
+const updateSubtitles = async () => {
+    console.log("Actualización de subtítulos iniciada");
+    if (showSubtitles.value) {
+        const audio = audioRefs.value[sceneNumber.value];
+        console.log("Audio actual:", audio);
+        if (audio) {
+            const foundWord = audio.id.replace("audioPlayer", "");
+            console.log("Palabra encontrada:", foundWord);
+            try {
+                const response = await fetch(props.messages[`subtitle${foundWord}`]);
+                const data = await response.json();
+                console.log("Datos de subtítulos:", data);
+                const currentTime = audio.currentTime;
+                console.log("Tiempo actual del audio:", currentTime);
+                currentSubtitle.value = data.stab_segments.find(sub => currentTime >= sub.start && currentTime <= sub.end);
+                console.log("Subtítulo actual:", currentSubtitle.value);
+            } catch (error) {
+                console.error("Error al obtener los subtítulos:", error);
+            }
+        }
+    }
+};
+const toggleSubtitles = (subtitleNumber) => {
     showSubtitles.value = !showSubtitles.value;
+    sceneNumber.value = subtitleNumber + 1;
 };
 
 watch(showSubtitles, (newValue) => {
@@ -150,9 +177,9 @@ watch(showSubtitles, (newValue) => {
                 <button @click="controlAudio(initScene + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" :title="messages.titleAudioAdult">
                     {{ isPlayed[initScene + 1] ? 'Pause' : 'Play' }}
                 </button>
-                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" :title="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
+                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" :title="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle" > {{ showSubtitles ? messages.disableSubtitle : messages.enableSubtitle }}</button>
             </div>
-                <p v-if="currentSubtitle"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
+                <p v-if="currentSubtitle && showSubtitles"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
                     {{ currentSubtitle.word }}
                 </p>
             </swiper-slide>
@@ -171,27 +198,27 @@ watch(showSubtitles, (newValue) => {
                 </button>
                 <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  title="Activar Subitutlos" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
             </div>
-                <p v-if="currentSubtitle"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
+                <p v-if="currentSubtitle && showSubtitles"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
                     {{ currentSubtitle.word }}
                 </p>
             </swiper-slide>
         </swiper>
         <swiper v-if="initScene < 4 && initScene !=-1" class="bg-black mt-4_6 text-yellow swiper-container" :navigation="navigation" :modules="modules" :loop="true" :initial-slide="initScene != null ? initScene : 0" @slideChange="handleSlideChange">
-            <swiper-slide class="d-flex mt-4_2 flex-column text-center " v-for="index in 4" :key="getSlideKey(index)">
+            <swiper-slide class="d-flex mt-4_2 flex-column text-center " v-for="(slide, index) in 4" :key="getSlideKey(index)">
                 <h1 class="fw-bold" role="title">{{getSceneMessage(index)}}</h1>
-                <audio :id="`audioPlayer${((4 + index)) % 4 + 1}`" :ref="(el) => { audioRefs[((4 + index)) % 4 + 1] = el, sceneNumber = initScene + 1 }"
+                <audio :id="`audioPlayer${((4 + index)) % 4 + 1}`" :ref="(el) => { audioRefs[((4 + index)) % 4 + 1] = el}"
                     @ended="handleAudioEnded(((4 + index)) % 4 + 1)">
-                    <source :src="$t(`audio${((4 + index)) % 4 + 1}`)" type="audio/mpeg"/>
+                    <source :src="$t(`audio${((4 + index)) % 4 +1}`)" type="audio/mpeg"/>
                 </audio>
                 <div class="d-flex flex-column justify-content-center">
                 <button @click="controlAudio(((4 + index)) % 4 + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" :title="messages.titleAudioAdult">
-                    {{ isPlayed[((4 + index)) % 4 + 1]  ? 'Pause' : 'Play' }}
+                    {{ isPlayed[((4 + index)) % 4 + 1 ]  ? 'Pause' : 'Play' }}
                 </button>
-                <button @click="toggleSubtitles" class="mt-4 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  title="Activar Subitutlos" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
+                <button @click="toggleSubtitles(index)" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  title="Activar Subitutlos" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
             </div>
-                <p v-if="currentSubtitle"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
-                    {{ currentSubtitle.word }}
-                </p>
+            <p v-if="currentSubtitle"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
+                {{ currentSubtitle.word }}
+            </p>
             </swiper-slide>
             <div ref="prevButton" class="swiper-button-next text-yellow shadow-shadowYellow2 w-5 h-4_8"></div>
             <div ref="nextButton" class="swiper-button-prev text-yellow shadow-shadowYellow2 w-5 h-4_8"></div>
