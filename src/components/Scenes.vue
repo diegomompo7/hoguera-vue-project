@@ -63,6 +63,7 @@ const handleSlideChange = () => {
 
     if (intervalId) {
         clearInterval(intervalId);
+        intervalId = null; 
     }
 
     audioRefs.value.forEach((ref, index) => {
@@ -70,13 +71,12 @@ const handleSlideChange = () => {
             console.log(`Pausando audio de escena: ${sceneNumber.value}`);
             ref.pause();
             ref.currentTime = 0;
-            isPlayed.value = isPlayed.value.map((state, i) => i === index ? false : state);
+            isPlayed.value[index] = false; 
  
         }
     });
 
     currentSubtitle.value = null;
-    showSubtitles.value = false; 
 
 };
 
