@@ -52,7 +52,7 @@ watch(() => props.language, () => {
             audioRef.currentTime = 0;
             audioRef.load();
             isPlayed.value = isPlayed.value.map((state, i) => i === index ? false : state);
-            showSubtitles.value = false
+           
         }
     });
 
@@ -60,30 +60,36 @@ watch(() => props.language, () => {
 
 
 const handleSlideChange = () => {
+
+    if (intervalId) {
+        clearInterval(intervalId);
+    }
+
     audioRefs.value.forEach((ref, index) => {
         if (ref && isPlayed.value[index]) {
-            console.log(sceneNumber.value)
-            console.log(ref)
+            console.log(`Pausando audio de escena: ${sceneNumber.value}`);
             ref.pause();
             ref.currentTime = 0;
             isPlayed.value = isPlayed.value.map((state, i) => i === index ? false : state);
-            console.log(isPlayed)
-            showSubtitles.value = false
+ 
         }
     });
+
+    currentSubtitle.value = null;
+    showSubtitles.value = false; 
+
 };
 
-const controlAudio = (sceneNumber2) => {
-    console.log(sceneNumber2)
-    isPlayed.value[sceneNumber2] = !isPlayed.value[sceneNumber2];
-    sceneNumber.value = sceneNumber2
-    audio = audioRefs.value[sceneNumber2];
+const controlAudio = (index) => {
+    console.log(index)
+    isPlayed.value[index] = !isPlayed.value[index];
+    audio = audioRefs.value[index];
 
-    console.log(isPlayed.value[sceneNumber2])
+    console.log(isPlayed.value[index])
 
     if (audio) {
         console.log("1")
-        if (isPlayed.value[sceneNumber2]) {
+        if (isPlayed.value[index]) {
             console.log("2")
             audio.play();
         } else {
@@ -102,12 +108,12 @@ const handleAudioEnded = (sceneNumber) => {
 
 
 
-/*const updateSubtitles = async() => {
+const updateSubtitles = async() => {
     
     if (showSubtitles.value) {
         const audio = audioRefs.value[sceneNumber.value];
-        const foundWord = audio?.id.replace("audioPlayer", "");
         if (audio) {
+            const foundWord = audio?.id.replace("audioPlayer", "");
             try {
                 const response = await fetch(props.messages[`subtitle${foundWord}`]);
                 const data = await response.json();
@@ -118,10 +124,10 @@ const handleAudioEnded = (sceneNumber) => {
             }
     }
 };
-}*/
+}
 
 
-const updateSubtitles = async () => {
+/*const updateSubtitles = async () => {
     console.log("Actualización de subtítulos iniciada");
     if (showSubtitles.value) {
         const audio = audioRefs.value[sceneNumber.value];
@@ -142,7 +148,7 @@ const updateSubtitles = async () => {
             }
         }
     }
-};
+};*/
 const toggleSubtitles = (subtitleNumber) => {
     showSubtitles.value = !showSubtitles.value;
     sceneNumber.value = subtitleNumber + 1;
@@ -214,7 +220,7 @@ watch(showSubtitles, (newValue) => {
                 <button @click="controlAudio(((4 + index)) % 4 + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" :title="messages.titleAudioAdult">
                     {{ isPlayed[((4 + index)) % 4 + 1 ]  ? 'Pause' : 'Play' }}
                 </button>
-                <button @click="toggleSubtitles(index)" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  title="Activar Subitutlos" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
+                <button @click="toggleSubtitles(((4 + index)) % 4)" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  title="Activar Subitutlos" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
             </div>
             <p v-if="currentSubtitle"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
                 {{ currentSubtitle.word }}
