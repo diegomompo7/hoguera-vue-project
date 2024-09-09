@@ -207,7 +207,7 @@ watch(showSubtitles, (newValue) => {
                 </p>
             </swiper-slide>
         </swiper>
-        <swiper v-if="initScene < 4 && initScene !=-1" class="bg-black mt-4_6 text-yellow swiper-container" :navigation="navigation" :modules="modules" :loop="true" :initial-slide="initScene != null ? initScene : 0"  @slideChangeTransitionEnd="handleSlideChange">
+        <swiper v-if="initScene < 4 && initScene !=-1" class="bg-black mt-4_6 text-yellow swiper-container" :navigation="navigation" :modules="modules" :loop="true" :initial-slide="initScene != null ? initScene : 0"  @slideChangeTransitionStart="handleSlideChange">
             <swiper-slide class="d-flex mt-4_2 flex-column text-center " v-for="(slide, index) in 4" :key="getSlideKey(index)">
                 <h1 class="fw-bold" role="title">{{getSceneMessage(index)}}</h1>
                 <audio :id="`audioPlayer${((4 + index)) % 4 + 1}`" :ref="(el) => { audioRefs[((4 + index)) % 4 + 1] = el}"
