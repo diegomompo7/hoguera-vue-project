@@ -61,17 +61,15 @@ watch(() => props.language, () => {
 
 const handleSlideChange = () => {
 
-    if (intervalId) {
-        clearInterval(intervalId);
-        intervalId = null; 
-    }
+    console.log("Entra a la función")
 
     audioRefs.value.forEach((ref, index) => {
         if (ref && isPlayed.value[index]) {
             console.log(`Pausando audio de escena: ${sceneNumber.value}`);
             ref.pause();
             ref.currentTime = 0;
-            isPlayed.value[index] = false; 
+            isPlayed.value[index] = false;
+            showSubtitles.value = false;
  
         }
     });
@@ -108,7 +106,7 @@ const handleAudioEnded = (sceneNumber) => {
 
 
 
-const updateSubtitles = async() => {
+/*const updateSubtitles = async() => {
     
     if (showSubtitles.value) {
         const audio = audioRefs.value[sceneNumber.value];
@@ -124,10 +122,10 @@ const updateSubtitles = async() => {
             }
     }
 };
-}
+}*/
 
 
-/*const updateSubtitles = async () => {
+const updateSubtitles = async () => {
     console.log("Actualización de subtítulos iniciada");
     if (showSubtitles.value) {
         const audio = audioRefs.value[sceneNumber.value];
@@ -148,7 +146,7 @@ const updateSubtitles = async() => {
             }
         }
     }
-};*/
+};
 const toggleSubtitles = (subtitleNumber) => {
     showSubtitles.value = !showSubtitles.value;
     sceneNumber.value = subtitleNumber + 1;
@@ -185,7 +183,7 @@ watch(showSubtitles, (newValue) => {
                 </button>
                 <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" :title="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle" > {{ showSubtitles ? messages.disableSubtitle : messages.enableSubtitle }}</button>
             </div>
-                <p v-if="currentSubtitle && showSubtitles"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
+                <p v-if="currentSubtitle"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
                     {{ currentSubtitle.word }}
                 </p>
             </swiper-slide>
@@ -204,12 +202,12 @@ watch(showSubtitles, (newValue) => {
                 </button>
                 <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  title="Activar Subitutlos" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
             </div>
-                <p v-if="currentSubtitle && showSubtitles"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
+                <p v-if="currentSubtitle"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
                     {{ currentSubtitle.word }}
                 </p>
             </swiper-slide>
         </swiper>
-        <swiper v-if="initScene < 4 && initScene !=-1" class="bg-black mt-4_6 text-yellow swiper-container" :navigation="navigation" :modules="modules" :loop="true" :initial-slide="initScene != null ? initScene : 0" @slideChange="handleSlideChange">
+        <swiper v-if="initScene < 4 && initScene !=-1" class="bg-black mt-4_6 text-yellow swiper-container" :navigation="navigation" :modules="modules" :loop="true" :initial-slide="initScene != null ? initScene : 0"  @slideChangeTransitionEnd="handleSlideChange">
             <swiper-slide class="d-flex mt-4_2 flex-column text-center " v-for="(slide, index) in 4" :key="getSlideKey(index)">
                 <h1 class="fw-bold" role="title">{{getSceneMessage(index)}}</h1>
                 <audio :id="`audioPlayer${((4 + index)) % 4 + 1}`" :ref="(el) => { audioRefs[((4 + index)) % 4 + 1] = el}"

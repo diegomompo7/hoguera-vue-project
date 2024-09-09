@@ -6,8 +6,8 @@
             "start": 0.700,
             "end": 3.000,
             "word": "(Música)",
-            "probability": 0.5322265625,
-            "segmentNo": 0
+            "probability": 1,
+            "segmentNo": 1
         },
         {
             "start": 3.000,
