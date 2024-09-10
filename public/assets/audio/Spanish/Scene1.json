@@ -1,5 +1,5 @@
 {
-    "result": "Terra màgica de dansa i foc, d'aigua que banya una deu, on sent orgull del que sóc. Perquè la crema no és morir, és moment de refermar-se i per sempre les fogueres gaudir. I que el foc siga sempre amic, que doni pas a noves creacions, que els obradors troben amic. En cent amb el foc, ell És el gran faedor d'esta festa i el concloure d'aquesta. De la mar, iix una sirena que va onit-se a poc a poc amb el foc, mitjançant una dansa acompanyada per les flames.",
+    "result": "",
            
     "stab_segments": [
         {
@@ -124,7 +124,7 @@
         {
             "start": 42.100,
             "end": 46.800,
-            "word": "que va uniéndose poco a poco con el fuego.",
+            "word": "mediante una danza acompañada de las llamas.",
             "probability": 0.75146484375,
             "segmentNo": 1
         }

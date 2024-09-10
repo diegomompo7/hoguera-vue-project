@@ -101,6 +101,7 @@ const handleAudioEnded = (sceneNumber) => {
     console.log(sceneNumber)
     isPlayed.value[sceneNumber] = false;
     currentSubtitle.value = null; 
+    showSubtitles.value = false
 
 };
 
@@ -202,7 +203,7 @@ watch(showSubtitles, (newValue) => {
                 </button>
                 <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  title="Activar Subitutlos" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
             </div>
-                <p v-if="currentSubtitle"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
+                <p v-if="currentSubtitle && showSubtitles"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
                     {{ currentSubtitle.word }}
                 </p>
             </swiper-slide>
@@ -220,12 +221,12 @@ watch(showSubtitles, (newValue) => {
                 </button>
                 <button @click="toggleSubtitles(((4 + index)) % 4)" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  title="Activar Subitutlos" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
             </div>
-            <p v-if="currentSubtitle"  class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
-                {{ currentSubtitle.word }}
-            </p>
             </swiper-slide>
             <div ref="prevButton" class="swiper-button-next text-yellow shadow-shadowYellow2 w-5 h-4_8"></div>
             <div ref="nextButton" class="swiper-button-prev text-yellow shadow-shadowYellow2 w-5 h-4_8"></div>
+            <p v-if="currentSubtitle && showSubtitles"  class="subtitles  fs-text_base text-center m-auto pt-4_4 w-11_12">
+                {{ currentSubtitle.word }}
+            </p>
         </swiper>
     </div>
 </template>
@@ -233,7 +234,7 @@ watch(showSubtitles, (newValue) => {
 <style scoped>
   .swiper-button-next, .swiper-button-prev{
     position: absolute;
-    top: auto;
+    top: 70%;
     --swiper-navigation-size: 1.25rem;
     position: absolute;
     bottom:1.25rem;

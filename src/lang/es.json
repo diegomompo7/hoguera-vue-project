@@ -42,5 +42,6 @@
     "enableSubtitle": "Activar Subtítulos",
     "disableSubtitle": "Desactivar Subtítulos",
     "subtitleAdult": "/assets/audio/Spanish/SceneAdult.json",
-    "subtitleKid": "/assets/audio/Spanish/SceneKid.json"
+    "subtitleKid": "/assets/audio/Spanish/SceneKid.json",
+    "subtitle1": "/assets/audio/Spanish/Scene1.json"
 }

@@ -1,0 +1,380 @@
+{
+    "result": "Alacant, terra de llum i color, que llueix poliuclomia atrevida, on t'abraça de la mar el remor. Som terra de llum i color, addictes a la festa del solstici, festa que fa bategar el foc. Són les fogueres llum i color, que amb el sol l'animador i tornar-se a perdre amb la foscor. Són les fogueres festa de dia i nit. On ballen les estrel·les i la lluna, i el poble, a taula parà, tenen reunit. És una terra de llum, gent i color, on les persones planten la festa, fruit d'una passió que no cap al cor. Et trobes en la terra de llum i color. Ella és a la camp, és la festa, on l'aigua i el foc són elements principals. És una festa... pròxim al mar. Per això, a la nostra dreta trobem l'aigua i a l'esquerra el foc. És una explosió de color, representada per les flors en el ramat, amb el sol que impera i governa a les fogueres. Amb ella, apartant els núvols, deixant al costat l'hivern i el mal horatge, donant la benvinguda al calor i la festa de fogueres. Ella és una explosió de color representada per les flors en el remat, amb el sol que impera i governa les fogueres. Ella, per tant, els núvols, deixant al costat l'hivern i el mal horatge, donant la benvinguda al calor i a la festa de fogueres.",
+           
+    "stab_segments": [
+        {
+            "start": 0.900,
+            "end": 2.100,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 2.100,
+            "end": 7.000,
+            "word": "Alacant, terra de llum i color, que llueix",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 7.000,
+            "end": 10.700,
+            "word": "poliuclomia atrevida, on t'abraça de la mar el remor.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 10.700,
+            "end": 11.800,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 11.800,
+            "end": 14.800,
+            "word": "Som terra de llum i color, addictes a la",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 14.800,
+            "end": 18.400,
+            "word": "festa del solstici, festa que fa bategar el foc.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 18.400,
+            "end": 19.800,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 19.800,
+            "end": 22.700,
+            "word": "Són les fogueres llum i color, que amb el",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 22.700,
+            "end": 26.400,
+            "word": "sol l'animador i tornar-se a perdre amb la foscor.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 26.400,
+            "end": 27.800,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 27.800,
+            "end": 29.800,
+            "word": "Són les fogueres festa de dia i nit.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 29.800,
+            "end": 30.700,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 30.700,
+            "end": 33.100,
+            "word": "On ballen les estrel·les i la lluna, i",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 33.100,
+            "end": 35.500,
+            "word": "el poble, a taula parà, tenen reunit.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 35.500,
+            "end": 36.800,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 36.800,
+            "end": 39.900,
+            "word": "És una terra de llum, gent i color, on",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 39.900,
+            "end": 42.000,
+            "word": "les persones planten la festa, fruit",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 42.000,
+            "end": 44.300,
+            "word": "d'una passió que no cap al cor.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 44.300,
+            "end": 47.500,
+            "word": "(Acaba la música)",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 47.500,
+            "end": 48.600,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 48.600,
+            "end": 51.200,
+            "word": "Et trobes en la terra de llum i color.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 51.200,
+            "end": 52.000,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 52.000,
+            "end": 55.900,
+            "word": "Ella és a la camp, és la festa, on l'aigua",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 55.900,
+            "end": 58.000,
+            "word": "i el foc són elements principals.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 58.000,
+            "end": 58.900,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 58.900,
+            "end": 60.800,
+            "word": "És una festa... pròxim al mar.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 60.800,
+            "end": 61.200,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 61.200,
+            "end": 64.000,
+            "word": "Per això, a la nostra dreta trobem",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 64.000,
+            "end": 66.500,
+            "word": "l'aigua i a l'esquerra el foc.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 66.500,
+            "end": 68.300,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 68.300,
+            "end": 71.200,
+            "word": "És una explosió de color, representada per",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 71.200,
+            "end": 74.900,
+            "word": "les flors en el ramat, amb el sol que",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 74.900,
+            "end": 77.300,
+            "word": "impera i governa a les fogueres.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 77.300,
+            "end": 78.400,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 78.400,
+            "end": 82.200,
+            "word": "Amb ella, apartant els núvols, deixant al",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 82.200,
+            "end": 87.000,
+            "word": "costat l'hivern i el mal horatge, donant",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 87.000,
+            "end": 90.800,
+            "word": "la benvinguda al calor i la festa de fogueres.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 90.800,
+            "end": 91.500,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 91.500,
+            "end": 94.100,
+            "word": "Ella és una explosió de color representada",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 94.100,
+            "end": 97.600,
+            "word": "per les flors en el remat, amb el sol que",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 97.600,
+            "end": 98.900,
+            "word": "impera i governa les fogueres.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 98.900,
+            "end": 99.900,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 99.900,
+            "end": 103.200,
+            "word": "Ella, per tant, els núvols, deixant al costat",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 103.200,
+            "end": 107.100,
+            "word": "l'hivern i el mal horatge, donant la benvinguda",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 107.100,
+            "end": 109.500,
+            "word": "al calor i a la festa de fogueres.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        }
+    ],
+    "segment_data": [
+        {
+            "start": 0.57,
+            "end": 7.67,
+            "index": 0
+        },
+        {
+            "start": 7.67,
+            "end": 14.05,
+            "index": 1
+        },
+        {
+            "start": 14.05,
+            "end": 20.77,
+            "index": 2
+        },
+        {
+            "start": 20.77,
+            "end": 25.03,
+            "index": 3
+        }
+    ],
+    "vad_segment_array": [
+        {
+            "start": 0.56875,
+            "end": 3.236125
+        },
+        {
+            "start": 3.336125,
+            "end": 6.4449375
+        },
+        {
+            "start": 6.5449375,
+            "end": 10.43475
+        },
+        {
+            "start": 10.53475,
+            "end": 15.4263125
+        },
+        {
+            "start": 15.5263125,
+            "end": 20.2140625
+        },
+        {
+            "start": 20.3140625,
+            "end": 22.4041875
+        },
+        {
+            "start": 22.5041875,
+            "end": 25.050875
+        }
+    ],
+    "diarization": [
+        {
+            "start": "0",
+            "end": "25.730612",
+            "speaker": "SPEAKER_00"
+        }
+    ]
+}

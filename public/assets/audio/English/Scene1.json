@@ -1,13 +1,13 @@
 {
-    "result": "",
+    "result": "Terra màgica de dansa i foc, d'aigua que banya una deu, on sent orgull del que sóc. Perquè la crema no és morir, és moment de refermar-se i per sempre les fogueres gaudir. I que el foc siga sempre amic, que doni pas a noves creacions, que els obradors troben amic. En cent amb el foc, ell És el gran faedor d'esta festa i el concloure d'aquesta. De la mar, iix una sirena que va onit-se a poc a poc amb el foc, mitjançant una dansa acompanyada per les flames.",
            
     "stab_segments": [
         {
             "start": 0.700,
             "end": 3.000,
-            "word": "(Música)",
-            "probability": 1,
-            "segmentNo": 1
+            "word": "(Music)",
+            "probability": 0.5322265625,
+            "segmentNo": 0
         },
         {
             "start": 3.000,
@@ -26,7 +26,7 @@
         {
             "start": 9.200,
             "end": 10.100,
-            "word": "(Música)",
+            "word": "(Music)",
             "probability": 0.5322265625,
             "segmentNo": 0
         },
@@ -47,7 +47,7 @@
         {
             "start": 16.300,
             "end": 17.100,
-            "word": "(Música)",
+            "word": "(Music)",
             "probability": 0.5322265625,
             "segmentNo": 0
         },
@@ -75,64 +75,50 @@
         {
             "start": 24.000,
             "end": 27.300,
-            "word": "(Acaba la música)",
+            "word": "(End the music)",
             "probability": 0.5322265625,
             "segmentNo": 0
         },
         {
             "start": 27.300,
-            "end": 27.900,
-            "word": "(Silenci)",
+            "end": 28.100,
+            "word": "(Silence)",
             "probability": 0.75146484375,
             "segmentNo": 1
         },
         {
-            "start": 27.900,
-            "end": 32.100,
-            "word": "En cent amb el foc, ell És el gran faedor",
+            "start": 28.100,
+            "end": 31.400,
+            "word": "Light yourself with fire, which is the greatest",
             "probability": 0.75146484375,
             "segmentNo": 1
         },
         {
-            "start": 32.100,
-            "end": 34.900,
-            "word": "d'esta festa i el concloure d'aquesta.",
+            "start": 31.400,
+            "end": 35.000,
+            "word": "maker of this festa and the culmination of it.",
             "probability": 0.75146484375,
             "segmentNo": 1
         },
         {
-            "start": 34.900,
-            "end": 35.700,
-            "word": "(Silenci)",
+            "start": 35.000,
+            "end": 36.000,
+            "word": "(Silence)",
             "probability": 0.75146484375,
             "segmentNo": 1
         },
         {
-            "start": 35.700,
+            "start": 36.000,
             "end": 39.900,
-            "word": "De la mar, iix una sirena que va onit-se",
+            "word": "A mermaid emerges from the sea and gradually",
             "probability": 0.75146484375,
             "segmentNo": 1
         },
         {
             "start": 39.900,
-            "end": 40.300,
-            "word": "(Silenci)",
+            "end": 43.100,
+            "word": "joins the fire in a dense with flames.",
             "probability": 0.75146484375,
-            "segmentNo": 1
-        },
-        {
-            "start": 40.300,
-            "end": 42.600,
-            "word": "poc a poc amb el foc,",
-            "probability": 0.75146484375,
-            "segmentNo": 1
-        },
-        {
-            "start": 42.600,
-            "end": 47.100,
-            "word": "mitjançant una dansa acompanyada per les flames.",
-            "probability": 0.79736328125,
             "segmentNo": 1
         }
     ],
