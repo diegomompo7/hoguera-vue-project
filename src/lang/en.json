@@ -47,6 +47,7 @@
     "roleSubtitle": "Subtitles",
     "subtitleAdult": "/assets/audio/English/SceneAdult.json",
     "subtitleKid": "/assets/audio/English/SceneKid.json",
-    "subtitle1": "/assets/audio/English/Scene1.json"
+    "subtitle1": "/assets/audio/English/Scene1.json",
+    "subtitle2": "/assets/audio/English/Scene2.json"
     
 }
