@@ -1,4 +1,6 @@
 {
+    "scenes": "Escenes",
+    "title": "Títol",
     "sceneAdult" : "Lara Blázquez Pérez",
     "sceneKid" : "Xiana Ugeda Andrés",
     "descriptionAdult": "Descripció 0 Valenciano",
@@ -41,6 +43,8 @@
     "titleAudioAdult": "Benvinguda de la bellesa",
     "enableSubtitle": "Activar Subtítols",
     "disableSubtitle":  "Desactivar Subtítols",
+    "roleSubtitle": "Subtítols",
+    "audioControls": "Controls d'àudio",
     "subtitleAdult": "/assets/audio/Valencia/SceneAdult.json",
     "subtitleKid": "/assets/audio/Valencia/SceneKid.json",
     "subtitle1": "/assets/audio/Valencia/Scene1.json",

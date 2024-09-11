@@ -1,4 +1,6 @@
 {
+    "scenes": "Scenes",
+    "title": "Title",
     "sceneAdult" : "Lara Blázquez Pérez",
     "sceneKid" : "Xiana Ugeda Andrés",
     "descriptionAdult": "Description Adult Inglés",
@@ -41,6 +43,8 @@
     "titleAudioAdult": "Belleza's Welcome",
     "enableSubtitle": "Enable Subtitles",
     "disableSubtitle": "Disable Subtitles",
+    "audioControls": "Audio controls",
+    "roleSubtitle": "Subtitles",
     "subtitleAdult": "/assets/audio/English/SceneAdult.json",
     "subtitleKid": "/assets/audio/English/SceneKid.json",
     "subtitle1": "/assets/audio/English/Scene1.json"

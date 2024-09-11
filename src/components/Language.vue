@@ -14,7 +14,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="text-center mb-3_5" role="language">
+    <div class="text-center mb-3_5" :role="messages.language">
         <h1 class="visually-hidden">{{ messages.language }}</h1>
         <img src="../assets/img/valencia.svg" :alt="messages.pageValencia" class=" w-5 me-2_25" @click="setLanguage('va')"
             @keypress="setLanguage('va')" tabindex="0"/>
