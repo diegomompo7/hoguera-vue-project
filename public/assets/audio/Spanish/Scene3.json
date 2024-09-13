@@ -1,0 +1,254 @@
+{
+    "result": "",
+           
+    "stab_segments": [
+        {
+            "start": 0.000,
+            "end": 3.800,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 3.800,
+            "end": 8.200,
+            "word": "Color i soroll d'uns esclats que naixen on viuen",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 8.200,
+            "end": 11.700,
+            "word": "els estels i al cel acaben tots abraçats.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 11.700,
+            "end": 12.700,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 12.700,
+            "end": 16.600,
+            "word": "Color i soroll que anuncia la pau d'esta batalla",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 16.600,
+            "end": 20.100,
+            "word": "festiva per guanyar i on la rivalitat sana és la clau.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 20.100,
+            "end": 21.400,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 21.400,
+            "end": 25.400,
+            "word": "Color i soroll recorrent la mar per a fer-hi girar",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 25.400,
+            "end": 28.700,
+            "word": "tots de la closca i les fogueres tornar a celebrar.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 28.700,
+            "end": 32.100,
+            "word": "(Termina la música)",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 32.100,
+            "end": 33.300,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 33.300,
+            "end": 36.400,
+            "word": "Estás sumergida en una distopía",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 36.400,
+            "end": 38.800,
+            "word": "dónde Alicante está bajo el mar.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 38.800,
+            "end": 39.200,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 39.200,
+            "end": 42.500,
+            "word": "Su plaza emblemática, la catedral de la pólvora",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 42.500,
+            "end": 45.900,
+            "word": "y la pirotecnia, es lo que observas.",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 45.900,
+            "end": 46.700,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 46.700,
+            "end": 49.700,
+            "word": "¿Y quiénes podrían llevar a cabo el defender",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 49.700,
+            "end": 51.200,
+            "word": "el color bajo el mar?",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 51.200,
+            "end": 51.700,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 51.700,
+            "end": 55.100,
+            "word": "A su alrededor puedes ver las medusas,",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 55.100,
+            "end": 58.200,
+            "word": "puesto que tienen la capacidad de adaptarse",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 58.200,
+            "end": 60.300,
+            "word": "y generar sus propios colores.",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 60.300,
+            "end": 61.000,
+            "word": "(Silencio)",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 61.000,
+            "end": 63.900,
+            "word": "Además, están representando todos los colores",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 63.900,
+            "end": 68.500,
+            "word": "del arcoiris que hoy en día son los de la diversidad",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 68.500,
+            "end": 70.700,
+            "word": "y el respeto a la misma.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        }
+    ],
+    "segment_data": [
+        {
+            "start": 0.57,
+            "end": 7.67,
+            "index": 0
+        },
+        {
+            "start": 7.67,
+            "end": 14.05,
+            "index": 1
+        },
+        {
+            "start": 14.05,
+            "end": 20.77,
+            "index": 2
+        },
+        {
+            "start": 20.77,
+            "end": 25.03,
+            "index": 3
+        }
+    ],
+    "vad_segment_array": [
+        {
+            "start": 0.56875,
+            "end": 3.236125
+        },
+        {
+            "start": 3.336125,
+            "end": 6.4449375
+        },
+        {
+            "start": 6.5449375,
+            "end": 10.43475
+        },
+        {
+            "start": 10.53475,
+            "end": 15.4263125
+        },
+        {
+            "start": 15.5263125,
+            "end": 20.2140625
+        },
+        {
+            "start": 20.3140625,
+            "end": 22.4041875
+        },
+        {
+            "start": 22.5041875,
+            "end": 25.050875
+        }
+    ],
+    "diarization": [
+        {
+            "start": "0",
+            "end": "25.730612",
+            "speaker": "SPEAKER_00"
+        }
+    ]
+}

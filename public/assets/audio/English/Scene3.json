@@ -1,0 +1,233 @@
+{
+    "result": "Color i soroll d'uns esclats que naixen on viuen els estels i al cel acaben tots abraçats. Color i soroll que anuncia la pau d'esta batalla festiva per guanyar i on la rivalitat sana és la clau. Color i soroll recorrent la mar per a fer-hi girar tots de la closca i les fogueres tornar a celebrar. You are immersed in a dystopia where Alicante in under the sea. And the emblematic squale, The cathedral of gunpowder on pyrotechnic is that you can see. And, ¿Who could carry out the colour defence? The jellyfish have the ability to adapt and generate their own colours. Also they represent with the colours on the rainbow the diversity and respect of it..",
+           
+    "stab_segments": [
+        {
+            "start": 0.000,
+            "end": 3.800,
+            "word": "(Music)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 3.800,
+            "end": 8.200,
+            "word": "Color i soroll d'uns esclats que naixen on viuen",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 8.200,
+            "end": 11.700,
+            "word": "els estels i al cel acaben tots abraçats.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 11.700,
+            "end": 12.700,
+            "word": "(Music)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 12.700,
+            "end": 16.600,
+            "word": "Color i soroll que anuncia la pau d'esta batalla",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 16.600,
+            "end": 20.100,
+            "word": "festiva per guanyar i on la rivalitat sana és la clau.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 20.100,
+            "end": 21.400,
+            "word": "(Music)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 21.400,
+            "end": 25.400,
+            "word": "Color i soroll recorrent la mar per a fer-hi girar",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 25.400,
+            "end": 28.700,
+            "word": "tots de la closca i les fogueres tornar a celebrar.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 28.700,
+            "end": 32.100,
+            "word": "(End the music)",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 32.100,
+            "end": 33.000,
+            "word": "(Silence)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 33.000,
+            "end": 35.600,
+            "word": "You are immersed in a dystopia",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 35.600,
+            "end": 37.600,
+            "word": "where Alicante in under the sea.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 37.600,
+            "end": 38.400,
+            "word": "(Silence)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 38.400,
+            "end": 40.900,
+            "word": "And the emblematic squale, the cathedral of",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },        
+        {
+            "start": 40.900,
+            "end": 44.900,
+            "word": "gunpowder on pyrotechnic is that you can see.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 44.900,
+            "end": 46.200,
+            "word": "(Silence)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 46.200,
+            "end": 49.500,
+            "word": "And, ¿Who could carry out the colour defence?",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 49.500,
+            "end": 49.800,
+            "word": "(Silence)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 49.800,
+            "end": 53.300,
+            "word": "The jellyfish have the ability to adapt",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 53.300,
+            "end": 56.500,
+            "word": "and generate their own colours.",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 56.500,
+            "end": 56.900,
+            "word": "(Silence)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 56.900,
+            "end": 59.900,
+            "word": "Also they represent with the colours on the",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 59.900,
+            "end": 63.500,
+            "word": "rainbow the diversity and respect of it.",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        }
+    ],
+    "segment_data": [
+        {
+            "start": 0.57,
+            "end": 7.67,
+            "index": 0
+        },
+        {
+            "start": 7.67,
+            "end": 14.05,
+            "index": 1
+        },
+        {
+            "start": 14.05,
+            "end": 20.77,
+            "index": 2
+        },
+        {
+            "start": 20.77,
+            "end": 25.03,
+            "index": 3
+        }
+    ],
+    "vad_segment_array": [
+        {
+            "start": 0.56875,
+            "end": 3.236125
+        },
+        {
+            "start": 3.336125,
+            "end": 6.4449375
+        },
+        {
+            "start": 6.5449375,
+            "end": 10.43475
+        },
+        {
+            "start": 10.53475,
+            "end": 15.4263125
+        },
+        {
+            "start": 15.5263125,
+            "end": 20.2140625
+        },
+        {
+            "start": 20.3140625,
+            "end": 22.4041875
+        },
+        {
+            "start": 22.5041875,
+            "end": 25.050875
+        }
+    ],
+    "diarization": [
+        {
+            "start": "0",
+            "end": "25.730612",
+            "speaker": "SPEAKER_00"
+        }
+    ]
+}

@@ -224,7 +224,7 @@ watch(showSubtitles, (newValue) => {
             </swiper-slide>
             <div ref="prevButton" class="swiper-button-next text-yellow shadow-shadowYellow2 w-5 h-4_8"></div>
             <div ref="nextButton" class="swiper-button-prev text-yellow shadow-shadowYellow2 w-5 h-4_8"></div>
-            <p v-if="currentSubtitle && showSubtitles" :role="messages.roleSubtitle" class="subtitles  fs-text_base text-center m-auto pt-4_4 w-11_12">
+            <p v-if="currentSubtitle && showSubtitles" :role="messages.roleSubtitle" class="subtitles fs-text_base text-center m-auto pt-4_4 w-11_12">
                 {{ currentSubtitle.word }}
             </p>
         </swiper>
