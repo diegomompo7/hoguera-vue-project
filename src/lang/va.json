@@ -49,5 +49,6 @@
     "subtitleKid": "/assets/audio/Valencia/SceneKid.json",
     "subtitle1": "/assets/audio/Valencia/Scene1.json",
     "subtitle2": "/assets/audio/Valencia/Scene2.json",
-    "subtitle3": "/assets/audio/Valencia/Scene3.json"
+    "subtitle3": "/assets/audio/Valencia/Scene3.json",
+    "subtitle4": "/assets/audio/Valencia/Scene4.json"
 }

@@ -1,0 +1,270 @@
+{
+    "result": ".",
+           
+    "stab_segments": [
+        {
+            "start": 0.000,
+            "end": 4.630,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 4.630,
+            "end": 8.320,
+            "word": "Terra de llum i color, que uneix terra i mar",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 8.320,
+            "end": 9.550,
+            "word": "on es respira l'amor.",
+            "probability": 1,
+            "segmentNo": 2
+        },
+        {
+            "start": 9.550,
+            "end": 10.350,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 10.350,
+            "end": 13.440,
+            "word": "Terra majestuosa i antiga, terra d'història",
+            "probability": 1,
+            "segmentNo": 3
+        },
+        {
+            "start": 13.440,
+            "end": 17.030,
+            "word": "i tradició, i mai de ningú serà enemiga.",
+            "probability": 1,
+            "segmentNo": 4
+        },
+        {
+            "start": 17.030,
+            "end": 17.950,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 17.950,
+            "end": 21.099,
+            "word": "Terra de festa i fervor, terra d'essència",
+            "probability": 1,
+            "segmentNo": 5
+        },
+        {
+            "start": 21.099,
+            "end": 24.149,
+            "word": "i creença, terra de llum i color.",
+            "probability": 1,
+            "segmentNo": 6
+        },
+        {
+            "start": 24.149,
+            "end": 29.279,
+            "word": "(Acaba la música)",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 29.279,
+            "end": 29.990,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 29.990,
+            "end": 33.426,
+            "word": "Enlluerna't amb la nit alacantina de foc i color",
+            "probability": 1,
+            "segmentNo": 8
+        },
+        {
+            "start": 33.426,
+            "end": 34.220,
+            "word": "reflectida en l'aigua.",
+            "probability": 1,
+            "segmentNo": 0
+        },
+        {
+            "start": 34.229,
+            "end": 34.819,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 34.819,
+            "end": 37.989,
+            "word": "Sota aquest skyline de la ciutat que t'estimen,",
+            "probability": 1,
+            "segmentNo": 0
+        },
+        {
+            "start": 37.989,
+            "end": 41.220,
+            "word": "Alacant, d'esquerra a dreta trobaràs",
+            "probability": 1,
+            "segmentNo": 0
+        },
+        {
+            "start": 41.220,
+            "end": 45.529,
+            "word": "la Diputació, el Gran Sol, la plaça dels Estels,",
+            "probability": 1,
+            "segmentNo": 0
+        },
+        {
+            "start": 45.529,
+            "end": 49.169,
+            "word": "Nostra dona de Gràcia, el Mercat Central,",
+            "probability": 1,
+            "segmentNo": 0
+        },
+        {
+            "start": 49.169,
+            "end": 52.939,
+            "word": "la Casa Carboner, l'Ajuntament i Sant Nicolau,",
+            "probability": 1,
+            "segmentNo": 0
+        },
+        {
+            "start": 52.939,
+            "end": 58.069,
+            "word": "reflexes en un blau a ratlles que és la mar.",
+            "probability": 1,
+            "segmentNo": 0
+        },
+        {
+            "start": 58.069,
+            "end": 59.139,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 59.139,
+            "end": 62.402,
+            "word": "El món ben acantil iŀluminat, assenyalant",
+            "probability": 1,
+            "segmentNo": 0
+        },
+        {
+            "start": 62.402,
+            "end": 64.940,
+            "word": "que la nit està encensa.",
+            "probability": 1,
+            "segmentNo": 0
+        },
+        {
+            "start": 64.940,
+            "end": 65.819,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 65.819,
+            "end": 70.309,
+            "word": "Després veiem una alicantina plena d'estreles,",
+            "probability": 1,
+            "segmentNo": 0
+        },
+        {
+            "start": 70.309,
+            "end": 73.894,
+            "word": "a on s'han posat les papallones que arriben",
+            "probability": 1,
+            "segmentNo": 0
+        },
+        {
+            "start": 73.894,
+            "end": 75.260,
+            "word": "de dalt i n'han baixat.",
+            "probability": 1,
+            "segmentNo": 0
+        },
+        {
+            "start": 75.260,
+            "end": 76.410,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 76.410,
+            "end": 80.435,
+            "word": "Està coronada al voltant d'una palmera feta",
+            "probability": 1,
+            "segmentNo": 0
+        },
+        {
+            "start": 80.435,
+            "end": 84.398,
+            "word": "amb focs d'artifici i castells de tots els",
+            "probability": 1,
+            "segmentNo": 0
+        },
+        {
+            "start": 84.398,
+            "end": 87.199,
+            "word": "colors que simbolitzen la pluralitat.",
+            "probability": 1,
+            "segmentNo": 0
+        }
+    ],
+    "segment_data": [
+        {
+            "start": 4.630,
+            "end": 8.320,
+            "index": 1
+        },
+        {
+            "start": 8.320,
+            "end": 9.550,
+            "index": 2
+        },
+        {
+            "start": 10.350,
+            "end": 13.440,
+            "index": 3
+        },
+        {
+            "start": 13.440,
+            "end": 17.030,
+            "index": 4
+        }
+    ],
+    "vad_segment_array": [
+        {
+            "start": 4.630,
+            "end": 8.320
+        },
+        {
+            "start": 8.320,
+            "end": 9.550
+        },
+        {
+            "start": 10.350,
+            "end": 13.440
+        },
+        {
+            "start": 13.440,
+            "end": 17.030
+        }
+    ],
+    "diarization": [
+        {
+            "start": "4.630",
+            "end": "29.990",
+            "speaker": "SPEAKER_00"
+        }
+    ]
+}
