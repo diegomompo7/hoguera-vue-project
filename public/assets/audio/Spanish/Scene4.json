@@ -1,0 +1,319 @@
+{
+    "result": ".",
+           
+    "stab_segments": [
+        {
+            "start": 0.000,
+            "end": 4.630,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 4.630,
+            "end": 8.320,
+            "word": "Terra de llum i color, que uneix terra i mar",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 8.320,
+            "end": 9.550,
+            "word": "on es respira l'amor.",
+            "probability": 1,
+            "segmentNo": 2
+        },
+        {
+            "start": 9.550,
+            "end": 10.350,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 10.350,
+            "end": 13.440,
+            "word": "Terra majestuosa i antiga, terra d'història",
+            "probability": 1,
+            "segmentNo": 3
+        },
+        {
+            "start": 13.440,
+            "end": 17.030,
+            "word": "i tradició, i mai de ningú serà enemiga.",
+            "probability": 1,
+            "segmentNo": 4
+        },
+        {
+            "start": 17.030,
+            "end": 17.950,
+            "word": "(Música)",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 17.950,
+            "end": 21.099,
+            "word": "Terra de festa i fervor, terra d'essència",
+            "probability": 1,
+            "segmentNo": 5
+        },
+        {
+            "start": 21.099,
+            "end": 24.149,
+            "word": "i creença, terra de llum i color.",
+            "probability": 1,
+            "segmentNo": 6
+        },
+        {
+            "start": 24.149,
+            "end": 29.279,
+            "word": "(Termina la música)",
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 29.279,
+            "end": 30.260,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 30.260,
+            "end": 33.762,
+            "word": "Deslúmbrate con la noche alicantina de",
+            "probability": 1,
+            "segmentNo": 1
+        },
+        {
+            "start": 33.762,
+            "end": 36.490,
+            "word": "fuego y color reflejada en sus aguas.",
+            "probability": 1,
+            "segmentNo": 2
+        },
+        {
+            "start": 36.490,
+            "end": 37.189,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 37.189,
+            "end": 39.952,
+            "word": "Abajo está el skyline de la ciudad que",
+            "probability": 1,
+            "segmentNo": 3
+        },
+        {
+            "start": 39.952,
+            "end": 41.860,
+            "word": "tanto amamos Alicante.",
+            "probability": 1,
+            "segmentNo": 4
+        },
+        {
+            "start": 41.860,
+            "end": 42.479,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 42.479,
+            "end": 45.187,
+            "word": "De izquierda a derecha encontrarás",
+            "probability": 1,
+            "segmentNo": 5
+        },
+        {
+            "start": 45.187,
+            "end": 48.695,
+            "word": "la Diputación, el Gran Sol, Luceros,",
+            "probability": 1,
+            "segmentNo": 6
+        },
+        {
+            "start": 48.695,
+            "end": 51.830,
+            "word": "Nuestra Señora de Gracia, Mercado Central,",
+            "probability": 1,
+            "segmentNo": 7
+        },
+        {
+            "start": 51.830,
+            "end": 54.238,
+            "word": "la Casa Carbonell, el Ayuntamiento",
+            "probability": 1,
+            "segmentNo": 8
+        },
+        {
+            "start": 54.238,
+            "end": 57.320,
+            "word": "y San Nicolás, reflejados en un azul",
+            "probability": 1,
+            "segmentNo": 9
+        },
+        {
+            "start": 57.320,
+            "end": 59.099,
+            "word": "a rayas que es el mar.",
+            "probability": 1,
+            "segmentNo": 10
+        },
+        {
+            "start": 59.099,
+            "end": 59.680,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 59.680,
+            "end": 60.490,
+            "word": "Tras él,",
+            "probability": 1,
+            "segmentNo": 11
+        },
+        {
+            "start": 60.490,
+            "end": 63.594,
+            "word": "el Monte Benacantil iluminado señalando",
+            "probability": 1,
+            "segmentNo": 12
+        },
+        {
+            "start": 63.594,
+            "end": 65.290,
+            "word": "que la noche está encendida.",
+            "probability": 1,
+            "segmentNo": 13
+        },
+        {
+            "start": 65.290,
+            "end": 66.040,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 66.040,
+            "end": 68.896,
+            "word": "Luego vemos una alicantina que representa",
+            "probability": 1,
+            "segmentNo": 14
+        },
+        {
+            "start": 68.896,
+            "end": 70.068,
+            "word": "la noche estrellada,",
+            "probability": 1,
+            "segmentNo": 15
+        },
+        {
+            "start": 70.068,
+            "end": 72.330,
+            "word": "en la cual se han posado mariposas",
+            "probability": 1,
+            "segmentNo": 16
+        },
+        {
+            "start": 72.330,
+            "end": 74.466,
+            "word": "que vienen de arriba y han",
+            "probability": 1,
+            "segmentNo": 17
+        },
+        {
+            "start": 74.466,
+            "end": 75.940,
+            "word": "bajado para ser partícipes.",
+            "probability": 1,
+            "segmentNo": 18
+        },
+        {
+            "start": 75.940,
+            "end": 77.020,
+            "word": "(Silencio)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 77.020,
+            "end": 77.919,
+            "word": "Alrededor,",
+            "probability": 1,
+            "segmentNo": 19
+        },
+        {
+            "start": 77.919,
+            "end": 81.115,
+            "word": "está coronada por una palmera hecha por",
+            "probability": 1,
+            "segmentNo": 20
+        },
+        {
+            "start": 81.115,
+            "end": 83.394,
+            "word": "fuegos artificiales y castillos de todos",
+            "probability": 1,
+            "segmentNo": 21
+        },
+        {
+            "start": 83.394,
+            "end": 86.629,
+            "word": "los colores que simbolizan la pluralidad.",
+            "probability": 1,
+            "segmentNo": 22
+        }
+    ],
+    "segment_data": [
+        {
+            "start": 4.630,
+            "end": 8.320,
+            "index": 1
+        },
+        {
+            "start": 8.320,
+            "end": 9.550,
+            "index": 2
+        },
+        {
+            "start": 10.350,
+            "end": 13.440,
+            "index": 3
+        },
+        {
+            "start": 13.440,
+            "end": 17.030,
+            "index": 4
+        }
+    ],
+    "vad_segment_array": [
+        {
+            "start": 4.630,
+            "end": 8.320
+        },
+        {
+            "start": 8.320,
+            "end": 9.550
+        },
+        {
+            "start": 10.350,
+            "end": 13.440
+        },
+        {
+            "start": 13.440,
+            "end": 17.030
+        }
+    ],
+    "diarization": [
+        {
+            "start": "4.630",
+            "end": "29.990",
+            "speaker": "SPEAKER_00"
+        }
+    ]
+}

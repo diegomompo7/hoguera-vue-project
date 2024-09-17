@@ -49,5 +49,6 @@
     "subtitleKid": "/assets/audio/Spanish/SceneKid.json",
     "subtitle1": "/assets/audio/Spanish/Scene1.json",
     "subtitle2": "/assets/audio/Spanish/Scene2.json",
-    "subtitle3": "/assets/audio/Spanish/Scene3.json"
+    "subtitle3": "/assets/audio/Spanish/Scene3.json",
+    "subtitle4": "/assets/audio/Spanish/Scene4.json"
 }
