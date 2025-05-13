@@ -222,7 +222,7 @@ watch(showSubtitles, (newValue) => {
                     <source :src="$t(`audio${((4 + index)) % 4 +1}`)" type="audio/mpeg"/>
                 </audio>
                 <div class="d-flex flex-column justify-content-center">
-                <button @click="controlAudio(((4 + index)) % 4 + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" :aria-label="messages.audioControls" tabindex="0">
+                <button @click="controlAudio(((4 + index)) % 4 + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" :aria-label="isPlayed[initScene + 1] ? messages.pauseAudio : messages.playAudio" tabindex="0">
                     {{ isPlayed[((4 + index)) % 4 + 1 ]  ? 'Pause' : 'Play' }}
                 </button>
                 <button @click="toggleSubtitles(((4 + index)) % 4)" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" tabindex="0" :aria-label="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle"> {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
