@@ -53,12 +53,13 @@ console.log(locale)
 </script>
 
 <template>
+  <SkipLinks />
   <div class="">
   <div class="text-center pt-3">
-    <Language :messages="messages" :setLanguage="setLanguage"></Language>
+    <Language :messages="messages" :setLanguage="setLanguage" id="languages"></Language>
   </div>
   <Header :messages="messages" :setLanguage="setLanguage"></Header>
-  <Scenes :messages="messages" :language="locale"></Scenes>
+  <Scenes :messages="messages" :language="locale" id="main-content"></Scenes>
   </div>
 
 </template>

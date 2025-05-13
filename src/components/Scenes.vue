@@ -105,7 +105,13 @@ const handleAudioEnded = (sceneNumber) => {
 
 };
 
+const navigateNext = () => {
+  document.querySelector('.swiper-button-next')?.click();
+};
 
+const navigatePrev = () => {
+  document.querySelector('.swiper-button-prev')?.click();
+};
 
 /*const updateSubtitles = async() => {
     
@@ -172,59 +178,59 @@ watch(showSubtitles, (newValue) => {
     <div class="" :role="messages.scenes">
         <swiper v-if="initScene === -1" class="bg-black mt-4_6 text-yellow">
             <swiper-slide class="d-flex mt-4_2 flex-column text-center ">
-                <h1 class="fw-bold" :role="messages.title">{{ messages.sceneAdult }}</h1>
+                <h1 class="fw-bold" :role="messages.title" role="heading">{{ messages.sceneAdult }}</h1>
                 <img src="../assets/img/imgAdult.png" alt="" class="w-1_3 m-auto">
                 <audio id="audioPlayerAdult" :ref="(el) => { audioRefs[initScene + 1] = el, sceneNumber = initScene + 1 }" 
                     @ended="handleAudioEnded(initScene + 1)" :alt="messages.titleAudioAdult">
                     <source :src="$t(`audioAdult`)" type="audio/mpeg"/>
                 </audio>
                 <div class="d-flex justify-content-center">
-                <button @click="controlAudio(initScene + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  :role="messages.audioControls">
+                <button @click="controlAudio(initScene + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  role="button" :aria-label="isPlayed[initScene + 1] ? messages.pauseAudio : messages.playAudio" tabindex="0">
                     {{ isPlayed[initScene + 1] ? 'Pause' : 'Play' }}
                 </button>
-                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" :role="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle"  > {{ showSubtitles ? messages.disableSubtitle : messages.enableSubtitle }}</button>
+                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" tabindex="0" :aria-label="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle" > {{ showSubtitles ? messages.disableSubtitle : messages.enableSubtitle }}</button>
             </div>
-                <p v-if="currentSubtitle"  :role="messages.roleSubtitle" class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
+                <p v-if="currentSubtitle"  role="status" aria-live="polite" class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
                     {{ currentSubtitle.word }}"
                 </p>
             </swiper-slide>
         </swiper>
         <swiper v-if="initScene === 4" class="bg-black mt-4_6 text-yellow ">
             <swiper-slide class="d-flex mt-4_2 flex-column text-center ">
-                <h1 class="fw-bold" :role="messages.title">{{ messages.sceneKid }}</h1>
+                <h1 class="fw-bold" :role="messages.title" role="heading">{{ messages.sceneKid }}</h1>
                 <img src="../assets/img/imgKid.png" alt="" class="w-1_3 m-auto">
                 <audio id="audioPlayerKid" :ref="(el) => { audioRefs[initScene + 1] = el, sceneNumber = initScene + 1 }"
                     @ended="handleAudioEnded(initScene + 1)">
                     <source :src="$t(`audioKid`)" type="audio/mpeg"/>
                 </audio>
                 <div class="d-flex justify-content-center">
-                <button @click="controlAudio(initScene + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  :role="messages.audioControls">
+                <button @click="controlAudio(initScene + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  role="button" :aria-label="isPlayed[initScene + 1] ? messages.pauseAudio : messages.playAudio" tabindex="0">
                     {{ isPlayed[initScene + 1] ? 'Pause' : 'Play' }}
                 </button>
-                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" :role="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle"  > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
+                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" tabindex="0" :aria-label="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle"> {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
             </div>
-                <p v-if="currentSubtitle && showSubtitles" :role="messages.roleSubtitle" class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
+                <p v-if="currentSubtitle && showSubtitles" role="status" aria-live="polite" class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
                     {{ currentSubtitle.word }}
                 </p>
             </swiper-slide>
         </swiper>
         <swiper v-if="initScene < 4 && initScene !=-1" class="bg-black mt-4_6 text-yellow swiper-container" :navigation="navigation" :modules="modules" :loop="true" :initial-slide="initScene != null ? initScene : 0"  @slideChangeTransitionStart="handleSlideChange">
             <swiper-slide class="d-flex mt-4_2 flex-column text-center " v-for="(slide, index) in 4" :key="getSlideKey(index)">
-                <h1 class="fw-bold" role="title">{{getSceneMessage(index)}}</h1>
+                <h1 class="fw-bold" role="heading">{{getSceneMessage(index)}}</h1>
                 <audio :id="`audioPlayer${((4 + index)) % 4 + 1}`" :ref="(el) => { audioRefs[((4 + index)) % 4 + 1] = el}"
                     @ended="handleAudioEnded(((4 + index)) % 4 + 1)">
                     <source :src="$t(`audio${((4 + index)) % 4 +1}`)" type="audio/mpeg"/>
                 </audio>
                 <div class="d-flex flex-column justify-content-center">
-                <button @click="controlAudio(((4 + index)) % 4 + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" :role="messages.audioControls">
+                <button @click="controlAudio(((4 + index)) % 4 + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" :aria-label="messages.audioControls" tabindex="0">
                     {{ isPlayed[((4 + index)) % 4 + 1 ]  ? 'Pause' : 'Play' }}
                 </button>
-                <button @click="toggleSubtitles(((4 + index)) % 4)" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  :role="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
+                <button @click="toggleSubtitles(((4 + index)) % 4)" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" tabindex="0" :aria-label="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle"> {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
             </div>
             </swiper-slide>
-            <div ref="prevButton" class="swiper-button-next text-yellow shadow-shadowYellow2 w-5 h-4_8"></div>
-            <div ref="nextButton" class="swiper-button-prev text-yellow shadow-shadowYellow2 w-5 h-4_8"></div>
-            <p v-if="currentSubtitle && showSubtitles" :role="messages.roleSubtitle" class="subtitles fs-text_base text-center m-auto pt-4_4 w-5_6">
+            <div ref="prevButton" class="swiper-button-next text-yellow shadow-shadowYellow2 w-5 h-4_8" role="button" tabindex="0" @keydown.enter="navigateNext" @keydown.space="navigateNext"  aria-label="Siguiente escena" ></div>
+            <div ref="nextButton" class="swiper-button-prev text-yellow shadow-shadowYellow2 w-5 h-4_8" role="button" tabindex="0"  @keydown.enter="navigatePrev" @keydown.space="navigatePrev" aria-label="Escena anterior"></div>
+            <p v-if="currentSubtitle && showSubtitles" role="status" aria-live="polite" class="subtitles fs-text_base text-center m-auto pt-4_4 w-5_6">
                 {{ currentSubtitle.word }}
             </p>
         </swiper>

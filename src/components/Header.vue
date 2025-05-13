@@ -14,7 +14,7 @@ defineProps({
 </script>
 
 <template>
-    <h1 class="text-center visually-hidden">{{ messages.header }}</h1>
+    <h1 class="text-center visually-hidden" role="heading">{{ messages.header }}</h1>
     <div class="d-flex justify-content-center " :role="messages.header">
         <img src="../assets/img/logo.png" alt="" class=" w-25 mx-4_2" role="logo" />
         <div class="w-50 align-self-center" :role="messages.sponsors">
