@@ -1,8 +1,24 @@
 <!-- components/SkipLinks.vue -->
+
+<script>
+const removeAriaHidden = (event) => {
+  event.target.setAttribute('aria-hidden', 'false');
+};
+
+const addAriaHidden = (event) => {
+  event.target.setAttribute('aria-hidden', 'true');
+};
+
+</script>
+
 <template>
     <nav class="skip-links" aria-label="Enlaces de salto">
-      <a href="#languages" class="skip-link" aria-label="Saltar al menú de idiomas">Saltar al menú</a>
-      <a href="#main-content" class="skip-link" aria-label="Saltar al contenido principal">Saltar al contenido</a>
+      <a href="#languages" class="skip-link" aria-label="Saltar al menú de idiomas" tabindex="-1"    aria-hidden="true"
+   @focus="removeAriaHidden($event)"
+   @blur="addAriaHidden($event)">Saltar al menú</a>
+      <a href="#main-content" class="skip-link" aria-label="Saltar al contenido principal" tabindex="-1"    aria-hidden="true"
+   @focus="removeAriaHidden($event)"
+   @blur="addAriaHidden($event)">Saltar al contenido</a>
     </nav>
   </template>
   

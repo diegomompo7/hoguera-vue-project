@@ -35,3 +35,7 @@ $customShadow: (
       @include applyShadow($size);
     } 
 }
+:focus {
+  outline: 3px solid #FFD700; /* amarillo dorado */
+  outline-offset: 2px;
+}

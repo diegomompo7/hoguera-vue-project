@@ -14,7 +14,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="text-center mb-3_5" role="region" aria-label="Language selection">
+    <div class="text-center mb-3_5" role="region" aria-label="Language selection" role="navigation">
         <h1 class="visually-hidden" role="heading">{{ messages.language }}</h1>
         <img src="../assets/img/valencia.svg" :alt="messages.pageValencia" class=" w-5 me-2_25" @click="setLanguage('va')"
             @keypress.enter="setLanguage('va')" @keydown.space="setLanguage('va')" tabindex="0" role="button" :aria-label="messages.pageValencia" :aria-pressed="locale === 'va' ? 'true' : 'false'"/>

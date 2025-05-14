@@ -6,6 +6,8 @@ import { Navigation } from 'swiper/modules';
 import { ref, reactive, watch, onMounted, onUnmounted} from 'vue';
 import { useI18n } from 'vue-i18n';
 
+const isNextButtonVisible = ref(true); // Cambia según lógica de navegación
+
 const props = defineProps({
     messages: {
         type: Object,
@@ -178,8 +180,8 @@ watch(showSubtitles, (newValue) => {
     <div class="" :role="messages.scenes">
         <swiper v-if="initScene === -1" class="bg-black mt-4_6 text-yellow">
             <swiper-slide class="d-flex mt-4_2 flex-column text-center ">
-                <h1 class="fw-bold" :role="messages.title" role="heading">{{ messages.sceneAdult }}</h1>
-                <img src="../assets/img/imgAdult.png" alt="" class="w-1_3 m-auto">
+                <h1 class="fw-bold" :aria-label="messages.title" role="heading">{{ messages.sceneAdult }}</h1>
+                <img src="../assets/img/imgAdult.png" alt="Belleza adulta" class="w-1_3 m-auto">
                 <audio id="audioPlayerAdult" :ref="(el) => { audioRefs[initScene + 1] = el, sceneNumber = initScene + 1 }" 
                     @ended="handleAudioEnded(initScene + 1)" :alt="messages.titleAudioAdult">
                     <source :src="$t(`audioAdult`)" type="audio/mpeg"/>
@@ -197,8 +199,8 @@ watch(showSubtitles, (newValue) => {
         </swiper>
         <swiper v-if="initScene === 4" class="bg-black mt-4_6 text-yellow ">
             <swiper-slide class="d-flex mt-4_2 flex-column text-center ">
-                <h1 class="fw-bold" :role="messages.title" role="heading">{{ messages.sceneKid }}</h1>
-                <img src="../assets/img/imgKid.png" alt="" class="w-1_3 m-auto">
+                <h1 class="fw-bold" :aria-label="messages.title" role="heading">{{ messages.sceneKid }}</h1>
+                <img src="../assets/img/imgKid.png" alt="Belleza Infantil" class="w-1_3 m-auto">
                 <audio id="audioPlayerKid" :ref="(el) => { audioRefs[initScene + 1] = el, sceneNumber = initScene + 1 }"
                     @ended="handleAudioEnded(initScene + 1)">
                     <source :src="$t(`audioKid`)" type="audio/mpeg"/>
@@ -228,8 +230,10 @@ watch(showSubtitles, (newValue) => {
                 <button @click="toggleSubtitles(((4 + index)) % 4)" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" tabindex="0" :aria-label="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle"> {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
             </div>
             </swiper-slide>
-            <div ref="prevButton" class="swiper-button-next text-yellow shadow-shadowYellow2 w-5 h-4_8" role="button" tabindex="0" @keydown.enter="navigateNext" @keydown.space="navigateNext"  aria-label="Siguiente escena" ></div>
-            <div ref="nextButton" class="swiper-button-prev text-yellow shadow-shadowYellow2 w-5 h-4_8" role="button" tabindex="0"  @keydown.enter="navigatePrev" @keydown.space="navigatePrev" aria-label="Escena anterior"></div>
+            <div ref="prevButton" class="swiper-button-next text-yellow shadow-shadowYellow2 w-5 h-4_8" role="button" tabindex="0" @keydown.enter="navigateNext" @keydown.space="navigateNext"  aria-label="Siguiente escena"   v-show="isNextButtonVisible"
+  :tabindex="isNextButtonVisible ? 0 : -1" ></div>
+            <div ref="nextButton" class="swiper-button-prev text-yellow shadow-shadowYellow2 w-5 h-4_8" role="button" tabindex="0"  @keydown.enter="navigatePrev" @keydown.space="navigatePrev" aria-label="Escena anterior"   v-show="isNextButtonVisible"
+  :tabindex="isNextButtonVisible ? 0 : -1"></div>
             <p v-if="currentSubtitle && showSubtitles" role="status" aria-live="polite" class="subtitles fs-text_base text-center m-auto pt-4_4 w-5_6">
                 {{ currentSubtitle.word }}
             </p>
