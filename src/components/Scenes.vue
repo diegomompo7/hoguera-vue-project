@@ -187,12 +187,12 @@ watch(showSubtitles, (newValue) => {
                     <source :src="$t(`audioAdult`)" type="audio/mpeg"/>
                 </audio>
                 <div class="d-flex justify-content-center">
-                <button @click="controlAudio(initScene + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  role="button" :aria-label="isPlayed[initScene + 1] ? messages.pauseAudio : messages.playAudio" tabindex="0">
+                <button @click="controlAudio(initScene + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  role="button" :aria-label="isPlayed[initScene + 1] ? messages.pauseAudio : messages.playAudio" tabindex="0" >
                     {{ isPlayed[initScene + 1] ? 'Pause' : 'Play' }}
                 </button>
-                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" tabindex="0" :aria-label="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle" > {{ showSubtitles ? messages.disableSubtitle : messages.enableSubtitle }}</button>
+                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" tabindex="0" :aria-label="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle" aria-labelledby="audioControlDesc" > {{ showSubtitles ? messages.disableSubtitle : messages.enableSubtitle }}</button>
             </div>
-                <p v-if="currentSubtitle"  role="status" aria-live="polite" class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
+                <p id="audioControlDesc" v-if="currentSubtitle"  role="status" aria-live="polite" class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
                     {{ currentSubtitle.word }}"
                 </p>
             </swiper-slide>
@@ -209,9 +209,9 @@ watch(showSubtitles, (newValue) => {
                 <button @click="controlAudio(initScene + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"  role="button" :aria-label="isPlayed[initScene + 1] ? messages.pauseAudio : messages.playAudio" tabindex="0">
                     {{ isPlayed[initScene + 1] ? 'Pause' : 'Play' }}
                 </button>
-                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" tabindex="0" :aria-label="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle"> {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
+                <button @click="toggleSubtitles" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" tabindex="0" :aria-label="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle" aria-labelledby="audioControlDesc" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
             </div>
-                <p v-if="currentSubtitle && showSubtitles" role="status" aria-live="polite" class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
+                <p id="audioControlDesc" v-if="currentSubtitle && showSubtitles" role="status" aria-live="polite" class="subtitles w-4_5 fs-text_base text-center m-auto pt-4_4">
                     {{ currentSubtitle.word }}
                 </p>
             </swiper-slide>
@@ -227,14 +227,14 @@ watch(showSubtitles, (newValue) => {
                 <button @click="controlAudio(((4 + index)) % 4 + 1)" class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" :aria-label="isPlayed[initScene + 1] ? messages.pauseAudio : messages.playAudio" tabindex="0">
                     {{ isPlayed[((4 + index)) % 4 + 1 ]  ? 'Pause' : 'Play' }}
                 </button>
-                <button @click="toggleSubtitles(((4 + index)) % 4)" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" tabindex="0" :aria-label="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle"> {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
+                <button @click="toggleSubtitles(((4 + index)) % 4)" class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5" role="button" tabindex="0" :aria-label="!showSubtitles ? messages.enableSubtitle : messages.disableSubtitle" aria-labelledby="audioControlDesc" > {{ !showSubtitles ? messages.enableSubtitle : messages.disableSubtitle }}</button>
             </div>
             </swiper-slide>
             <div ref="prevButton" class="swiper-button-next text-yellow shadow-shadowYellow2 w-5 h-4_8" role="button" tabindex="0" @keydown.enter="navigateNext" @keydown.space="navigateNext"  aria-label="Siguiente escena"   v-show="isNextButtonVisible"
   :tabindex="isNextButtonVisible ? 0 : -1" ></div>
             <div ref="nextButton" class="swiper-button-prev text-yellow shadow-shadowYellow2 w-5 h-4_8" role="button" tabindex="0"  @keydown.enter="navigatePrev" @keydown.space="navigatePrev" aria-label="Escena anterior"   v-show="isNextButtonVisible"
   :tabindex="isNextButtonVisible ? 0 : -1"></div>
-            <p v-if="currentSubtitle && showSubtitles" role="status" aria-live="polite" class="subtitles fs-text_base text-center m-auto pt-4_4 w-5_6">
+            <p id="audioControlDesc" v-if="currentSubtitle && showSubtitles" role="status" aria-live="polite" class="subtitles fs-text_base text-center m-auto pt-4_4 w-5_6">
                 {{ currentSubtitle.word }}
             </p>
         </swiper>
