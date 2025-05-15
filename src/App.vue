@@ -54,12 +54,12 @@ console.log(locale)
 
 <template>
   <SkipLinks />
-  <div class="">
+  <main role="main">
   <div class="text-center pt-3">
     <Language :messages="messages" :setLanguage="setLanguage" id="languages"></Language>
   </div>
   <Header :messages="messages" :setLanguage="setLanguage"></Header>
   <Scenes :messages="messages" :language="locale" id="main-content"></Scenes>
-  </div>
+</main>
 
 </template>
