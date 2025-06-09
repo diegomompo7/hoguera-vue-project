@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd hoguera-vite-project/
+            cd hoguera-vue-project/
             npm install
             git pull origin main
             cd /opt/bitnami/nginx/html/
