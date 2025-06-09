@@ -21,7 +21,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            git clone https://github.com/diegomompo7/hoguera-vue-project.git
             cd hoguera-vue-project/
             npm install
             git pull origin main
