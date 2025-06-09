@@ -24,9 +24,6 @@ jobs:
             cd hoguera-vue-project/
             npm install
             git pull origin main
-            cd /opt/bitnami/nginx/html/
-            rm -rf assets/
-            rm index.html vite.svg
             cd /home/bitnami/hoguera-vue-project/
             npm run build
             mv dist/* /opt/bitnami/nginx/html/
