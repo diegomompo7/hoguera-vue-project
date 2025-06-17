@@ -1,8 +1,11 @@
 {
     "scenes": "Escenas",
     "title": "Título",
+    "signLanguage": "Introducción en lenguaje de signos",
+    "videoSignLanguage": "Introducción en lenguaje de signos",
     "sceneAdult" : "Lara Blázquez Pérez",
     "sceneKid" : "Xiana Ugeda Andrés",
+    "swiperScenes": "Carrusel de escenas",
     "descriptionAdult": "Descripción Adult Español",
     "scene1" : "Fuego",
     "description1": "Descripción 1 Español",
@@ -50,5 +53,7 @@
     "subtitle1": "/assets/audio/Spanish/Scene1.json",
     "subtitle2": "/assets/audio/Spanish/Scene2.json",
     "subtitle3": "/assets/audio/Spanish/Scene3.json",
-    "subtitle4": "/assets/audio/Spanish/Scene4.json"
+    "subtitle4": "/assets/audio/Spanish/Scene4.json",
+    "nextScene": "Siguiente escena",
+    "previousScene": "Siguiente escena"
 }

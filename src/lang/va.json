@@ -1,8 +1,11 @@
 {
     "scenes": "Escenes",
     "title": "Títol",
+    "signLanguage": "Introducció en llenguatge de signes",
+    "videoSignLanguage": "Vídeo d'introducció en llenguatge de signes",
     "sceneAdult" : "Lara Blázquez Pérez",
     "sceneKid" : "Xiana Ugeda Andrés",
+    "swiperScenes": "Carrusel d'escenes",
     "descriptionAdult": "Descripció 0 Valenciano",
     "scene1" : "Foc",
     "description1": "Descripció 1 Valenciano",
@@ -50,5 +53,7 @@
     "subtitle1": "/assets/audio/Valencia/Scene1.json",
     "subtitle2": "/assets/audio/Valencia/Scene2.json",
     "subtitle3": "/assets/audio/Valencia/Scene3.json",
-    "subtitle4": "/assets/audio/Valencia/Scene4.json"
+    "subtitle4": "/assets/audio/Valencia/Scene4.json",
+    "nextScene": "Següent escena",
+    "previousScene": "Anterior  escena"
 }

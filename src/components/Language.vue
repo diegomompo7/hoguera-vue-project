@@ -20,8 +20,5 @@ defineProps({
     <img src="../assets/img/spain.svg" :alt="messages.pageSpanish" class="w-5 me-2_25" @click="setLanguage('es')"
       @keypress.enter="setLanguage('es')" @keydown.space="setLanguage('es')" tabindex="0" role="button"
       :aria-label="messages.pageSpanish" :aria-pressed="locale === 'es' ? 'true' : 'false'" />
-    <img src="../assets/img/uk.svg" :alt="messages.pageEnglish" class="w-5 me-2_25" @click="setLanguage('en')"
-      @keypress.enter="setLanguage('en')" @keydown.space="setLanguage('en')" tabindex="0" role="button"
-      :aria-label="messages.pageEnglish" :aria-pressed="locale === 'en' ? 'true' : 'false'" />
   </div>
 </template>
