@@ -19,8 +19,8 @@ defineProps({
         <img src="../assets/img/logo.png" alt="" class="w-25 mx-4_2" role="none" />
         <div class="w-50 align-self-center" :role="messages.sponsors">
             <h2 class="visually-hidden">{{ messages.sponsors }}</h2>
-            <img src="../assets/img/tecnocasa.png" alt="Tecnocasa" class="w-100" tabindex="0" />
-            <img src="../assets/img/electrodepot.png" alt="Electrodepot" class="w-3_5 mt-4_2 ms-3_5" tabindex="0" />
+            <img src="../assets/img/anis_tenis.png" alt="Anis Tenis" class="w-100" tabindex="0" />
+
         </div>
     </div>
 </template>

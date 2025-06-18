@@ -1,6 +1,9 @@
 {
     "scenes": "Escenas",
     "title": "Título",
+    "introduction": "Introducción",
+    "audioGuide": "Audioguía",
+    "signLanguageButton": "Lenguaje de signos",
     "signLanguage": "Introducción en lenguaje de signos",
     "videoSignLanguage": "Introducción en lenguaje de signos",
     "sceneAdult" : "Lara Blázquez Pérez",

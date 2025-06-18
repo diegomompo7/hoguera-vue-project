@@ -19338,6 +19338,15 @@ progress {
   width: 41.666667%;
 }
 
+.swiper-button-next.w-1_2,
+.swiper-button-prev.w-1_2 {
+  width: 50%;
+}
+
+.w-1_2 {
+  width: 50%;
+}
+
 .swiper-button-next.w-7_12,
 .swiper-button-prev.w-7_12 {
   width: 58.333333%;
@@ -19390,6 +19399,15 @@ progress {
 
 .w-11_12 {
   width: 91.666667%;
+}
+
+.swiper-button-next.w-1_1,
+.swiper-button-prev.w-1_1 {
+  width: 100%;
+}
+
+.w-1_1 {
+  width: 100%;
 }
 
 .swiper-button-next.h-0_5,
@@ -23681,4 +23699,9 @@ progress {
 
 .shadow-shadowYellow2 {
   box-shadow: 0em 0em 0.625rem 0.6875rem rgb(255, 255, 0);
+}
+
+:focus {
+  outline: 3px solid #FFD700; /* amarillo dorado */
+  outline-offset: 2px;
 }/*# sourceMappingURL=custom.css.map */

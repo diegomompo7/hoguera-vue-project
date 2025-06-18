@@ -32,8 +32,11 @@ const audioRefs = ref(new Array(7).fill());
 const isPlayed = ref([false, false, false, false, false, false, false]);
 let sceneNumber = ref(0);
 const params = new URLSearchParams(window.location.search);
-let initScene = params.get("init");
-initScene !== null ? (initScene -= 1) : (initScene = -1);
+let initParam = params.get("init");
+const initScene = ref(-1)
+
+initParam !== null ? initScene.value = Number(initParam) - 1
+ : initScene.value = -1
 let currentSubtitle = ref(null);
 const showSubtitles = ref(false);
 let audio = ref();
@@ -169,12 +172,102 @@ watch(showSubtitles, (newValue) => {
     currentSubtitle.value = null;
   }
 });
+
+const gotoScene = (scene) =>{
+   initScene.value = scene
+}
+
 </script>
 
 <template>
   <div class="" :role="messages.scenes">
-    <swiper
+      <swiper
       v-if="initScene === -1"
+      class="bg-black mt-4_6 text-yellow swiper-container"
+      :aria-label="messages.introduction"
+    >
+      <swiper-slide
+        class="d-flex mt-4_2 flex-column text-center"
+        :key="getSlideKey(index)"
+      >
+        <h1 class="fw-bold" role="heading" aria-level="1">
+          {{ messages.introduction }}
+        </h1>
+        <div class="d-flex justify-content-between mt-5 mb-3">
+        <audio
+          :id="`audioPlayer${((4 + index) % 4) + 1}`"
+          :ref="
+            (el) => {
+              audioRefs[((4 + index) % 4) + 1] = el;
+            }
+          "
+          @ended="handleAudioEnded(((4 + index) % 4) + 1)"
+        >
+          <source
+            :src="$t(`audio${((4 + index) % 4) + 1}`)"
+            type="audio/mpeg"
+          />
+        </audio>
+        <div class="d-flex flex-column justify-content-center w-1_2" role="group">
+          <button
+            @click="controlAudio(((4 + index) % 4) + 1)"
+                    @keydown.enter="controlAudio(((4 + index) % 4) + 1)"
+        @keydown.space="controlAudio(((4 + index) % 4) + 1)"
+            class="m-auto fs-text_xl py-2_5 w-9 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"
+            role="button"
+            :aria-label="
+              isPlayed[initScene + 1] ? 'Pause' : messages.audioGuide
+            "
+            tabindex="0"
+          >
+            {{ isPlayed[((4 + index) % 4) + 1] ? "Pause" : messages.audioGuide }}
+          </button>
+          <button
+            @click="toggleSubtitles((4 + index) % 4)"
+                    @keydown.enter="toggleSubtitles((4 + index) % 4)"
+        @keydown.space="toggleSubtitles((4 + index) % 4)"
+            class="mt-5 m-auto fs-text_base w-9 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"
+            role="button"
+            tabindex="0"
+            :aria-label="
+              !showSubtitles
+                ? messages.enableSubtitle
+                : messages.disableSubtitle
+            "
+            aria-labelledby="audioControlDesc"
+          >
+            {{
+              !showSubtitles
+                ? messages.enableSubtitle
+                : messages.disableSubtitle
+            }}
+          </button>
+          </div>
+        <div class="flex-grow-1 mt-5 ">
+          <button
+            @click="gotoScene(6)"
+            class="m-auto fs-text_l py-2_5 w-9 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"
+            role="button"
+            :aria-label="videoSignLanguage"
+            tabindex="0"
+          >
+            {{ messages.signLanguageButton }}
+          </button>
+        </div>
+        </div>
+      </swiper-slide>
+      <p
+        id="audioControlDesc"
+        v-if="currentSubtitle && showSubtitles"
+        role="status"
+        aria-live="polite"
+        class="subtitles fs-text_base text-center m-auto pt-4_4 w-5_6"
+      >
+        {{ currentSubtitle.word }}
+      </p>
+    </swiper>
+    <swiper
+      v-if="initScene === 6"
       class="bg-black mt-4_6 text-yellow"
       role="contentinfo"
       :aria-label="messages.signLanguage"
@@ -293,10 +386,12 @@ watch(showSubtitles, (newValue) => {
         <div class="d-flex flex-column justify-content-center" role="group">
           <button
             @click="controlAudio(((4 + index) % 4) + 1)"
+                                @keydown.enter="controlAudio(((4 + index) % 4) + 1)"
+        @keydown.space="controlAudio(((4 + index) % 4) + 1)"
             class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"
             role="button"
             :aria-label="
-              isPlayed[initScene + 1] ? messages.pauseAudio : messages.playAudio
+              isPlayed[initScene + 1] ? 'Pause' : 'Play'
             "
             tabindex="0"
           >
@@ -304,6 +399,8 @@ watch(showSubtitles, (newValue) => {
           </button>
           <button
             @click="toggleSubtitles((4 + index) % 4)"
+                                @keydown.enter="toggleSubtitles((4 + index) % 4)"
+        @keydown.space="toggleSubtitles((4 + index) % 4)"
             class="mt-5 m-auto fs-text_base w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"
             role="button"
             tabindex="0"
