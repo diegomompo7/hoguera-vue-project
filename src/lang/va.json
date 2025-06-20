@@ -54,6 +54,7 @@
     "subtitle2": "/assets/audio/Valencia/Scene2.json",
     "subtitle3": "/assets/audio/Valencia/Scene3.json",
     "subtitle4": "/assets/audio/Valencia/Scene4.json",
+    "subtitle5": "/assets/audio/Valencia/Scene5.json",
     "nextScene": "Següent escena",
     "previousScene": "Anterior  escena"
 }
