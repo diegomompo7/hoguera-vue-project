@@ -1,5 +1,4 @@
 <script setup>
-import English from "./lang/en.json";
 import Spanish from "./lang/es.json";
 import Valencia from "./lang/va.json";
 import Language from "./components/Language.vue";

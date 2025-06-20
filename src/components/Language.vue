@@ -1,4 +1,6 @@
 <script setup>
+import { ref, reactive, watch, onMounted, onUnmounted } from "vue";
+
 defineProps({
   messages: {
     type: Object,
@@ -9,10 +11,17 @@ defineProps({
     required: true, // Puedes ajustar esto según sea necesario
   },
 });
+
+const params = new URLSearchParams(window.location.search);
+let initParam = params.get("init");
+const initScene = ref(-1)
+
+initParam !== null ? initScene.value = Number(initParam) - 1
+ : initScene.value = -1
 </script>
 
 <template>
-  <div class="text-center mb-3_5" aria-label="Language selection" role="navigation">
+  <div class="text-center mb-3_5" aria-label="Language selection" role="navigation" v-if="initScene === -1">
     <h1 class="visually-hidden" role="heading">{{ messages.language }}</h1>
     <img src="../assets/img/valencia.svg" :alt="messages.pageValencia" class="w-5 me-2_25" @click="setLanguage('va')"
       @keypress.enter="setLanguage('va')" @keydown.space="setLanguage('va')" tabindex="0" role="button"

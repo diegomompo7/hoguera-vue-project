@@ -1,5 +1,5 @@
 {
-    "result": "",
+    "result": "Terra màgica de dansa i foc, d'aigua que banya una deu, on sent orgull del que sóc. Perquè la crema no és morir, és moment de refermar-se i per sempre les fogueres gaudir. I que el foc siga sempre amic, que doni pas a noves creacions, que els obradors troben amic. En cent amb el foc, ell És el gran faedor d'esta festa i el concloure d'aquesta. De la mar, iix una sirena que va onit-se a poc a poc amb el foc, mitjançant una dansa acompanyada per les flames.",
            
     "stab_segments": [
         {
@@ -75,57 +75,71 @@
         {
             "start": 24.000,
             "end": 27.300,
-            "word": "(Termina la música)",
+            "word": "(Acaba la música)",
             "probability": 0.5322265625,
             "segmentNo": 0
         },
         {
             "start": 27.300,
-            "end": 28.000,
-            "word": "(Silencio)",
+            "end": 27.900,
+            "word": "(Silenci)",
             "probability": 0.75146484375,
             "segmentNo": 1
         },
         {
-            "start": 28.000,
-            "end": 32.600,
-            "word": "Enciéndete con el fuego, él es el gran hacedor",
+            "start": 27.900,
+            "end": 32.100,
+            "word": "En cent amb el foc, ell És el gran faedor",
             "probability": 0.75146484375,
             "segmentNo": 1
         },
         {
-            "start": 32.600,
-            "end": 35.400,
-            "word": "de esta fiesta y el cúlmine de ella.",
+            "start": 32.100,
+            "end": 34.900,
+            "word": "d'esta festa i el concloure d'aquesta.",
             "probability": 0.75146484375,
             "segmentNo": 1
         },
         {
-            "start": 35.400,
-            "end": 36.100,
-            "word": "(Silencio)",
+            "start": 34.900,
+            "end": 35.700,
+            "word": "(Silenci)",
             "probability": 0.75146484375,
             "segmentNo": 1
         },
         {
-            "start": 36.100,
-            "end": 39.800,
-            "word": "Podemos observar como del mar sale una sirena",
+            "start": 35.700,
+            "end": 39.900,
+            "word": "De la mar, iix una sirena que va onit-se",
             "probability": 0.75146484375,
             "segmentNo": 1
         },
         {
-            "start": 39.800,
-            "end": 42.100,
-            "word": "que va uniéndose poco a poco con el fuego",
+            "start": 39.900,
+            "end": 40.300,
+            "word": "(Silenci)",
             "probability": 0.75146484375,
             "segmentNo": 1
         },
         {
-            "start": 42.100,
-            "end": 46.800,
-            "word": "mediante una danza acompañada de las llamas.",
+            "start": 40.300,
+            "end": 42.400,
+            "word": "poc a poc amb el foc,",
             "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 42.400,
+            "end": 42.600,
+            "word": "(Silenci)",
+            "probability": 0.75146484375,
+            "segmentNo": 1
+        },
+        {
+            "start": 42.600,
+            "end": 47.100,
+            "word": "mitjançant una dansa acompanyada per les flames.",
+            "probability": 0.79736328125,
             "segmentNo": 1
         }
     ],

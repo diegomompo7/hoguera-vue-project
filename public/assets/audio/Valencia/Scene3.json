@@ -1,225 +1,188 @@
 {
-    "result": "Color i soroll d'uns esclats que naixen on viuen els estels i al cel acaben tots abraçats. Color i soroll que anuncia la pau d'esta batalla festiva per guanyar i on la rivalitat sana és la clau. Color i soroll recorrent la mar per a fer-hi girar tots de la closca i les fogueres tornar a celebrar. Submergiste a una distopia on elegant ets sota la mar, on trobes la seu emblemàtica plaça i catedral de la polvorela pirotècnia. I quins podrien dur a terme la defensa del color? Les meduses, ja que tenen la capacitat d'adaptar-se i generar els seus propis colors. A més a més, estan representats els colors de l'art del Sant Martí que avui dia zones de la diversitat i el respecte cap a ella.",
-           
+    "result": "Desperta les papallones d'un nou futur, que corren per la panxa del foguerer,  una banyada que al final d\u00f3na glamur.  Brilla m\u00e9s l'esplanada quan hi ha una al\u00b7lena,  i Alacant s'entrega a la festa i a l'aldrull,  desitjant que tots tinguin viv\u00e8ncia plena.  Vellers que no volen ni sentir parlar d'una banyada buscant fogueres i flames,  n'han d'entendre que tot s'ha de cremar.  Boniques xiquetes futur de la seua foguera,  imatge d'innoc\u00e8ncia, preparen el banyador,  i quan siguin majors recordaran el que era.",
     "stab_segments": [
         {
-            "start": 0.000,
-            "end": 3.800,
+            "start": 0,
+            "end": 1.74,
             "word": "(Música)",
-            "probability": 1,
+            "probability": 0.5322265625,
+            "segmentNo": 0
+        },
+        {
+            "start": 1.74,
+            "end": 4.7,
+            "word": "Desperta les papallones d'un nou futur,",
+            "probability": 0.80712890625,
+            "segmentNo": 0
+        },
+        {
+            "start": 4.7,
+            "end": 7.7,
+            "word": "que corren per la panxa del foguerer, una banyada",
+            "probability": 0.8291015625,
+            "segmentNo": 0
+        },
+        {
+            "start": 7.7,
+            "end": 9.14,
+            "word": "que al final dóna glamur.",
+            "probability": 0.78125,
             "segmentNo": 1
         },
         {
-            "start": 3.800,
-            "end": 8.200,
-            "word": "Color i soroll d'uns esclats que naixen on viuen",
-            "probability": 0.5322265625,
-            "segmentNo": 0
-        },
-        {
-            "start": 8.200,
-            "end": 11.700,
-            "word": "els estels i al cel acaben tots abraçats.",
-            "probability": 0.5322265625,
-            "segmentNo": 0
-        },
-        {
-            "start": 11.700,
-            "end": 12.700,
+            "start": 9.14,
+            "end": 9.8,
             "word": "(Música)",
-            "probability": 1,
-            "segmentNo": 1
-        },
-        {
-            "start": 12.700,
-            "end": 16.600,
-            "word": "Color i soroll que anuncia la pau d'esta batalla",
             "probability": 0.5322265625,
             "segmentNo": 0
         },
         {
-            "start": 16.600,
-            "end": 20.100,
-            "word": "festiva per guanyar i on la rivalitat sana és la clau.",
-            "probability": 0.5322265625,
-            "segmentNo": 0
+            "start": 9.8,
+            "end": 11.9,
+            "word": "Brilla més l'esplanada quan hi ha una al·lena,",
+            "probability": 0.689208984375,
+            "segmentNo": 2
         },
         {
-            "start": 20.100,
-            "end": 21.400,
+            "start": 11.9,
+            "end": 15.72,
+            "word": "i Alacant s'entrega a la festa i a l'aldrull, desitjant",
+            "probability": 0.8115234375,
+            "segmentNo": 3
+        },
+        {
+            "start": 15.72,
+            "end": 17.42,
+            "word": "que tots tinguin vivència plena.",
+            "probability": 0.81103515625,
+            "segmentNo": 4
+        },
+        {
+            "start": 17.42,
+            "end": 18.4,
             "word": "(Música)",
-            "probability": 1,
-            "segmentNo": 1
-        },
-        {
-            "start": 21.400,
-            "end": 25.400,
-            "word": "Color i soroll recorrent la mar per a fer-hi girar",
-            "probability": 1,
-            "segmentNo": 1
-        },
-        {
-            "start": 25.400,
-            "end": 28.700,
-            "word": "tots de la closca i les fogueres tornar a celebrar.",
             "probability": 0.5322265625,
             "segmentNo": 0
         },
         {
-            "start": 28.700,
-            "end": 32.100,
-            "word": "(Acaba la música)",
+            "start": 18.4,
+            "end": 20.94,
+            "word": "Vellers que no volen ni sentir parlar d'una banyada",
+            "probability": 0.7526041666666666,
+            "segmentNo": 5
+        },
+        {
+            "start": 20.94,
+            "end": 24,
+            "word": "buscant fogueres i flames, n'han d'entendre que",
+            "probability": 0.92529296875,
+            "segmentNo": 5
+        },
+        {
+            "start": 24,
+            "end": 25.02,
+            "word": "tot s'ha de cremar.",
+            "probability": 0.771484375,
+            "segmentNo": 6
+        },
+        {
+            "start": 25.02,
+            "end": 25.96,
+            "word": "(Música)",
             "probability": 0.5322265625,
             "segmentNo": 0
         },
         {
-            "start": 32.100,
-            "end": 33.000,
-            "word": "(Silenci)",
-            "probability": 0.75146484375,
-            "segmentNo": 1
+            "start": 25.96,
+            "end": 28.84,
+            "word": "Boniques xiquetes futur de la seua foguera, imatge",
+            "probability": 0.739990234375,
+            "segmentNo": 7
         },
         {
-            "start": 33.000,
-            "end": 37.400,
-            "word": "Submergiste a una distopia on elegant ets sota",
-            "probability": 0.5322265625,
-            "segmentNo": 0
+            "start": 28.84,
+            "end": 31.72,
+            "word": "d'innocència, preparen el banyador, i quan siguin",
+            "probability": 0.97705078125,
+            "segmentNo": 8
         },
         {
-            "start": 37.400,
-            "end": 42.900,
-            "word": "la mar, on trobes la seu emblemàtica plaça i catedral",
-            "probability": 0.5322265625,
-            "segmentNo": 0
+            "start": 31.72,
+            "end": 33.34,
+            "word": "majors recordaran el que era.",
+            "probability": 0.6579182942708334,
+            "segmentNo": 9
         },
-        {
-            "start": 42.900,
-            "end": 44.300,
-            "word": "de la polvorela pirotècnia.",
-            "probability": 0.5322265625,
-            "segmentNo": 0
-        },
-        {
-            "start": 44.300,
-            "end": 45.100,
-            "word": "(Silenci)",
-            "probability": 0.75146484375,
-            "segmentNo": 1
-        },
-        {
-            "start": 45.100,
-            "end": 48.900,
-            "word": "I quins podrien dur a terme la defensa del color?",
-            "probability": 0.5322265625,
-            "segmentNo": 0
-        },
-        {
-            "start": 48.900,
-            "end": 49.500,
-            "word": "(Silenci)",
-            "probability": 0.75146484375,
-            "segmentNo": 1
-        },
-        {
-            "start": 49.500,
-            "end": 52.700,
-            "word": "Les meduses, ja que tenen la capacitat d'adaptar-se",
-            "probability": 0.5322265625,
-            "segmentNo": 0
-        },
-        {
-            "start": 52.700,
-            "end": 55.100,
-            "word": "generar els seus propis colors.",
-            "probability": 0.5322265625,
-            "segmentNo": 0
-        },
-        {
-            "start": 55.100,
-            "end": 55.900,
-            "word": "(Silenci)",
-            "probability": 0.75146484375,
-            "segmentNo": 1
-        },
-        {
-            "start": 55.900,
-            "end": 59.600,
-            "word": "A més a més, estan representats els colors de l'art",
-            "probability": 0.5322265625,
-            "segmentNo": 0
-        },
-        {
-            "start": 59.600,
-            "end": 62.400,
-            "word": "del Sant Martí que avui dia zones de",
-            "probability": 0.5322265625,
-            "segmentNo": 0
-        },
-        {
-            "start": 62.400,
-            "end": 65.400,
-            "word": "la diversitat i el respecte cap a ella.",
+                {
+            "start": 33.34,
+            "end": 36,
+            "word": "(Música)",
             "probability": 0.5322265625,
             "segmentNo": 0
         }
     ],
     "segment_data": [
         {
-            "start": 0.57,
-            "end": 7.67,
+            "start": 1.74,
+            "end": 6.68,
             "index": 0
         },
         {
-            "start": 7.67,
-            "end": 14.05,
+            "start": 7.14,
+            "end": 9.14,
             "index": 1
         },
         {
-            "start": 14.05,
-            "end": 20.77,
+            "start": 9.8,
+            "end": 11.9,
             "index": 2
         },
         {
-            "start": 20.77,
-            "end": 25.03,
+            "start": 12.3,
+            "end": 14.66,
             "index": 3
+        },
+        {
+            "start": 15.3,
+            "end": 17.42,
+            "index": 4
+        },
+        {
+            "start": 18.4,
+            "end": 22.6,
+            "index": 5
+        },
+        {
+            "start": 23.14,
+            "end": 25.02,
+            "index": 6
+        },
+        {
+            "start": 25.96,
+            "end": 28.1,
+            "index": 7
+        },
+        {
+            "start": 28.1,
+            "end": 30.88,
+            "index": 8
+        },
+        {
+            "start": 31.2,
+            "end": 33.34,
+            "index": 9
         }
     ],
     "vad_segment_array": [
         {
-            "start": 0.56875,
-            "end": 3.236125
-        },
-        {
-            "start": 3.336125,
-            "end": 6.4449375
-        },
-        {
-            "start": 6.5449375,
-            "end": 10.43475
-        },
-        {
-            "start": 10.53475,
-            "end": 15.4263125
-        },
-        {
-            "start": 15.5263125,
-            "end": 20.2140625
-        },
-        {
-            "start": 20.3140625,
-            "end": 22.4041875
-        },
-        {
-            "start": 22.5041875,
-            "end": 25.050875
+            "start": 1.744,
+            "end": 33.904
         }
     ],
     "diarization": [
         {
             "start": "0",
-            "end": "25.730612",
+            "end": "36.408",
             "speaker": "SPEAKER_00"
         }
     ]
