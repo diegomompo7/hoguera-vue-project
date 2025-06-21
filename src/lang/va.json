@@ -50,11 +50,11 @@
     "roleSubtitle": "Subtítols",
     "audioControls": "Controls d'àudio",
     "subtitleIntroduction": "/assets/audio/Valencia/SceneIntroduction.json",
-    "subtitle1": "/assets/audio/Valencia/Scene12025.json",
-    "subtitle2": "/assets/audio/Valencia/Scene22025.json",
-    "subtitle3": "/assets/audio/Valencia/Scene32025.json",
-    "subtitle4": "/assets/audio/Valencia/Scene42025.json",
-    "subtitle5": "/assets/audio/Valencia/Scene52025.json",
+    "subtitle1": "/assets/audio/Valencia/Scene1.json",
+    "subtitle2": "/assets/audio/Valencia/Scene2.json",
+    "subtitle3": "/assets/audio/Valencia/Scene3.json",
+    "subtitle4": "/assets/audio/Valencia/Scene4.json",
+    "subtitle5": "/assets/audio/Valencia/Scene5.json",
     "nextScene": "Següent escena",
     "previousScene": "Anterior  escena"
 }
