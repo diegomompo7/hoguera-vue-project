@@ -220,7 +220,7 @@ const gotoScene = (scene) => {
           <div class="flex-grow-1 mt-5 ">
             <button @click="gotoScene(6)"
               class="m-auto fs-text_l py-2_5 w-9 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"
-              role="button" :aria-label="videoSignLanguage" tabindex="0">
+              role="button" :aria-label="messages.videoSignLanguage" tabindex="0">
               {{ messages.signLanguageButton }}
             </button>
           </div>
@@ -236,7 +236,7 @@ const gotoScene = (scene) => {
       <swiper-slide class="d-flex mt-4_2 flex-column text-center">
         <h1 class="fw-bold">{{ messages.signLanguage }}</h1>
         <video src="../assets/video/signLanguageIntroduction.mp4" class="w-5_12 m-auto pb-2_5" controls autoplay
-          :aria-label="videoSignLanguage"></video>
+          :aria-label="messages.videoSignLanguage"></video>
       </swiper-slide>
     </swiper>
     <swiper v-if="initScene < 5 && initScene != -1" class="bg-black mt-4_6 text-yellow swiper-container"

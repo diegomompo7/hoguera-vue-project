@@ -1,6 +1,7 @@
 <script setup>
 import Spanish from "./lang/es.json";
 import Valencia from "./lang/va.json";
+import SkipLink from "./components/SkipLink.vue";
 import Language from "./components/Language.vue";
 import Header from "./components/Header.vue";
 import Scenes from "./components/Scenes.vue";
@@ -52,7 +53,7 @@ console.log(locale)
 </script>
 
 <template>
-  <SkipLinks />
+  <SkipLink />
   <main role="main">
   <div class="text-center pt-3">
     <Language :messages="messages" :setLanguage="setLanguage" id="languages"></Language>
