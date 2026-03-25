@@ -1,7 +1,9 @@
-body{
-    background-color:#00bfff;
-    width: 89%;
-    margin: auto;
+body {
+    background-color: #00bfff;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
     height: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

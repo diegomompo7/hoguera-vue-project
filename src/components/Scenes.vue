@@ -31,8 +31,11 @@ const navigation = {
 const { t } = useI18n();
 const { initScene } = useQueryParams();
 
-const { audioRefs, isPlayed, controlAudio, pauseAll, handleAudioEnded: audioEnded } =
-  useAudioControl(() => props.language);
+const {
+  audioRefs, isPlayed, isLoading, isError,
+  controlAudio, pauseAll, handleAudioEnded: audioEnded,
+  handleLoadStart, handleCanPlay, handleAudioError,
+} = useAudioControl(() => props.language);
 
 const { showSubtitles, currentSubtitle, sceneNumber, toggleSubtitles, resetSubtitles } =
   useSubtitles(audioRefs, () => props.messages);
@@ -85,16 +88,21 @@ const gotoScene = (scene) => {
           <audio id="audioPlayerIntroduction" :ref="(el) => {
             (audioRefs[initScene + 1] = el), (sceneNumber = initScene + 1);
           }
-            " @ended="onAudioEnded(initScene + 1)">
+            " @ended="onAudioEnded(initScene + 1)"
+            @loadstart="handleLoadStart(initScene + 1)"
+            @canplay="handleCanPlay(initScene + 1)"
+            @error="handleAudioError(initScene + 1)">
             <source :src="$t(`audioIntroduction`)" type="audio/mpeg" />
           </audio>
           <div class="d-flex flex-column justify-content-center w-1_2" role="group">
             <button @click="controlAudio(initScene + 1)" @keydown.enter="controlAudio(initScene + 1)"
               @keydown.space="controlAudio(initScene + 1)"
               class="m-auto fs-text_xl py-2_5 w-9 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"
-              aria-controls="audioPlayerIntroduction" role="button" :aria-label="isPlayed[initScene + 1] ? messages.pauseAudio : messages.playAudio
-                " tabindex="0">
-              {{ isPlayed[initScene + 1] ? "Pause" : messages.audioGuide }}
+              aria-controls="audioPlayerIntroduction" role="button"
+              :aria-label="isError[initScene + 1] ? messages.audioError : isLoading[initScene + 1] ? messages.audioLoading : isPlayed[initScene + 1] ? messages.pauseAudio : messages.playAudio"
+              :disabled="isError[initScene + 1] || isLoading[initScene + 1]"
+              tabindex="0">
+              {{ isError[initScene + 1] ? messages.audioError : isLoading[initScene + 1] ? messages.audioLoading : isPlayed[initScene + 1] ? "Pause" : messages.audioGuide }}
             </button>
 
             <button @click="toggleSubtitles"
@@ -144,16 +152,21 @@ const gotoScene = (scene) => {
         <audio :id="`audioPlayer${((5 + index) % 5) + 1}`" :ref="(el) => {
             audioRefs[((5 + index) % 5) + 1] = el;
           }
-          " @ended="onAudioEnded(((5 + index) % 5) + 1)">
+          " @ended="onAudioEnded(((5 + index) % 5) + 1)"
+          @loadstart="handleLoadStart(((5 + index) % 5) + 1)"
+          @canplay="handleCanPlay(((5 + index) % 5) + 1)"
+          @error="handleAudioError(((5 + index) % 5) + 1)">
           <source :src="$t(`audio${((5 + index) % 5) + 1}`)" type="audio/mpeg" />
         </audio>
         <div class="d-flex flex-column justify-content-center" role="group">
           <button @click="controlAudio(((5 + index) % 5) + 1)" @keydown.enter="controlAudio(((5 + index) % 5) + 1)"
             @keydown.space="controlAudio(((5 + index) % 5) + 1)"
             class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"
-            :aria-controls="`audioPlayer${((5 + index) % 5) + 1}`" role="button" :aria-label="isPlayed[((5 + index) % 5) + 1] ? messages.pauseAudio : messages.playAudio
-              " tabindex="0">
-            {{ isPlayed[((5 + index) % 5) + 1] ? "Pause" : "Play" }}
+            :aria-controls="`audioPlayer${((5 + index) % 5) + 1}`" role="button"
+            :aria-label="isError[((5 + index) % 5) + 1] ? messages.audioError : isLoading[((5 + index) % 5) + 1] ? messages.audioLoading : isPlayed[((5 + index) % 5) + 1] ? messages.pauseAudio : messages.playAudio"
+            :disabled="isError[((5 + index) % 5) + 1] || isLoading[((5 + index) % 5) + 1]"
+            tabindex="0">
+            {{ isError[((5 + index) % 5) + 1] ? messages.audioError : isLoading[((5 + index) % 5) + 1] ? messages.audioLoading : isPlayed[((5 + index) % 5) + 1] ? "Pause" : "Play" }}
           </button>
           <button @click="toggleSubtitles((5 + index) % 5)" @keydown.enter="toggleSubtitles((5 + index) % 5)"
             @keydown.space="toggleSubtitles((5 + index) % 5)"

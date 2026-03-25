@@ -46,6 +46,10 @@
     "header": "Cabecera",
     "sponsors": "Patrocinadores",
     "titleAudioAdult": "Bienvenida de la belleza",
+    "playAudio": "Reproducir audioguía",
+    "pauseAudio": "Pausar audioguía",
+    "audioLoading": "Cargando...",
+    "audioError": "Error al cargar el audio",
     "enableSubtitle": "Activar Subtítulos",
     "disableSubtitle": "Desactivar Subtítulos",
     "audioControls": "Controles de audio",
@@ -56,6 +60,7 @@
     "subtitle2": "/assets/audio/Spanish/Scene2.json",
     "subtitle3": "/assets/audio/Spanish/Scene3.json",
     "subtitle4": "/assets/audio/Spanish/Scene4.json",
+    "subtitle5": "/assets/audio/Spanish/Scene5.json",
     "nextScene": "Siguiente escena",
     "previousScene": "Escena anterior"
 }

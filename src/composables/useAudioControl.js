@@ -3,6 +3,8 @@ import { ref, watch } from 'vue'
 export function useAudioControl(getLanguage) {
   const audioRefs = ref(new Array(7).fill(null))
   const isPlayed = ref(new Array(7).fill(false))
+  const isLoading = ref(new Array(7).fill(false))
+  const isError = ref(new Array(7).fill(false))
 
   watch(getLanguage, () => {
     audioRefs.value.forEach((audioRef, index) => {
@@ -11,6 +13,8 @@ export function useAudioControl(getLanguage) {
         audioRef.currentTime = 0
         audioRef.load()
         isPlayed.value[index] = false
+        isLoading.value[index] = false
+        isError.value[index] = false
       }
     })
   })
@@ -38,5 +42,24 @@ export function useAudioControl(getLanguage) {
     isPlayed.value[index] = false
   }
 
-  return { audioRefs, isPlayed, controlAudio, pauseAll, handleAudioEnded }
+  const handleLoadStart = (index) => {
+    isLoading.value[index] = true
+    isError.value[index] = false
+  }
+
+  const handleCanPlay = (index) => {
+    isLoading.value[index] = false
+  }
+
+  const handleAudioError = (index) => {
+    isLoading.value[index] = false
+    isError.value[index] = true
+    isPlayed.value[index] = false
+  }
+
+  return {
+    audioRefs, isPlayed, isLoading, isError,
+    controlAudio, pauseAll, handleAudioEnded,
+    handleLoadStart, handleCanPlay, handleAudioError,
+  }
 }
