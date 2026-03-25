@@ -41,6 +41,11 @@ let currentSubtitle = ref(null);
 const showSubtitles = ref(false);
 let audio = ref();
 let intervalId = null;
+const swiperInstance = ref(null);
+const currentSlide = ref(0);
+const onSwiper = (swiper) => {
+  swiperInstance.value = swiper;
+};
 const getSlideKey = (index) => `${((5 + index) % 5) + 1}`;
 const getSceneMessage = (index) => t(`scene${((5 + index) % 5) + 1}`);
 
@@ -61,6 +66,10 @@ watch(
 );
 
 const handleSlideChange = () => {
+
+  if (swiperInstance.value) {
+    currentSlide.value = swiperInstance.value.realIndex;
+  }
 
   audioRefs.value.forEach((ref, index) => {
     if (ref && isPlayed.value[index]) {
@@ -161,7 +170,7 @@ const gotoScene = (scene) => {
 </script>
 
 <template>
-  <div class="" :role="messages.scenes">
+  <div class="" role="region" :aria-label="messages.scenes">
     <swiper v-if="initScene === -1" class="bg-black mt-4_6 text-yellow swiper-container"
       :aria-label="messages.introduction">
       <swiper-slide class="d-flex mt-4_2 flex-column text-center" :key="getSlideKey(index)">
@@ -172,14 +181,14 @@ const gotoScene = (scene) => {
           <audio id="audioPlayerIntroduction" :ref="(el) => {
             (audioRefs[initScene + 1] = el), (sceneNumber = initScene + 1);
           }
-            " @ended="handleAudioEnded(initScene + 1)" :alt="messages.introduction">
+            " @ended="handleAudioEnded(initScene + 1)">
             <source :src="$t(`audioIntroduction`)" type="audio/mpeg" />
           </audio>
           <div class="d-flex flex-column justify-content-center w-1_2" role="group">
             <button @click="controlAudio(initScene + 1)" @keydown.enter="controlAudio(initScene + 1)"
               @keydown.space="controlAudio(initScene + 1)"
               class="m-auto fs-text_xl py-2_5 w-9 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"
-              role="button" :aria-label="isPlayed[initScene + 1] ? messages.pauseAudio : messages.playAudio
+              aria-controls="audioPlayerIntroduction" role="button" :aria-label="isPlayed[initScene + 1] ? messages.pauseAudio : messages.playAudio
                 " tabindex="0">
               {{ isPlayed[initScene + 1] ? "Pause" : messages.audioGuide }}
             </button>
@@ -215,13 +224,15 @@ const gotoScene = (scene) => {
       :aria-label="messages.signLanguage">
       <swiper-slide class="d-flex mt-4_2 flex-column text-center">
         <h1 class="fw-bold">{{ messages.signLanguage }}</h1>
-        <video src="../assets/video/signLanguageIntroduction.mp4" class="w-5_12 m-auto pb-2_5" controls autoplay
-          :aria-label="messages.videoSignLanguage"></video>
+        <video src="../assets/video/signLanguageIntroduction.mp4" class="w-5_12 m-auto pb-2_5" controls autoplay playsinline
+          :aria-label="messages.videoSignLanguage">
+          <track kind="captions" src="/assets/captions/signLanguageIntroduction.vtt" srclang="es" label="Español" default />
+        </video>
       </swiper-slide>
     </swiper>
     <swiper v-if="initScene < 5 && initScene != -1" class="bg-black mt-4_6 text-yellow swiper-container"
       :navigation="navigation" :modules="modules" :loop="true" :initial-slide="initScene != null ? initScene : 0"
-      @slideChangeTransitionStart="handleSlideChange" role="contentinfo" :aria-label="messages.swiperScenes">
+      @swiper="onSwiper" @slideChangeTransitionStart="handleSlideChange" role="contentinfo" :aria-label="messages.swiperScenes + ' (' + (currentSlide + 1) + ' / 5)'">
       <swiper-slide class="d-flex mt-4_2 flex-column text-center" v-for="(slide, index) in 5" :key="getSlideKey(index)">
         <h1 class="fw-bold" role="heading" aria-level="1">
           {{ getSceneMessage(index) }}
@@ -236,7 +247,7 @@ const gotoScene = (scene) => {
           <button @click="controlAudio(((5 + index) % 5) + 1)" @keydown.enter="controlAudio(((5 + index) % 5) + 1)"
             @keydown.space="controlAudio(((5 + index) % 5) + 1)"
             class="mt-5 m-auto fs-text_2xl py-2_5 w-1_3 border border-0 bg-black text-yellow shadow-shadowYellow1 rounded-5"
-            role="button" :aria-label="isPlayed[initScene + 1] ? 'Pause' : 'Play'
+            :aria-controls="`audioPlayer${((5 + index) % 5) + 1}`" role="button" :aria-label="isPlayed[((5 + index) % 5) + 1] ? messages.pauseAudio : messages.playAudio
               " tabindex="0">
             {{ isPlayed[((5 + index) % 5) + 1] ? "Pause" : "Play" }}
           </button>
