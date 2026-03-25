@@ -3,15 +3,18 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-import { ref, reactive, watch, onMounted, onUnmounted } from "vue";
+import { ref } from "vue";
 import { useI18n } from "vue-i18n";
+import { useQueryParams } from "@/composables/useQueryParams";
+import { useAudioControl } from "@/composables/useAudioControl";
+import { useSubtitles } from "@/composables/useSubtitles";
 
-const isNextButtonVisible = ref(true); // Cambia según lógica de navegación
+const isNextButtonVisible = ref(true);
 
 const props = defineProps({
   messages: {
     type: Object,
-    required: true, // Puedes ajustar esto según sea necesario
+    required: true,
   },
   language: {
     type: String,
@@ -20,86 +23,40 @@ const props = defineProps({
 });
 
 const modules = [Navigation];
-
-// Navigation options
 const navigation = {
   nextEl: ".swiper-button-next",
   prevEl: ".swiper-button-prev",
 };
 
 const { t } = useI18n();
-const audioRefs = ref(new Array(7).fill());
-const isPlayed = ref([false, false, false, false, false, false, false]);
-let sceneNumber = ref(0);
-const params = new URLSearchParams(window.location.search);
-let initParam = params.get("init");
-const initScene = ref(-1)
+const { initScene } = useQueryParams();
 
-initParam !== null ? initScene.value = Number(initParam) - 1
-  : initScene.value = -1
-let currentSubtitle = ref(null);
-const showSubtitles = ref(false);
-let audio = ref();
-let intervalId = null;
+const { audioRefs, isPlayed, controlAudio, pauseAll, handleAudioEnded: audioEnded } =
+  useAudioControl(() => props.language);
+
+const { showSubtitles, currentSubtitle, sceneNumber, toggleSubtitles, resetSubtitles } =
+  useSubtitles(audioRefs, () => props.messages);
+
 const swiperInstance = ref(null);
 const currentSlide = ref(0);
 const onSwiper = (swiper) => {
   swiperInstance.value = swiper;
 };
+
 const getSlideKey = (index) => `${((5 + index) % 5) + 1}`;
 const getSceneMessage = (index) => t(`scene${((5 + index) % 5) + 1}`);
 
-watch(
-  () => props.language,
-  () => {
-    audioRefs.value.forEach((audioRef, index) => {
-      if (audioRef) {
-        audioRef.pause();
-        audioRef.currentTime = 0;
-        audioRef.load();
-        isPlayed.value = isPlayed.value.map((state, i) =>
-          i === index ? false : state
-        );
-      }
-    });
-  }
-);
-
 const handleSlideChange = () => {
-
   if (swiperInstance.value) {
     currentSlide.value = swiperInstance.value.realIndex;
   }
-
-  audioRefs.value.forEach((ref, index) => {
-    if (ref && isPlayed.value[index]) {
-      ref.pause();
-      ref.currentTime = 0;
-      isPlayed.value[index] = false;
-      showSubtitles.value = false;
-    }
-  });
-
-  currentSubtitle.value = null;
+  pauseAll();
+  resetSubtitles();
 };
 
-const controlAudio = (index) => {
-  isPlayed.value[index] = !isPlayed.value[index];
-  audio = audioRefs.value[index];
-
-  if (audio) {
-    if (isPlayed.value[index]) {
-      audio.play();
-    } else {
-      audio.pause();
-    }
-  }
-};
-
-const handleAudioEnded = (sceneNumber) => {
-  isPlayed.value[sceneNumber] = false;
-  currentSubtitle.value = null;
-  showSubtitles.value = false;
+const onAudioEnded = (index) => {
+  audioEnded(index);
+  resetSubtitles();
 };
 
 const navigateNext = () => {
@@ -110,62 +67,9 @@ const navigatePrev = () => {
   document.querySelector(".swiper-button-prev")?.click();
 };
 
-/*const updateSubtitles = async() => {
-    
-    if (showSubtitles.value) {
-        const audio = audioRefs.value[sceneNumber.value];
-        if (audio) {
-            const foundWord = audio?.id.replace("audioPlayer", "");
-            try {
-                const response = await fetch(props.messages[`subtitle${foundWord}`]);
-                const data = await response.json();
-                const currentTime = audio.currentTime;
-                currentSubtitle.value = data.stab_segments.find(sub => currentTime >= sub.start && currentTime <= sub.end);
-            } catch (error) {
-                console.error("Error fetching subtitles:", error);
-            }
-    }
-};
-}*/
-
-const updateSubtitles = async () => {
-  if (showSubtitles.value) {
-    const audio = audioRefs.value[sceneNumber.value];
-    if (audio) {
-      const foundWord = audio.id.replace("audioPlayer", "");
-      try {
-        const response = await fetch(props.messages[`subtitle${foundWord}`]);
-        const data = await response.json();
-        const currentTime = audio.currentTime;
-        currentSubtitle.value = data.stab_segments.find(
-          (sub) => currentTime >= sub.start && currentTime <= sub.end
-        );
-
-      } catch (error) {
-        console.error("Error al obtener los subtítulos:", error);
-      }
-    }
-  }
-};
-const toggleSubtitles = (subtitleNumber) => {
-  showSubtitles.value = !showSubtitles.value;
-  sceneNumber.value = subtitleNumber + 1;
-};
-
-watch(showSubtitles, (newValue) => {
-  if (newValue) {
-    intervalId = setInterval(updateSubtitles, 100);
-  } else {
-    if (intervalId) {
-      clearInterval(intervalId);
-    }
-    currentSubtitle.value = null;
-  }
-});
-
 const gotoScene = (scene) => {
-  initScene.value = scene
-}
+  initScene.value = scene;
+};
 
 </script>
 
@@ -181,7 +85,7 @@ const gotoScene = (scene) => {
           <audio id="audioPlayerIntroduction" :ref="(el) => {
             (audioRefs[initScene + 1] = el), (sceneNumber = initScene + 1);
           }
-            " @ended="handleAudioEnded(initScene + 1)">
+            " @ended="onAudioEnded(initScene + 1)">
             <source :src="$t(`audioIntroduction`)" type="audio/mpeg" />
           </audio>
           <div class="d-flex flex-column justify-content-center w-1_2" role="group">
@@ -233,14 +137,14 @@ const gotoScene = (scene) => {
     <swiper v-if="initScene < 5 && initScene != -1" class="bg-black mt-4_6 text-yellow swiper-container"
       :navigation="navigation" :modules="modules" :loop="true" :initial-slide="initScene != null ? initScene : 0"
       @swiper="onSwiper" @slideChangeTransitionStart="handleSlideChange" role="contentinfo" :aria-label="messages.swiperScenes + ' (' + (currentSlide + 1) + ' / 5)'">
-      <swiper-slide class="d-flex mt-4_2 flex-column text-center" v-for="(slide, index) in 5" :key="getSlideKey(index)">
+      <swiper-slide class="d-flex mt-4_2 flex-column text-center" v-for="(_, index) in 5" :key="getSlideKey(index)">
         <h1 class="fw-bold" role="heading" aria-level="1">
           {{ getSceneMessage(index) }}
         </h1>
         <audio :id="`audioPlayer${((5 + index) % 5) + 1}`" :ref="(el) => {
             audioRefs[((5 + index) % 5) + 1] = el;
           }
-          " @ended="handleAudioEnded(((5 + index) % 5) + 1)">
+          " @ended="onAudioEnded(((5 + index) % 5) + 1)">
           <source :src="$t(`audio${((5 + index) % 5) + 1}`)" type="audio/mpeg" />
         </audio>
         <div class="d-flex flex-column justify-content-center" role="group">

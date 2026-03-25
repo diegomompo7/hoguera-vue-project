@@ -7,20 +7,15 @@ import Header from "./components/Header.vue";
 import Scenes from "./components/Scenes.vue";
 import { ref, watch, onMounted } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { useQueryParams } from '@/composables/useQueryParams';
 
 const { locale } = useI18n();
+const { lang } = useQueryParams();
 
 let messages = ref({});
 
-const params = new URLSearchParams(window.location.search);
-const lang = params.get('lang');
-
 onMounted(() => {
-      if (lang != null) {
-        locale.value = lang;
-      } else {
-        locale.value = 'va';
-      }
+  locale.value = lang ?? 'va';
 });
 
 const setLanguage = (lang) =>{
@@ -34,11 +29,6 @@ watch(locale, (newLocale) => {
           locale.value = 'es';
           messages.value = Spanish;
           document.documentElement.lang = 'es'
-          break;
-        case 'en':
-        locale.value = 'en';
-          messages.value = English;
-          document.documentElement.lang = 'en'
           break;
         case 'va':
         locale.value = 'va';

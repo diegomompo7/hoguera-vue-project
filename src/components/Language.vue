@@ -1,26 +1,20 @@
 <script setup>
-import { ref, reactive, watch, onMounted, onUnmounted } from "vue";
 import { useI18n } from "vue-i18n";
+import { useQueryParams } from "@/composables/useQueryParams";
 
 const { locale } = useI18n();
+const { initScene } = useQueryParams();
 
 defineProps({
   messages: {
     type: Object,
-    required: true, // Puedes ajustar esto según sea necesario
+    required: true,
   },
   setLanguage: {
     type: Function,
-    required: true, // Puedes ajustar esto según sea necesario
+    required: true,
   },
 });
-
-const params = new URLSearchParams(window.location.search);
-let initParam = params.get("init");
-const initScene = ref(-1)
-
-initParam !== null ? initScene.value = Number(initParam) - 1
- : initScene.value = -1
 </script>
 
 <template>
