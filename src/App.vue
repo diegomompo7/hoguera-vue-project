@@ -49,7 +49,6 @@ watch(locale, (newLocale) => {
       
     });
 
-console.log(locale)
 </script>
 
 <template>

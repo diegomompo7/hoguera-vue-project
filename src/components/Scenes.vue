@@ -44,10 +44,6 @@ let intervalId = null;
 const getSlideKey = (index) => `${((5 + index) % 5) + 1}`;
 const getSceneMessage = (index) => t(`scene${((5 + index) % 5) + 1}`);
 
-console.log(showSubtitles);
-
-console.log(props.language);
-
 watch(
   () => props.language,
   () => {
@@ -65,11 +61,9 @@ watch(
 );
 
 const handleSlideChange = () => {
-  console.log("Entra a la función");
 
   audioRefs.value.forEach((ref, index) => {
     if (ref && isPlayed.value[index]) {
-      console.log(`Pausando audio de escena: ${sceneNumber.value}`);
       ref.pause();
       ref.currentTime = 0;
       isPlayed.value[index] = false;
@@ -81,26 +75,19 @@ const handleSlideChange = () => {
 };
 
 const controlAudio = (index) => {
-  console.log(index);
   isPlayed.value[index] = !isPlayed.value[index];
   audio = audioRefs.value[index];
 
-  console.log(isPlayed.value[index]);
-
   if (audio) {
-    console.log("1");
     if (isPlayed.value[index]) {
-      console.log("2");
       audio.play();
     } else {
-      console.log("3");
       audio.pause();
     }
   }
 };
 
 const handleAudioEnded = (sceneNumber) => {
-  console.log(sceneNumber);
   isPlayed.value[sceneNumber] = false;
   currentSubtitle.value = null;
   showSubtitles.value = false;
@@ -133,24 +120,18 @@ const navigatePrev = () => {
 }*/
 
 const updateSubtitles = async () => {
-  console.log("Actualización de subtítulos iniciada");
   if (showSubtitles.value) {
     const audio = audioRefs.value[sceneNumber.value];
-    console.log("Audio actual:", audio);
     if (audio) {
       const foundWord = audio.id.replace("audioPlayer", "");
-      console.log("Palabra encontrada:", foundWord);
       try {
         const response = await fetch(props.messages[`subtitle${foundWord}`]);
-        console.log(response)
         const data = await response.json();
-        console.log("Datos de subtítulos:", data);
         const currentTime = audio.currentTime;
-        console.log("Tiempo actual del audio:", currentTime);
         currentSubtitle.value = data.stab_segments.find(
           (sub) => currentTime >= sub.start && currentTime <= sub.end
         );
-        console.log("Subtítulo actual:", currentSubtitle.value);
+
       } catch (error) {
         console.error("Error al obtener los subtítulos:", error);
       }
@@ -163,7 +144,6 @@ const toggleSubtitles = (subtitleNumber) => {
 };
 
 watch(showSubtitles, (newValue) => {
-  console.log(newValue);
   if (newValue) {
     intervalId = setInterval(updateSubtitles, 100);
   } else {
