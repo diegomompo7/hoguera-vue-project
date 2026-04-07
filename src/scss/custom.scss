@@ -1,3 +1,6 @@
+// Design tokens — must be first so CSS vars are available globally
+@import "./tokens/tokens";
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";

@@ -1,9 +1,22 @@
+/* =============================================================
+   BASE STYLES — usa los tokens definidos en _tokens.scss
+   ============================================================= */
+
 body {
-    background-color: #00bfff;
+    background-color: var(--color-body-bg, #00bfff);
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 var(--space-md, 1rem);
     height: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-body, 'Inter', system-ui, sans-serif);
+    font-size: var(--text-base, 1rem);
+    line-height: var(--line-height-base, 1.6);
+    color: var(--color-text, #FFD700);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display, 'Playfair Display', Georgia, serif);
+    line-height: var(--line-height-tight, 1.2);
+    font-weight: var(--font-weight-bold, 700);
 }
