@@ -1,6 +1,8 @@
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
+import { EffectFade } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/effect-fade";
 import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 import { useQueryParams } from "@/composables/useQueryParams";
@@ -87,8 +89,8 @@ const audioText = (key, playText) => {
       v-if="initScene === -1"
       class="bg-black mt-4_6 text-yellow swiper-container"
       :aria-label="messages.introduction">
-      <swiper-slide class="d-flex mt-4_2 flex-column text-center">
-        <h1 class="fw-bold" role="heading" aria-level="1">
+      <swiper-slide class="scene-card">
+        <h1 class="scene-card__title" role="heading" aria-level="1">
           {{ messages.introduction }}
         </h1>
 
@@ -103,7 +105,7 @@ const audioText = (key, playText) => {
         </audio>
 
         <!-- Layout mobile-first: columna en móvil, fila en sm+ -->
-        <div class="intro-controls mt-5 mb-3">
+        <div class="intro-controls">
           <!-- Controles de audio + subtítulos -->
           <div class="audio-controls" role="group" :aria-label="messages.audioControls">
             <button
@@ -139,13 +141,15 @@ const audioText = (key, playText) => {
         </div>
       </swiper-slide>
 
-      <p
-        v-if="currentSubtitle && showSubtitles"
-        role="status"
-        aria-live="polite"
-        class="subtitles fs-text_base text-center m-auto pt-4_4 w-5_6">
-        {{ currentSubtitle.word }}
-      </p>
+      <Transition name="subtitle-fade">
+        <p
+          v-if="currentSubtitle && showSubtitles"
+          role="status"
+          aria-live="polite"
+          class="subtitles">
+          {{ currentSubtitle.word }}
+        </p>
+      </Transition>
     </swiper>
 
     <!-- ── Video lengua de signos ────────────────────────── -->
@@ -154,8 +158,8 @@ const audioText = (key, playText) => {
       class="bg-black mt-4_6 text-yellow"
       role="contentinfo"
       :aria-label="messages.signLanguage">
-      <swiper-slide class="d-flex mt-4_2 flex-column text-center">
-        <h1 class="fw-bold">{{ messages.signLanguage }}</h1>
+      <swiper-slide class="scene-card">
+        <h1 class="scene-card__title">{{ messages.signLanguage }}</h1>
         <video
           src="../assets/video/signLanguageIntroduction.mp4"
           class="w-5_12 m-auto pb-2_5"
@@ -171,6 +175,9 @@ const audioText = (key, playText) => {
     <swiper
       class="bg-black mt-4_6 text-yellow swiper-container"
       :loop="true"
+      :speed="400"
+      effect="fade"
+      :modules="[EffectFade]"
       :initial-slide="initScene != null ? initScene : 0"
       @swiper="onSwiper"
       @slideChangeTransitionStart="handleSlideChange"
@@ -178,11 +185,11 @@ const audioText = (key, playText) => {
       :aria-label="`${messages.swiperScenes} (${currentSlide + 1} / 5)`">
 
       <swiper-slide
-        class="d-flex mt-4_2 flex-column text-center scene-slide"
+        class="scene-card"
         v-for="(_, index) in 5"
         :key="getSlideKey(index)">
 
-        <h1 class="fw-bold" role="heading" aria-level="1">
+        <h1 class="scene-card__title" role="heading" aria-level="1">
           {{ getSceneMessage(index) }}
         </h1>
 
@@ -196,7 +203,7 @@ const audioText = (key, playText) => {
           <source :src="$t(`audio${((5 + index) % 5) + 1}`)" type="audio/mpeg" />
         </audio>
 
-        <div class="audio-controls mt-5" role="group" :aria-label="messages.audioControls">
+        <div class="audio-controls" role="group" :aria-label="messages.audioControls">
           <button
             class="btn-audio"
             :class="{ 'is-loading': isLoading[((5 + index) % 5) + 1], 'is-error': isError[((5 + index) % 5) + 1] }"
@@ -216,13 +223,15 @@ const audioText = (key, playText) => {
         </div>
       </swiper-slide>
 
-      <p
-        v-if="currentSubtitle && showSubtitles"
-        role="status"
-        aria-live="polite"
-        class="subtitles fs-text_base text-center">
-        {{ currentSubtitle.word }}
-      </p>
+      <Transition name="subtitle-fade">
+        <p
+          v-if="currentSubtitle && showSubtitles"
+          role="status"
+          aria-live="polite"
+          class="subtitles fs-text_base text-center">
+          {{ currentSubtitle.word }}
+        </p>
+      </Transition>
     </swiper>
 
     <!-- Navegación fuera del swiper: sin posibilidad de solapamiento -->
@@ -248,13 +257,23 @@ const audioText = (key, playText) => {
 </template>
 
 <style scoped>
-/* ── Subtítulos: flujo normal bajo los controles de audio */
+.scene-card {
+  padding-bottom: 0;
+}
+
+/* ── Subtítulos: badge/pill bajo los controles de audio */
 .subtitles {
   display: block;
-  width: 85%;
+  width: fit-content;
+  max-width: 85%;
   margin: 0.75rem auto 0;
-  padding: 0.375rem 0.75rem;
+  padding: 0.5rem 1.25rem;
   text-align: center;
+  background: rgba(255, 215, 0, 0.08);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: 2rem;
+  font-size: var(--text-sm, 0.875rem);
+  line-height: 1.5;
 }
 
 /* ── Navegación externa: fila bajo el swiper ─────────────── */
@@ -263,20 +282,20 @@ const audioText = (key, playText) => {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  padding: 0.625rem 0 0.75rem;
+  padding: 0.625rem 0 calc(0.75rem + env(safe-area-inset-bottom, 0px));
 }
 
 .scene-nav__btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   background: transparent;
   color: var(--color-accent, #FFD700);
-  border: 1px solid rgba(255, 215, 0, 0.45);
+  border: 1px solid rgba(255, 215, 0, 0.6);
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   line-height: 1;
   cursor: pointer;
   transition: background 150ms ease, border-color 150ms ease;
@@ -287,14 +306,25 @@ const audioText = (key, playText) => {
   border-color: var(--color-accent, #FFD700);
 }
 
+.scene-nav__btn:active {
+  transform: scale(0.88);
+  transition: transform 100ms ease;
+}
+
 .scene-nav__btn:focus-visible {
   outline: 3px solid var(--color-accent, #FFD700);
   outline-offset: 2px;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .scene-nav__btn:active {
+    transform: none;
+  }
+}
+
 .scene-nav__counter {
-  color: rgba(255, 215, 0, 0.65);
-  font-size: var(--text-sm, 0.875rem);
+  color: rgba(255, 215, 0, 0.85);
+  font-size: var(--text-base, 1rem);
   font-family: var(--font-body, system-ui);
   min-width: 2.5rem;
   text-align: center;
@@ -302,11 +332,25 @@ const audioText = (key, playText) => {
 
 /* ── Intro: layout mobile-first ─────────────────────────────
    Columna centrada en móvil → fila en pantallas sm (≥576px)  */
+/* Solo en slides del carrusel, donde audio-controls es hijo directo de scene-card */
+.scene-card > .audio-controls {
+  margin-top: var(--space-2xl, 3rem);
+}
+
 .intro-controls {
+  margin-top: var(--space-lg, 1.5rem);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
+}
+
+/* Botones más compactos en la intro para que quepan los subtítulos */
+.intro-controls .btn-audio,
+.intro-controls .btn-audio--secondary {
+  min-height: 44px;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.25rem;
 }
 
 .intro-controls__sep {
@@ -326,6 +370,23 @@ const audioText = (key, playText) => {
     height: 80px;
     background: rgba(255, 215, 0, 0.25);
     align-self: center;
+  }
+}
+
+/* ── Subtitle fade transition ────────────────────────────── */
+.subtitle-fade-enter-active,
+.subtitle-fade-leave-active {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.subtitle-fade-enter-from,
+.subtitle-fade-leave-to {
+  opacity: 0;
+  transform: translateY(4px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .subtitle-fade-enter-active,
+  .subtitle-fade-leave-active {
+    transition: none;
   }
 }
 </style>

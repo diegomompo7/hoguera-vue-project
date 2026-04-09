@@ -3,11 +3,13 @@
    ============================================================= */
 
 body {
-    background-color: var(--color-body-bg, #00bfff);
+    background: linear-gradient(160deg, #00CFFF 0%, #00A8E0 60%, #0090C8 100%);
+    background-attachment: fixed;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 var(--space-md, 1rem);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
     height: auto;
     font-family: var(--font-body, 'Inter', system-ui, sans-serif);
     font-size: var(--text-base, 1rem);
@@ -19,4 +21,18 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display, 'Playfair Display', Georgia, serif);
     line-height: var(--line-height-tight, 1.2);
     font-weight: var(--font-weight-bold, 700);
+}
+
+/* ── App fade-in al cargar ─────────────────────────────────── */
+#app {
+    animation: appFadeIn 0.4s ease forwards;
+}
+
+@keyframes appFadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #app { animation: none; }
 }

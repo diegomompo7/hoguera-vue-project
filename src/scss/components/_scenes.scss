@@ -1,0 +1,39 @@
+// =============================================================
+// SCENE CARD — mobile-first
+// =============================================================
+
+.scene-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2xl, 3rem);
+  padding: var(--space-xl, 2rem) var(--space-md, 1rem);
+  text-align: center;
+  width: 100%;
+}
+
+.scene-card__title {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(1.75rem, 6vw, 2.5rem);
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  color: var(--color-accent, #FFD700);
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Animación de entrada al activarse el slide */
+.swiper-slide-active .scene-card__title {
+  animation: titleFadeIn 0.35s ease forwards;
+}
+
+@keyframes titleFadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .swiper-slide-active .scene-card__title {
+    animation: none;
+  }
+}

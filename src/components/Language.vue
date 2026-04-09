@@ -34,8 +34,31 @@ defineProps({
 <style scoped>
 .language-btn {
   background: none;
-  border: none;
-  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 4px;
+  min-width: 44px;
+  min-height: 44px;
   cursor: pointer;
+  opacity: 0.55;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-btn:hover {
+  opacity: 0.85;
+}
+
+.language-btn[aria-pressed="true"] {
+  border-color: #FFD700;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .language-btn {
+    transition: none;
+  }
 }
 </style>

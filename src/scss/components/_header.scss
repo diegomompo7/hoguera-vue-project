@@ -1,0 +1,35 @@
+// =============================================================
+// HEADER — mobile-first
+// =============================================================
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  gap: 0.5rem;
+}
+
+.site-header__logo {
+  width: 90px;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.site-header__sponsor {
+  width: 45%;
+  max-width: 200px;
+  height: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-header__logo    { width: 120px; }
+  .site-header__sponsor { width: 50%; max-width: 300px; }
+}
