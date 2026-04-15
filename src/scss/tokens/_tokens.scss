@@ -60,10 +60,10 @@
   --radius-full: 9999px;
 
   // ── Sombras / Glow ───────────────────────────────────────
-  --glow-sm:  0 0 0.4em 0.25em var(--color-accent-glow);
-  --glow-md:  0 0 0.7em 0.45em var(--color-accent-glow);
-  --glow-lg:  0 0 1em   0.65em var(--color-accent-glow);
-  --glow-error: 0 0 0.5em 0.3em var(--color-error-glow);
+  --glow-sm:    0 0 0.4em 0.25em var(--color-accent-glow);
+  --glow-md:    0 0 0.7em 0.45em var(--color-accent-glow);
+  --glow-lg:    0 0 1em   0.65em var(--color-accent-glow);
+  --glow-error: 0 0 0.5em 0.3em  var(--color-error-glow);
 
   // ── Transiciones ─────────────────────────────────────────
   --transition-fast:   150ms ease;

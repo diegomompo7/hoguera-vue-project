@@ -1,18 +1,17 @@
 $theme-colors: (
-  "yellow" : #ffff00
+  "yellow": #ffff00
 );
 
 @mixin apply-color($color) {
-   color: map-get($theme-colors, $color);
-  }
-  
-  @each $color, $value in $theme-colors {
-    .swiper-button-next.text-#{$color},
-    .swiper-button-prev.text-#{$color} {
-      @include apply-color($color);
-    }
-    .text-#{$color} {
-      @include apply-color($color);
-    }
-  }
+  color: map-get($theme-colors, $color);
+}
 
+@each $color, $value in $theme-colors {
+  .swiper-button-next.text-#{$color},
+  .swiper-button-prev.text-#{$color} {
+    @include apply-color($color);
+  }
+  .text-#{$color} {
+    @include apply-color($color);
+  }
+}

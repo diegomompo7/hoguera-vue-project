@@ -1,12 +1,11 @@
 import { ref } from 'vue'
 
+// Singleton: parsed once, shared across all components
+const params = new URLSearchParams(window.location.search)
+const _lang = params.get('lang')
+const initParam = params.get('init')
+const _initScene = ref(initParam !== null ? Number(initParam) - 1 : -1)
+
 export function useQueryParams() {
-  const params = new URLSearchParams(window.location.search)
-
-  const lang = params.get('lang')
-
-  const initParam = params.get('init')
-  const initScene = ref(initParam !== null ? Number(initParam) - 1 : -1)
-
-  return { lang, initScene }
+  return { lang: _lang, initScene: _initScene }
 }

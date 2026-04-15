@@ -1,21 +1,30 @@
-<!-- components/SkipLinks.vue -->
-
-<script>
-const removeAriaHidden = (event) => {
-  event.target.setAttribute("aria-hidden", "false");
-};
-
-const addAriaHidden = (event) => {
-  event.target.setAttribute("aria-hidden", "true");
-};
+<script setup>
+const removeAriaHidden = (event) => event.target.removeAttribute('aria-hidden')
+const addAriaHidden    = (event) => event.target.setAttribute('aria-hidden', 'true')
 </script>
 
 <template>
-  <nav class="skip-links" aria-label="Enlaces de salto">
-    <a href="#languages" class="skip-link" aria-label="Saltar al menú de idiomas" tabindex="-1" aria-hidden="true"
-      @focus="removeAriaHidden($event)" @blur="addAriaHidden($event)">Saltar al menú</a>
-    <a href="#main-content" class="skip-link" aria-label="Saltar al contenido principal" tabindex="-1"
-      aria-hidden="true" @focus="removeAriaHidden($event)" @blur="addAriaHidden($event)">Saltar al contenido</a>
+  <nav class="skip-links" aria-label="Enllaços de salt">
+    <a
+      href="#languages"
+      class="skip-link"
+      aria-label="Saltar al menú d'idiomes"
+      tabindex="0"
+      aria-hidden="true"
+      @focus="removeAriaHidden"
+      @blur="addAriaHidden">
+      Saltar al menú
+    </a>
+    <a
+      href="#main-content"
+      class="skip-link"
+      aria-label="Saltar al contingut principal"
+      tabindex="0"
+      aria-hidden="true"
+      @focus="removeAriaHidden"
+      @blur="addAriaHidden">
+      Saltar al contingut
+    </a>
   </nav>
 </template>
 
@@ -37,7 +46,8 @@ const addAriaHidden = (event) => {
   height: auto;
   padding: 1rem;
   background: #000;
-  color: #fff;
+  color: #FFD700;
   text-decoration: none;
+  font-family: var(--font-body, system-ui);
 }
 </style>

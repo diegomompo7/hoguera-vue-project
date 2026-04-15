@@ -51,7 +51,7 @@ export function useSubtitles(audioRefs, getMessages) {
               subtitleCache = data.stab_segments ?? []
             }
           } catch (e) {
-            console.error('Error loading subtitles:', e)
+            // subtitle fetch failed — no subtitles shown
           }
         }
         intervalId = setInterval(updateCurrentSubtitle, 100)
@@ -63,7 +63,6 @@ export function useSubtitles(audioRefs, getMessages) {
     }
   }
 
-  // 2.5 — Cleanup garantizado al destruir el componente (evita memory leak)
   onUnmounted(() => {
     clearInterval_()
   })

@@ -1,7 +1,7 @@
 $marginPadding: (
   /* 2px  */ 0_5: 0.125rem,
   /* 6px  */ 1_5: 0.375rem,
-  /* 10px  */ 2_25: 0.625rem,
+  /* 10px */ 2_25: 0.625rem,
   /* 12px */ 2_5: 0.75rem,
   /* 14px */ 2_75: 0.875rem,
   /* 20px */ 3_5: 1.25rem,
@@ -29,22 +29,12 @@ $marginPadding: (
   /* 384px */ 21: 24rem
 );
 
-
 @mixin applyMarginPadding($size, $property) {
   #{$property}: map-get($marginPadding, $size);
 }
 
-
 @mixin generate-utility-classes($type, $properties) {
   @each $size, $value in $marginPadding {
-
-    .swiper-button-next.text-.#{$type}-#{$size},
-    .swiper-button-prev.text-.#{$type}-#{$size} {
-      @each $property in $properties {
-        @include applyMarginPadding($size, $property);
-      }
-    }
-
     .#{$type}-#{$size} {
       @each $property in $properties {
         @include applyMarginPadding($size, $property);
