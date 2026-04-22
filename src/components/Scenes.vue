@@ -134,7 +134,7 @@ const onAudioEnded = (index) => {
           v-if="currentSubtitle && showSubtitles"
           role="status"
           aria-live="polite"
-          class="subtitles fs-text_base text-center m-auto pt-4_4 w-5_6">
+          class="subtitles fs-text_base text-center">
           {{ currentSubtitle.word }}
         </p>
       </Transition>
@@ -257,12 +257,13 @@ const onAudioEnded = (index) => {
   padding-bottom: 0;
 }
 
+
 /* ── Subtítulos ──────────────────────────────────────────── */
 .subtitles {
   display: block;
   width: fit-content;
   max-width: 85%;
-  margin: 1.5rem auto 0;
+  margin: 1.5rem auto 0.75rem;
   padding: 0.5rem 1.25rem;
   text-align: center;
   background: rgba(255, 215, 0, 0.08);
@@ -323,11 +324,12 @@ const onAudioEnded = (index) => {
 /* ── Intro: mobile-first ─────────────────────────────────── */
 .scene-card > .audio-controls {
   margin-top: var(--space-2xl, 3rem);
+  padding-bottom: var(--space-md, 1rem);
 }
 
 .intro-controls {
   margin-top: var(--space-lg, 1.5rem);
-  padding-bottom: var(--space-xl, 2rem);
+  padding-bottom: calc(var(--space-md, 1rem) + env(safe-area-inset-bottom, 0px));
   display: flex;
   flex-direction: column;
   align-items: center;
