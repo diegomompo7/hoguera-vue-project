@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "choco": "^0.2.1",
+    "openai-whisper": "^1.0.2",
     "swiper": "^11.1.10",
     "vue": "^3.4.37",
     "vue-i18n": "^9.14.0"

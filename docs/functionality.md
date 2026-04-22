@@ -1,102 +1,109 @@
 # Funcionalidad
 
-## Modos de pantalla
+## Los tres modos de pantalla
 
-La app tiene tres modos controlados por el parámetro `initScene` (derivado de `?init` en la URL):
+La app renderiza uno de tres bloques según el valor de `initScene` (derivado de `?init` en la URL):
 
-| Valor `initScene` | URL | Pantalla |
+| `initScene` | URL de entrada | Pantalla |
 |---|---|---|
-| `-1` (por defecto) | `/` o `/?init=` sin valor | **Introducción** |
-| `0`–`4` | `/?init=1` → `/?init=5` | **Carrusel de escenas** (escena 1–5) |
+| `-1` | `/` (sin parámetro) | **Introducción** |
+| `0`–`4` | `/?init=1` → `/?init=5` | **Carrusel de escenas** |
 | `6` | (navegación interna) | **Vídeo lengua de signos** |
 
----
-
-## Pantalla 1: Introducción
-
-Se muestra cuando no hay `?init` en la URL.
-
-**Contenido:**
-- Selector de idioma (banderas valenciana y española) — solo visible en esta pantalla
-- Cabecera con logo y patrocinador (Anís Tenis)
-- Título "Introducció / Introducción"
-- Botón **Audioguía** — reproduce el audio de introducción
-- Botón **Activar/Desactivar Subtítulos** — muestra subtítulos sincronizados
-- Botón **Llenguatge de signes / Lenguaje de signos** — navega a la pantalla de vídeo
-
-**Flujo de usuario típico:**
-```
-1. Usuario selecciona idioma (valenciano por defecto)
-2. Pulsa "Audioguía" → se reproduce el audio de introducción
-3. Pulsa "Activar Subtítols" → aparecen subtítulos sincronizados
-4. Pulsa "Língua de signes" → navega al vídeo
-   O bien:
-4. Navega manualmente a las escenas via URL (?init=1)
-```
+El cambio entre modos se hace mutando `initScene.value` desde `Scenes.vue`:
+- Al pulsar "Llengua de signes" → `initScene.value = 6`
+- Al cargar con `?init=N` → `initScene = N - 1` (conversión 1-indexed → 0-indexed)
 
 ---
 
-## Pantalla 2: Carrusel de escenas
+## Pantalla 1 — Introducción (`initScene === -1`)
 
-Se accede con `?init=1` hasta `?init=5` (o navegando con las flechas desde cualquier escena).
+Se muestra al entrar sin `?init` en la URL. Es la pantalla de bienvenida.
 
-**Estructura de cada slide:**
+**Estructura visual:**
 ```
-┌─────────────────────────────┐
-│  [Título de la escena]      │  ← .scene-card__title (Playfair Display, dorado)
-│                             │
-│  [Botón Reproduir audioguia]│  ← .btn-audio (primario)
-│  [Botón Activar Subtítols]  │  ← .btn-audio--secondary
-│                             │
-│  [Subtítulos pill]          │  ← solo si showSubtitles && hay subtítulo activo
-└─────────────────────────────┘
-│  ‹    1 / 5    ›            │  ← .scene-nav (fuera del Swiper)
-└─────────────────────────────┘
+[ selector idioma VA | ES ]      ← Language.vue (solo visible aquí)
+[ logo ]         [ Anis Tenis ]  ← Header.vue
+┌────────────────────────────┐
+│    Introducció / Introducción  ← h1 .scene-card__title
+│                            │
+│  [ Audioguia ]             │  ← botón primario .btn-audio
+│  [ Activar Subtítols ]     │  ← botón secundario .btn-audio--secondary
+│                            │
+│  [ Llenguatge de signes ]  │  ← botón primario → navega a modo 3
+└────────────────────────────┘
+```
+
+**Flujo típico del usuario:**
+1. Selecciona idioma (valenciano por defecto)
+2. Pulsa "Audioguia" → se reproduce el audio de introducción
+3. Pulsa "Activar Subtítols" → aparecen subtítulos sincronizados con el audio
+4. Pulsa "Llengua de signes" → navega al vídeo de introducción en LSE
+
+---
+
+## Pantalla 2 — Carrusel de escenas (`initScene` 0–4)
+
+Se accede con `?init=1` hasta `?init=5`, o navegando con las flechas dentro del carrusel.
+
+**Estructura visual:**
+```
+[ logo ]         [ Anis Tenis ]
+┌────────────────────────────┐
+│    Banyà / Fuego           │  ← .scene-card__title (Playfair Display, dorado)
+│                            │
+│  [ Reproduir audioguia ]   │  ← .btn-audio
+│  [ Activar Subtítols ]     │  ← .btn-audio--secondary
+│                            │
+│  [subtítulos pill]         │  ← visible solo si showSubtitles && hay segmento activo
+└────────────────────────────┘
+  ‹        1 / 5        ›       ← .scene-nav (fuera del Swiper)
 ```
 
 **Navegación:**
-- Flechas `‹` / `›` — cambio de escena con efecto fade (400ms)
-- Swipe táctil — funciona por defecto con Swiper
-- El carrusel es **loop**: después de la escena 5 vuelve a la 1
-- Al cambiar de escena: el audio de la escena anterior se **pausa y resetea**
+- Flechas `‹` / `›` — cambian de escena (botones externos al Swiper)
+- Swipe táctil horizontal
+- Carrusel con **loop** — tras la escena 5 vuelve a la 1
+- Al cambiar de escena: el audio en curso se **pausa y resetea**, los subtítulos se **ocultan**
 
 **5 escenas:**
 
 | Escena | Valenciano | Español |
 |---|---|---|
-| 1 | Banyà | Banyà (El Baño) |
-| 2 | La nympha del aigua | La ninfa del agua |
-| 3 | Papallones a la panxa | Mariposas en el estómago |
-| 4 | Memòria de foc | Memoria de fuego |
-| 5 | Cendra i flama | Ceniza y llama |
+| 1 | Banyà | Fuego |
+| 2 | La nympha del aigua | Tierra de luz y color |
+| 3 | Papallones a la panxa | Agua |
+| 4 | Àngels que banyen a alacant i a als alacantins | Noche |
+| 5 | Una banyà centenaria | Escena 5 Español |
 
 ---
 
-## Pantalla 3: Vídeo lengua de signos
+## Pantalla 3 — Vídeo lengua de signos (`initScene === 6`)
 
-Se accede desde el botón "Llengua de signes" de la introducción.
+Se accede desde el botón "Llengua de signes" de la pantalla de introducción.
 
 **Contenido:**
-- Título "Introducció en llengua de signes"
-- Vídeo `signLanguageIntroduction.mp4` con controles nativos, autoplay, playsinline
-- Track de captions VTT adjunto
+- Título `messages.signLanguage` en `.scene-card__title`
+- Vídeo `signLanguageIntroduction.mp4` con controles nativos
+- Track de captions VTT adjunto (`/assets/captions/signLanguageIntroduction.vtt`)
+- Sin `autoplay` — el usuario inicia la reproducción
 
 ---
 
 ## Feature: Reproducción de audio
 
-Cada pantalla tiene su propio elemento `<audio>` con ID único (`audioPlayerIntroduction`, `audioPlayer1`–`audioPlayer5`).
+Cada pantalla tiene su elemento `<audio>` con `id` único (`audioPlayerIntroduction`, `audioPlayer1`–`audioPlayer5`). El botón cambia de texto y estado según el ciclo de vida del audio:
 
-**Estados del botón de audio:**
-
-| Estado | Clase CSS | Texto del botón | Comportamiento |
+| Estado | Clase CSS | Texto del botón | Comportamiento del botón |
 |---|---|---|---|
-| Listo | (ninguna) | "Reproduir audioguia" | Clic → reproduce |
-| Reproduciendo | (ninguna) | "Pausar audioguia" | Clic → pausa |
-| Cargando | `.is-loading` | "Carregant..." | Pulse animation, deshabilitado |
-| Error | `.is-error` | "Error al carregar l'àudio" | Rojo, deshabilitado |
+| Listo | — | `playAudio` / `audioGuide` | Clic → reproduce |
+| Reproduciendo | — | `pauseAudio` | Clic → pausa |
+| Cargando | `.is-loading` | `audioLoading` | Animación pulse, deshabilitado |
+| Error | `.is-error` | `audioError` | Texto rojo, no interactivo |
 
-**Reseteo automático:** cuando el usuario cambia de idioma, todos los audios se pausan, vuelven a `currentTime = 0` y recargan el fichero de la nueva lengua.
+**Reseteo automático al cambiar idioma:** todos los audios se pausan, vuelven a `currentTime = 0` y recargan el fichero del nuevo idioma (porque `src` apunta a rutas distintas según el locale).
+
+**Al terminar el audio:** se marca `isPlayed[index] = false` y los subtítulos se ocultan automáticamente (`onAudioEnded` en `Scenes.vue`).
 
 ---
 
@@ -104,44 +111,56 @@ Cada pantalla tiene su propio elemento `<audio>` con ID único (`audioPlayerIntr
 
 **Activación:**
 1. Usuario pulsa "Activar Subtítols"
-2. Se hace un **fetch único** del JSON de subtítulos para esa escena
+2. Se hace un **fetch único** del JSON de subtítulos de esa escena (`messages.subtitle1`, `messages.subtitleIntroduction`, etc.)
 3. Se inicia un `setInterval` cada 100ms que lee `audio.currentTime`
-4. El subtítulo activo se muestra en un pill dorado semitransparente
+4. El segmento activo se muestra en un pill dorado semitransparente
+
+**Durante la reproducción:** cada 100ms se busca en el cache el segmento cuyo `start ≤ currentTime ≤ end`. Si lo hay, se muestra; si no, el pill desaparece.
 
 **Desactivación:**
-1. Usuario pulsa "Desactivar Subtítols"
-2. Se limpia el intervalo y se borra el cache
+- Usuario pulsa "Desactivar Subtítols" → se limpia el intervalo, se borra el cache, el pill desaparece
+- El audio termina de forma natural → `onAudioEnded` llama a `resetSubtitles()` automáticamente
+- El usuario cambia de escena → `handleSlideChange` llama a `resetSubtitles()`
 
-**Formato del fichero JSON de subtítulos:**
+**Formato del JSON de subtítulos:**
 ```json
 {
   "stab_segments": [
-    { "start": 0.0, "end": 1.8, "word": "Banyar" },
-    { "start": 1.8, "end": 3.2, "word": "és sinònim de piler del foc" },
-    ...
+    { "start": 0.0,  "end": 1.8,  "word": "Banyar" },
+    { "start": 1.8,  "end": 3.2,  "word": "és sinònim de piler del foc," },
+    { "start": 3.2,  "end": 5.0,  "word": "és l'humitat de l'estiu" }
   ]
 }
 ```
-
-La ruta del JSON de subtítulos viene del fichero de traducciones: `es.json` → `subtitle1`, `subtitle2`… apuntan a `/assets/audio/Spanish/Scene1.json` etc.
 
 ---
 
 ## Feature: Selector de idioma
 
-- Solo visible en la pantalla de introducción (`initScene === -1`)
-- Banderas como botones con `aria-pressed` (indica idioma activo)
-- Idioma activo: borde dorado + opacidad 100%
-- Idioma inactivo: sin borde + opacidad 55%
+- Visible **solo** en la pantalla de introducción (`initScene === -1`)
+- Dos botones con banderas: valenciana y española
+- Estado activo: borde dorado + opacidad 100% + `aria-pressed="true"`
+- Estado inactivo: sin borde + opacidad 55% + `aria-pressed="false"`
 - Por defecto: **valenciano** (`va`)
-- Sobrescribible con `?lang=es`
+- Sobrescribible con `?lang=es` en la URL
+
+**Cambiar idioma:**
+1. `setLanguage('va'|'es')` → cambia `locale.value`
+2. El watcher en `App.vue` → actualiza `messages.value` + `document.documentElement.lang`
+3. Los `<audio>` se recargan automáticamente (nueva `src` del nuevo idioma)
+4. El `$t('audioX')` de los elementos `<source>` apunta a rutas distintas según el locale
 
 ---
 
 ## Feature: Accesibilidad
 
-- **Skip links:** al pulsar Tab desde el inicio, aparecen dos enlaces para saltar al menú de idiomas o al contenido principal
-- **Teclado:** todos los botones son navegables y activables con Enter/Space
-- **ARIA:** cada audio tiene `aria-controls`, el carrusel tiene `aria-label` con "escena X de 5"
-- **Zoom:** viewport permite hasta 5× (accesibilidad visual)
-- **Reduced motion:** si el usuario tiene activado `prefers-reduced-motion`, se desactivan todas las animaciones y transiciones CSS
+| Función | Implementación |
+|---|---|
+| Skip links | Tab desde el inicio muestra enlace "Saltar al menú" / "Saltar al contingut" |
+| Teclado | Todos los botones son navegables y activables con Enter/Space |
+| Estados anunciados | `aria-live="polite"` en el área de subtítulos |
+| Foco visible | `:focus-visible` con outline dorado 3px (solo al navegar con teclado) |
+| Movimiento reducido | `prefers-reduced-motion: reduce` desactiva animaciones CSS y transiciones |
+| Zoom | Viewport permite hasta 5× de zoom (usuarios con baja visión) |
+| Contraste | Dorado `#FFD700` sobre negro `#000` — ratio alto |
+| Touch targets | Mínimo 44px en todos los elementos interactivos |

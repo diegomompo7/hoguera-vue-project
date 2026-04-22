@@ -5,57 +5,55 @@
 ```
 hoguera-vue-project/
 │
-├── index.html                        # Entrada HTML: fuentes, meta OG, mount point #app
-├── vite.config.js                    # Build config: alias @, code splitting, drop console
-├── package.json                      # Dependencias y scripts npm
-│
-├── public/                           # Assets estáticos servidos en /
+├── index.html                        # Entrada HTML: fuentes Google, meta OG, mount point #app
+├── vite.config.js                    # Build: alias @, code splitting, drop console en prod
+├── package.json
 │
 ├── docs/                             # Esta documentación
 │
 └── src/
-    ├── main.js                       # Bootstrap de la app: createApp + i18n + mount
+    ├── main.js                       # Bootstrap: createApp + vue-i18n + mount
     ├── App.vue                       # Raíz: gestión de locale, composición de layout
-    ├── style.css                     # Estilos base: body, h1-h6, fade-in app
+    ├── style.css                     # Estilos base: gradiente fondo, fade-in app, tipografía
     │
     ├── components/
-    │   ├── SkipLink.vue              # Accesibilidad: skip links para teclado
-    │   ├── Language.vue              # Selector de idioma (banderas ES/VA)
-    │   ├── Header.vue                # Cabecera: logo + patrocinador
-    │   └── Scenes.vue                # Componente principal: carousel + audio + subtítulos
+    │   ├── SkipLink.vue              # Skip links para navegación por teclado
+    │   ├── Language.vue              # Selector de idioma (banderas VA/ES)
+    │   ├── Header.vue                # Cabecera: logo + patrocinador Anis Tenis
+    │   └── Scenes.vue                # Componente principal: 3 modos + audio + subtítulos
     │
     ├── composables/
-    │   ├── useQueryParams.js         # Lee ?lang y ?init de la URL
-    │   ├── useAudioControl.js        # Estado y control de reproducción de audio
-    │   └── useSubtitles.js           # Sincronización de subtítulos con audio
+    │   ├── useQueryParams.js         # Singleton: lee ?lang y ?init de la URL
+    │   ├── useAudioControl.js        # Estado y control de reproducción de 7 audios
+    │   └── useSubtitles.js           # Fetch + polling de subtítulos sincronizados
     │
     ├── lang/
-    │   ├── es.json                   # Traducciones español + rutas de assets ES
-    │   └── va.json                   # Traducciones valenciano + rutas de assets VA
+    │   ├── es.json                   # Textos ES + rutas de assets en español
+    │   └── va.json                   # Textos VA + rutas de assets en valenciano
     │
     ├── assets/
     │   ├── audio/
-    │   │   ├── Spanish/              # MP3 + JSON subtítulos en español
-    │   │   └── Valencia/             # MP3 + JSON subtítulos en valenciano
+    │   │   ├── Spanish/              # SceneIntroduction.mp3, Scene1–5.mp3 + JSON subtítulos
+    │   │   └── Valencia/             # SceneIntroduction.mp3, Scene1–52025.mp3 + JSON subtítulos
     │   ├── img/                      # logo.png, anis_tenis.png, valencia.svg, spain.svg
     │   └── video/
     │       └── signLanguageIntroduction.mp4
     │
     └── scss/
-        ├── custom.scss               # Fichero principal SCSS (importa todo)
-        ├── custom.css                # Compilado de custom.scss (no editar manualmente)
+        ├── custom.scss               # Fichero principal (importa todo el sistema)
+        ├── custom.css                # Compilado de custom.scss — NO editar manualmente
         ├── tokens/
-        │   └── _tokens.scss          # CSS Custom Properties: colores, tipografía, espaciado
+        │   └── _tokens.scss          # CSS Custom Properties: colores, tipografía, espaciado, glow
         ├── components/
-        │   ├── _buttons.scss         # Sistema de botones .btn-audio
-        │   ├── _scenes.scss          # .scene-card y .scene-card__title
-        │   └── _header.scss          # .site-header y variantes
+        │   ├── _buttons.scss         # .btn-audio y .btn-audio--secondary
+        │   ├── _scenes.scss          # .scene-card y animación titleFadeIn
+        │   └── _header.scss          # .site-header BEM
         └── utilities/
-            ├── _widths.scss          # Clases .w-* (fijas y porcentuales)
-            ├── _heights.scss         # Clases .h-*
-            ├── _marginPadding.scss   # Clases .mt-*, .mb-*, .p-*, etc.
-            ├── _colors.scss          # .text-yellow y variantes Swiper
-            └── _fontSize.scss        # Clases .fs-text_xs → .fs-text_9xl
+            ├── _widths.scss          # .w-* (rem fijos + porcentuales fraccionales)
+            ├── _heights.scss         # .h-*
+            ├── _marginPadding.scss   # .mt-*, .mb-*, .pt-*, .pb-*, etc.
+            ├── _colors.scss          # .text-yellow
+            └── _fontSize.scss        # .fs-text_xs → .fs-text_9xl
 ```
 
 ---
@@ -65,68 +63,70 @@ hoguera-vue-project/
 ```
 index.html
     └── #app
-         └── App.vue  (gestiona locale + messages)
-              ├── SkipLink.vue          (skip links accesibilidad)
-              ├── Language.vue          (selector idioma, solo en intro)
-              ├── Header.vue            (logo + patrocinador)
-              └── Scenes.vue            (lógica principal)
-                   ├── useQueryParams   (URL params)
-                   ├── useAudioControl  (audio state)
-                   ├── useSubtitles     (subtitle sync)
-                   ├── [Swiper intro]   (pantalla introducción)
-                   ├── [Swiper signos]  (vídeo lengua de signos)
-                   └── [Swiper escenas] (carrusel 5 escenas + nav)
+         └── App.vue           ← gestiona locale + messages ref
+              ├── SkipLink.vue  ← skip links (teclado)
+              ├── Language.vue  ← selector idioma VA/ES (solo en intro)
+              ├── Header.vue    ← logo + patrocinador
+              └── Scenes.vue    ← lógica principal
+                   ├── useQueryParams   (URL → initScene singleton)
+                   ├── useAudioControl  (7 slots de audio)
+                   ├── useSubtitles     (fetch + polling)
+                   ├── [Swiper intro]   initScene === -1
+                   ├── [Swiper signos]  initScene === 6
+                   └── [Swiper carrusel] initScene 0–4
 ```
 
 ---
 
-## Flujo de bootstrap
+## Flujo de arranque
 
 ```
-1. index.html se carga
-   ├── Google Fonts (Inter + Playfair Display) — preconnect + link
-   ├── custom.css (SCSS compilado con tokens + Bootstrap utilities + componentes)
-   └── Bootstrap JS (CDN) + ACS Barrierfree script
+1. index.html carga
+   ├── Google Fonts (Inter + Playfair Display) — preconnect
+   ├── src/scss/custom.css — tokens + Bootstrap utilities + botones + escenas + header
+   └── Bootstrap JS (CDN) + ACS Barrierfree (accesibilidad)
 
 2. main.js ejecuta
    ├── Importa es.json y va.json
-   ├── Crea instancia vue-i18n (legacy: false, defaultLocale: 'ca-valencia')
-   ├── Lee document.documentElement.lang para locale inicial
-   ├── Monta App.vue en #app
-   └── style.css aplica fade-in en #app (0.4s)
+   ├── Crea instancia vue-i18n
+   │    ├── legacy: false  (modo Composition API)
+   │    ├── locale: document.documentElement.lang || 'ca-valencia'
+   │    ├── defaultLocale: 'ca-valencia'
+   │    └── messages: { 'es': Spanish, 'ca-valencia': Valencia }
+   └── createApp(App).use(i18n).mount('#app')
 
-3. App.vue onMounted
-   ├── Lee ?lang de URL (useQueryParams) → sobrescribe locale si presente
-   └── watch(locale) → actualiza messages.value + document.lang
+3. App.vue se monta
+   ├── onMounted: locale.value = lang ?? 'va'  (lang viene de useQueryParams)
+   └── watch(locale, { immediate: true })
+        ├── 'es'  → messages.value = Spanish  + document.lang = 'es'
+        └── 'va'  → messages.value = Valencia + document.lang = 'ca-valencia'
 
-4. Scenes.vue montado
-   ├── useQueryParams → initScene (modo de pantalla)
-   ├── useAudioControl → refs de audio + estado
-   └── useSubtitles → listo para sincronizar
+4. Scenes.vue se monta
+   ├── useQueryParams() → initScene (ref singleton, compartido)
+   ├── useAudioControl(() => props.language) → audioRefs, isPlayed, isLoading, isError
+   └── useSubtitles(audioRefs, () => props.messages) → showSubtitles, currentSubtitle
 ```
 
 ---
 
-## Configuración Vite (`vite.config.js`)
+## Configuración Vite
 
 ```js
+// vite.config.js
 {
   plugins: [vue()],
-
   resolve: {
-    alias: { '@': resolve(__dirname, 'src') }  // @/composables, @/components, etc.
+    alias: { '@': resolve(__dirname, 'src') }  // import '@/composables/...'
   },
-
   esbuild: {
-    drop: ['console']  // Elimina todos los console.log en producción
+    drop: ['console']   // Elimina console.log/warn/error en producción
   },
-
   build: {
     rollupOptions: {
       output: {
         manualChunks: {
-          vue:    ['vue', 'vue-i18n'],   // ~122 KB gzip 43 KB
-          swiper: ['swiper'],             // ~67 KB gzip 21 KB
+          vue:    ['vue', 'vue-i18n'],  // ~122 KB / gzip 43 KB — cacheado por separado
+          swiper: ['swiper'],            // ~67 KB / gzip 21 KB — cacheado por separado
         }
       }
     }
@@ -134,25 +134,35 @@ index.html
 }
 ```
 
-**Por qué code splitting:** El chunk `vue` y `swiper` se cachean por separado. Si solo cambia la lógica de la app, el navegador solo descarga el bundle principal (~35 KB), no los vendors.
+> **Por qué code splitting:** Si solo cambia la lógica de la app, el navegador solo descarga el bundle principal (~37 KB). Los vendors `vue` y `swiper` se sirven cacheados desde la visita anterior.
 
 ---
 
 ## CSS: dos pipelines paralelos
 
-| Pipeline | Ficheros | Compilado por | Cargado en |
+| Pipeline | Ficheros fuente | Compilado por | Cargado en |
 |---|---|---|---|
 | SCSS global | `custom.scss` → `custom.css` | `npx sass` (manual) | `<link>` en `index.html` |
-| CSS de componentes | `<style scoped>` en `.vue` | Vite (automático) | Bundle JS |
+| CSS de componentes | `<style scoped>` en `.vue` | Vite (automático en build) | Bundle JS |
 
-> **Importante:** Si editas `src/scss/custom.scss` o cualquier `_partial.scss`, debes recompilar manualmente con `npx sass`. Vite NO vigila estos ficheros en dev.
+> **Importante:** Si editas `src/scss/custom.scss` o cualquier `_partial.scss`, debes ejecutar `npx sass` manualmente. Vite **no** vigila estos ficheros durante `npm run dev`.
+
+Los estilos en `<style scoped>` de `Scenes.vue` tienen precedencia sobre las clases globales de `custom.css` para los overrides específicos del carrusel (p.ej. `padding-bottom: 0` en `.scene-card`).
 
 ---
 
 ## Accesibilidad en la arquitectura
 
-- `SkipLink.vue` — permite saltar al menú de idiomas (`#languages`) o al contenido principal (`#main-content`)
-- Todas las imágenes decorativas tienen `role="none"` o `alt=""`
-- Touch targets mínimo 44px en todos los elementos interactivos
-- `prefers-reduced-motion` desactiva todas las animaciones y transiciones
-- `aria-live="polite"` en el área de subtítulos para lectores de pantalla
+| Mecanismo | Implementación |
+|---|---|
+| Skip links | `SkipLink.vue` → `#languages` y `#main-content` |
+| Landmarks ARIA | `<header>`, `<main>`, `role="region"` en bloques de contenido |
+| Un solo `<h1>` | El título de la escena activa en `Scenes.vue`; `Header.vue` usa `<span class="visually-hidden">` |
+| Estados de botón | `aria-pressed` (idioma), `aria-controls` (audio), `aria-label` dinámico |
+| Subtítulos | `role="status" aria-live="polite"` — lectores de pantalla los anuncian |
+| Touch targets | Mínimo 44px en todos los elementos interactivos |
+| Teclado | `:focus-visible` con outline 3px dorado; `:focus:not(:focus-visible)` sin outline |
+| Movimiento | `prefers-reduced-motion` desactiva animaciones y transiciones en tokens y CSS scoped |
+| Vídeo | Sin `autoplay` — el usuario decide cuándo reproducirlo |
+| Imágenes decorativas | `alt=""` + `role="none"` |
+| Zoom | `maximum-scale=5.0` en viewport — permite hasta 5× de zoom |

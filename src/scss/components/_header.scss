@@ -1,7 +1,4 @@
-// =============================================================
-// HEADER — mobile-first
-// =============================================================
-
+// ── Site header ────────────────────────────────────────────────────────────
 .site-header {
   display: flex;
   align-items: center;
@@ -14,19 +11,11 @@
   width: 90px;
   height: auto;
   flex-shrink: 0;
-  object-fit: contain;
 }
 
 .site-header__sponsor {
   width: 45%;
   max-width: 200px;
-  height: auto;
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
 }
 
 @media (min-width: 768px) {

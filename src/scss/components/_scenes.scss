@@ -1,7 +1,4 @@
-// =============================================================
-// SCENE CARD — mobile-first
-// =============================================================
-
+// ── Scene card ─────────────────────────────────────────────────────────────
 .scene-card {
   display: flex;
   flex-direction: column;
@@ -13,16 +10,16 @@
 }
 
 .scene-card__title {
-  font-family: var(--font-display, Georgia, serif);
+  font-family: var(--font-display, Georgia);
   font-size: clamp(1.75rem, 6vw, 2.5rem);
-  letter-spacing: -0.01em;
   font-weight: 700;
   color: var(--color-accent, #FFD700);
+  letter-spacing: -0.01em;
   line-height: 1.2;
   margin: 0;
 }
 
-/* Animación de entrada al activarse el slide */
+// Title fade-in on active slide
 .swiper-slide-active .scene-card__title {
   animation: titleFadeIn 0.35s ease forwards;
 }

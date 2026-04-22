@@ -1,5 +1,5 @@
 /* =============================================================
-   BASE STYLES — usa los tokens definidos en _tokens.scss
+   BASE STYLES — uses tokens defined in _tokens.scss
    ============================================================= */
 
 body {
@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold, 700);
 }
 
-/* ── App fade-in al cargar ─────────────────────────────────── */
+/* ── App fade-in on load ─────────────────────────────────── */
 #app {
   animation: appFadeIn 0.4s ease forwards;
 }

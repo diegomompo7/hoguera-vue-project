@@ -2,7 +2,11 @@
 
 ## ¿Qué es este proyecto?
 
-Guía multimedia interactiva para la **Foguera Sant Blai de Dalt** de Alacant (Festes de Sant Joan). Diseñada para uso **móvil en el evento presencial**: los visitantes pueden escanear un QR, escuchar la audioguía de cada escena con subtítulos sincronizados y acceder a una introducción en lengua de signos.
+Guía multimedia interactiva para la **Foguera Sant Blai de Dalt** de Alacant (Festes de Sant Joan). Diseñada para uso **móvil en el evento presencial**: los visitantes escanean un QR, escuchan la audioguía de cada escena con subtítulos sincronizados en tiempo real y pueden acceder a una introducción en lengua de signos.
+
+**Audiencia:** visitantes del evento, con soporte completo de accesibilidad (lectores de pantalla, teclado, `prefers-reduced-motion`, touch targets 44px+).
+
+**Idiomas:** valenciano (`ca-valencia`) por defecto · español (`es`) opcional.
 
 ---
 
@@ -10,12 +14,12 @@ Guía multimedia interactiva para la **Foguera Sant Blai de Dalt** de Alacant (F
 
 | Tecnología | Versión | Uso |
 |---|---|---|
-| Vue 3 | 3.4.37 | Framework UI (Composition API + `<script setup>`) |
+| Vue 3 | 3.4.37 | Framework UI — Composition API + `<script setup>` |
 | Vite | 5.4.2 | Build tool y dev server |
-| Swiper | 11.1.10 | Carrusel táctil con efecto fade |
-| vue-i18n | 9.14.0 | Internacionalización (español + valenciano) |
-| Bootstrap | 5.3.3 | Utilidades CSS (grid, helpers) |
-| Sass | 1.99.0 | Preprocesador CSS con tokens de diseño |
+| Swiper | 11.1.10 | Carrusel táctil con loop |
+| vue-i18n | 9.14.0 | Internacionalización (textos + rutas de assets) |
+| Bootstrap | 5.3.3 | Utilidades CSS (grid, helpers, visually-hidden) |
+| Sass | 1.99.0 | Preprocesador CSS con design tokens |
 
 ---
 
@@ -34,7 +38,7 @@ npm run build
 # Preview del build
 npm run preview
 
-# Compilar SCSS manualmente (si editas custom.scss)
+# Compilar SCSS manualmente (si editas custom.scss o cualquier _partial.scss)
 npx sass src/scss/custom.scss src/scss/custom.css --style=compressed --no-source-map
 ```
 
@@ -42,14 +46,17 @@ npx sass src/scss/custom.scss src/scss/custom.css --style=compressed --no-source
 
 ## Parámetros de URL
 
-| Parámetro | Valores | Descripción |
+| Parámetro | Valores | Efecto |
 |---|---|---|
-| `?lang=` | `es` / `va` | Fuerza idioma (español / valenciano) |
+| `?lang=` | `es` / `va` | Fuerza idioma al cargar |
 | `?init=` | `1`–`5` | Abre directamente una escena del carrusel |
 
 **Ejemplos:**
-- `?lang=es` → abre en español
-- `?lang=va&init=3` → abre en valenciano directamente en la escena 3
+- `/` → pantalla de introducción en valenciano
+- `/?lang=es` → introducción en español
+- `/?lang=va&init=3` → valenciano, directamente en la escena 3
+
+> `?init=` acepta valores 1–5 (1-indexed). Internamente se convierte a 0–4.
 
 ---
 
@@ -57,7 +64,7 @@ npx sass src/scss/custom.scss src/scss/custom.css --style=compressed --no-source
 
 | Fichero | Contenido |
 |---|---|
-| [architecture.md](./architecture.md) | Estructura de carpetas, diagrama de componentes, flujo de bootstrap, configuración Vite |
-| [functionality.md](./functionality.md) | Modos de pantalla, flujos de usuario, features de audio y subtítulos |
-| [business-logic.md](./business-logic.md) | Composables, i18n, gestión de estado, formato de datos |
-| [visual-system.md](./visual-system.md) | Tokens de diseño, sistema de botones, SCSS, tipografía |
+| [architecture.md](./architecture.md) | Estructura de carpetas, diagrama de componentes, flujo de arranque, configuración Vite, pipelines CSS |
+| [functionality.md](./functionality.md) | Tres modos de pantalla, flujos de usuario, features de audio, subtítulos, idioma y accesibilidad |
+| [business-logic.md](./business-logic.md) | Composables, i18n, gestión de estado, formato de datos, índices del carrusel |
+| [visual-system.md](./visual-system.md) | Design tokens, sistema de botones, SCSS, tipografía, utilidades CSS |

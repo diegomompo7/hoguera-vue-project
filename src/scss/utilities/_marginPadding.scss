@@ -1,60 +1,18 @@
-$marginPadding: (
-  /* 2px  */ 0_5: 0.125rem,
-  /* 6px  */ 1_5: 0.375rem,
-  /* 10px */ 2_25: 0.625rem,
-  /* 12px */ 2_5: 0.75rem,
-  /* 14px */ 2_75: 0.875rem,
-  /* 20px */ 3_5: 1.25rem,
-  /* 28px */ 4_2: 1.75rem,
-  /* 32px */ 4_4: 2rem,
-  /* 36px */ 4_5: 2.25rem,
-  /* 40px */ 4_6: 2.5rem,
-  /* 44px */ 4_8: 2.75rem,
-  /* 56px */ 5_5: 3.5rem,
-  /* 64px */ 6: 4rem,
-  /* 80px */ 7: 5rem,
-  /* 96px */ 8: 6rem,
-  /* 112px */ 9: 7rem,
-  /* 128px */ 10: 8rem,
-  /* 144px */ 11: 9rem,
-  /* 160px */ 12: 10rem,
-  /* 176px */ 13: 11rem,
-  /* 192px */ 14: 12rem,
-  /* 208px */ 15: 13rem,
-  /* 224px */ 16: 14rem,
-  /* 240px */ 17: 15rem,
-  /* 256px */ 18: 16rem,
-  /* 288px */ 19: 18rem,
-  /* 320px */ 20: 20rem,
-  /* 384px */ 21: 24rem
-);
+// Custom fractional spacing utilities extending Bootstrap's scale.
+// Naming: {property}-{value_decimal} where _ = decimal point.
+// Base: Bootstrap spacer = 1rem → scale: 1=0.25rem, 2=0.5rem, 3=1rem, 4=1.5rem, 5=3rem
 
-@mixin applyMarginPadding($size, $property) {
-  #{$property}: map-get($marginPadding, $size);
-}
+// Margin-bottom
+.mb-3_5 { margin-bottom: 1.25rem !important; }   // between 3 (1rem) and 4 (1.5rem)
 
-@mixin generate-utility-classes($type, $properties) {
-  @each $size, $value in $marginPadding {
-    .#{$type}-#{$size} {
-      @each $property in $properties {
-        @include applyMarginPadding($size, $property);
-      }
-    }
-  }
-}
+// Padding-bottom
+.pb-2_5 { padding-bottom: 0.75rem !important; }  // between 2 (0.5rem) and 3 (1rem)
 
-@include generate-utility-classes('m', 'margin');
-@include generate-utility-classes('mx', ('margin-right', 'margin-left'));
-@include generate-utility-classes('my', ('margin-top', 'margin-bottom'));
-@include generate-utility-classes('mt', 'margin-top');
-@include generate-utility-classes('me', 'margin-right');
-@include generate-utility-classes('mb', 'margin-bottom');
-@include generate-utility-classes('ms', 'margin-left');
+// Padding-top
+.pt-4_4 { padding-top: 1.5rem !important; }      // ≈ Bootstrap pt-4 extended
 
-@include generate-utility-classes('p', 'padding');
-@include generate-utility-classes('px', ('padding-right', 'padding-left'));
-@include generate-utility-classes('py', ('padding-top', 'padding-bottom'));
-@include generate-utility-classes('pt', 'padding-top');
-@include generate-utility-classes('pe', 'padding-right');
-@include generate-utility-classes('pb', 'padding-bottom');
-@include generate-utility-classes('ps', 'padding-left');
+// Margin-end (inline-end)
+.me-2_25 { margin-inline-end: 0.5rem !important; }
+
+// Margin-top (used in Scenes.vue; kept for reference)
+.mt-4_6 { margin-top: 2.5rem !important; }       // large top gap (replaced by mt-2 in scenes)

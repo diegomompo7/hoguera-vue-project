@@ -1,7 +1,6 @@
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
-import 'swiper/css/effect-fade'
 import { ref } from 'vue'
 import { useQueryParams } from '@/composables/useQueryParams'
 import { useAudioControl } from '@/composables/useAudioControl'
@@ -63,6 +62,7 @@ const audioText = (key, playText) => {
 const getSceneMessage = (index) => props.messages[`scene${((5 + index) % 5) + 1}`]
 const getSlideKey     = (index) => `scene-${((5 + index) % 5) + 1}-${props.language}`
 
+// ── Audio ended: parar + resetear subtítulos ─────────────────
 const onAudioEnded = (index) => {
   handleAudioEnded(index)
   resetSubtitles()
