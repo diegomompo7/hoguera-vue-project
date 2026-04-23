@@ -35,10 +35,10 @@
   "audio4":               "/assets/audio/Spanish/Scene4.mp3",
   "audio5":               "/assets/audio/Spanish/Scene5.mp3",
 
-  "subtitleIntroduction": "/assets/audio/Spanish/SceneIntroduction.json",
-  "subtitle1":            "/assets/audio/Spanish/Scene1.json",
-  "subtitle2":            "/assets/audio/Spanish/Scene2.json",
-  "subtitle3":            "/assets/audio/Spanish/Scene3.json",
-  "subtitle4":            "/assets/audio/Spanish/Scene4.json",
-  "subtitle5":            "/assets/audio/Spanish/Scene5.json"
+  "subtitleIntroduction": "/assets/audio/Spanish/SceneIntroduction.srt",
+  "subtitle1":            "/assets/audio/Spanish/Scene1.srt",
+  "subtitle2":            "/assets/audio/Spanish/Scene2.srt",
+  "subtitle3":            "/assets/audio/Spanish/Scene3.srt",
+  "subtitle4":            "/assets/audio/Spanish/Scene4.srt",
+  "subtitle5":            "/assets/audio/Spanish/Scene5.srt"
 }

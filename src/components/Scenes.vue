@@ -75,7 +75,7 @@ const onAudioEnded = (index) => {
     <!-- ── Pantalla de introducción ──────────────────────── -->
     <swiper
       v-if="initScene === -1"
-      class="bg-black mt-2 text-yellow swiper-container"
+      class="bg-black mt-1 text-yellow swiper-container"
       :aria-label="messages.introduction">
 
       <swiper-slide class="scene-card">
@@ -135,7 +135,7 @@ const onAudioEnded = (index) => {
           role="status"
           aria-live="polite"
           class="subtitles fs-text_base text-center">
-          {{ currentSubtitle.word }}
+          {{ currentSubtitle.text }}
         </p>
       </Transition>
     </swiper>
@@ -167,10 +167,10 @@ const onAudioEnded = (index) => {
     <!-- ── Carrusel de escenas ───────────────────────────── -->
     <template v-if="initScene < 5 && initScene !== -1">
       <swiper
-        class="bg-black mt-2 text-yellow swiper-container"
+        class="bg-black mt-1 text-yellow swiper-container"
         :loop="true"
         :speed="400"
-        :initial-slide="initScene != null ? initScene : 0"
+:initial-slide="initScene != null ? initScene : 0"
         @swiper="onSwiper"
         @slideChangeTransitionStart="handleSlideChange"
         role="region"
@@ -224,7 +224,7 @@ const onAudioEnded = (index) => {
             role="status"
             aria-live="polite"
             class="subtitles fs-text_base text-center">
-            {{ currentSubtitle.word }}
+            {{ currentSubtitle.text }}
           </p>
         </Transition>
       </swiper>
@@ -263,7 +263,7 @@ const onAudioEnded = (index) => {
   display: block;
   width: fit-content;
   max-width: 85%;
-  margin: 1.5rem auto 0.75rem;
+  margin: 1.5rem auto 1.5rem;
   padding: 0.5rem 1.25rem;
   text-align: center;
   background: rgba(255, 215, 0, 0.08);

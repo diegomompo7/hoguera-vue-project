@@ -35,10 +35,10 @@
   "audio4":               "/assets/audio/Valencia/Scene42025.mp3",
   "audio5":               "/assets/audio/Valencia/Scene52025.mp3",
 
-  "subtitleIntroduction": "/assets/audio/Valencia/SceneIntroduction.json",
-  "subtitle1":            "/assets/audio/Valencia/Scene1.json",
-  "subtitle2":            "/assets/audio/Valencia/Scene2.json",
-  "subtitle3":            "/assets/audio/Valencia/Scene3.json",
-  "subtitle4":            "/assets/audio/Valencia/Scene4.json",
-  "subtitle5":            "/assets/audio/Valencia/Scene5.json"
+  "subtitleIntroduction": "/assets/audio/Valencia/SceneIntroduction.srt",
+  "subtitle1":            "/assets/audio/Valencia/Scene1.srt",
+  "subtitle2":            "/assets/audio/Valencia/Scene2.srt",
+  "subtitle3":            "/assets/audio/Valencia/Scene3.srt",
+  "subtitle4":            "/assets/audio/Valencia/Scene4.srt",
+  "subtitle5":            "/assets/audio/Valencia/Scene5.srt"
 }

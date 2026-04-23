@@ -6,7 +6,7 @@ Guía multimedia interactiva para la **Foguera Sant Blai de Dalt** de Alacant (F
 
 **Audiencia:** visitantes del evento, con soporte completo de accesibilidad (lectores de pantalla, teclado, `prefers-reduced-motion`, touch targets 44px+).
 
-**Idiomas:** valenciano (`ca-valencia`) por defecto · español (`es`) opcional.
+**Idiomas:** valenciano (`va`) por defecto · español (`es`) opcional.
 
 ---
 
@@ -48,7 +48,7 @@ npx sass src/scss/custom.scss src/scss/custom.css --style=compressed --no-source
 
 | Parámetro | Valores | Efecto |
 |---|---|---|
-| `?lang=` | `es` / `va` | Fuerza idioma al cargar |
+| `?lang=` | `es` / `va` | Fuerza el idioma al cargar |
 | `?init=` | `1`–`5` | Abre directamente una escena del carrusel |
 
 **Ejemplos:**
@@ -64,7 +64,7 @@ npx sass src/scss/custom.scss src/scss/custom.css --style=compressed --no-source
 
 | Fichero | Contenido |
 |---|---|
-| [architecture.md](./architecture.md) | Estructura de carpetas, diagrama de componentes, flujo de arranque, configuración Vite, pipelines CSS |
-| [functionality.md](./functionality.md) | Tres modos de pantalla, flujos de usuario, features de audio, subtítulos, idioma y accesibilidad |
+| [architecture.md](./architecture.md) | Estructura de carpetas, diagrama de componentes, flujo de arranque, configuración Vite, pipeline CSS |
+| [functionality.md](./functionality.md) | Tres modos de pantalla, flujos de usuario, audio, subtítulos, idioma y accesibilidad |
 | [business-logic.md](./business-logic.md) | Composables, i18n, gestión de estado, formato de datos, índices del carrusel |
 | [visual-system.md](./visual-system.md) | Design tokens, sistema de botones, SCSS, tipografía, utilidades CSS |

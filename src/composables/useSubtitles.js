@@ -1,7 +1,24 @@
 import { ref, onUnmounted } from 'vue'
 
-// Module-level cache: url → stab_segments[]
 const subtitleCache = new Map()
+
+function toSeconds(h, m, s, ms) {
+  return +h * 3600 + +m * 60 + +s + +ms / 1000
+}
+
+function parseSRT(text) {
+  return text.trim().split(/\n\n+/).flatMap(block => {
+    const lines = block.trim().split('\n')
+    if (lines.length < 3) return []
+    const match = lines[1].match(/(\d{2}):(\d{2}):(\d{2}),(\d{3})\s*-->\s*(\d{2}):(\d{2}):(\d{2}),(\d{3})/)
+    if (!match) return []
+    return [{
+      start: toSeconds(match[1], match[2], match[3], match[4]),
+      end:   toSeconds(match[5], match[6], match[7], match[8]),
+      text:  lines.slice(2).join(' ')
+    }]
+  })
+}
 
 export function useSubtitles(audioRefs, getMessages) {
   const showSubtitles   = ref(false)
@@ -43,8 +60,8 @@ export function useSubtitles(audioRefs, getMessages) {
     if (subtitleCache.has(url)) { segments = subtitleCache.get(url); return }
     try {
       const res  = await fetch(url)
-      const data = await res.json()
-      segments = data.stab_segments ?? []
+      const text = await res.text()
+      segments = parseSRT(text)
       subtitleCache.set(url, segments)
     } catch {
       segments = []

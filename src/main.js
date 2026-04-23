@@ -8,7 +8,7 @@ import Valencia from './lang/va.json'
 const i18n = createI18n({
   legacy: false,
   locale: document.documentElement.lang || 'ca-valencia',
-  defaultLocale: 'ca-valencia',
+  fallbackLocale: 'ca-valencia',
   messages: {
     'es': Spanish,
     'ca-valencia': Valencia,
