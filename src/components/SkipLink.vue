@@ -1,28 +1,17 @@
-<script setup>
-const removeAriaHidden = (event) => event.target.removeAttribute('aria-hidden')
-const addAriaHidden    = (event) => event.target.setAttribute('aria-hidden', 'true')
-</script>
-
 <template>
   <nav class="skip-links" aria-label="Enllaços de salt">
     <a
       href="#languages"
       class="skip-link"
       aria-label="Saltar al menú d'idiomes"
-      tabindex="0"
-      aria-hidden="true"
-      @focus="removeAriaHidden"
-      @blur="addAriaHidden">
+      tabindex="0">
       Saltar al menú
     </a>
     <a
       href="#main-content"
       class="skip-link"
       aria-label="Saltar al contingut principal"
-      tabindex="0"
-      aria-hidden="true"
-      @focus="removeAriaHidden"
-      @blur="addAriaHidden">
+      tabindex="0">
       Saltar al contingut
     </a>
   </nav>
