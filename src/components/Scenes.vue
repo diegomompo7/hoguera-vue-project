@@ -102,6 +102,7 @@ const onAudioEnded = (index) => {
               @click="controlAudio(0)"
               aria-controls="audioPlayerIntroduction"
               :aria-label="audioLabel(0)"
+              :aria-pressed="isPlayed[0] ? 'true' : 'false'"
               :disabled="isError[0]">
               {{ audioText(0, messages.audioGuide) }}
             </button>
@@ -109,7 +110,8 @@ const onAudioEnded = (index) => {
             <button
               class="btn-audio btn-audio--secondary"
               @click="toggleSubtitles(-1)"
-              :aria-label="showSubtitles ? messages.disableSubtitle : messages.enableSubtitle">
+              :aria-label="showSubtitles ? messages.disableSubtitle : messages.enableSubtitle"
+              :aria-pressed="showSubtitles ? 'true' : 'false'">
               {{ showSubtitles ? messages.disableSubtitle : messages.enableSubtitle }}
             </button>
           </div>
@@ -205,6 +207,7 @@ const onAudioEnded = (index) => {
               @click="controlAudio(((5 + index) % 5) + 1)"
               :aria-controls="`audioPlayer${((5 + index) % 5) + 1}`"
               :aria-label="audioLabel(((5 + index) % 5) + 1)"
+              :aria-pressed="isPlayed[((5 + index) % 5) + 1] ? 'true' : 'false'"
               :disabled="isError[((5 + index) % 5) + 1]">
               {{ audioText(((5 + index) % 5) + 1, messages.playAudio) }}
             </button>
@@ -212,7 +215,8 @@ const onAudioEnded = (index) => {
             <button
               class="btn-audio btn-audio--secondary"
               @click="toggleSubtitles((5 + index) % 5)"
-              :aria-label="showSubtitles ? messages.disableSubtitle : messages.enableSubtitle">
+              :aria-label="showSubtitles ? messages.disableSubtitle : messages.enableSubtitle"
+              :aria-pressed="showSubtitles ? 'true' : 'false'">
               {{ showSubtitles ? messages.disableSubtitle : messages.enableSubtitle }}
             </button>
           </div>
