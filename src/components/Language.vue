@@ -16,8 +16,6 @@ defineProps({
     v-if="initScene === -1"
     class="text-center mb-3_5"
     :aria-label="messages.language">
-    <h2 class="visually-hidden">{{ messages.language }}</h2>
-
     <button
       type="button"
       class="language-btn"

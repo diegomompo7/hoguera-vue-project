@@ -14,7 +14,6 @@ defineProps({
       class="site-header__logo"
       role="none" />
     <div class="site-header__sponsor" :aria-label="messages.sponsors">
-      <h2 class="visually-hidden">{{ messages.sponsors }}</h2>
       <img
         src="../assets/img/anis_tenis.png"
         :alt="messages.sponsors"
