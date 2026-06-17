@@ -40,6 +40,7 @@ watch(locale, (newLocale) => {
 <template>
   <SkipLink />
   <main role="main">
+    <h1 class="visually-hidden">{{ messages.scenes }}</h1>
     <div class="text-center pt-1">
       <Language :messages="messages" :setLanguage="setLanguage" id="languages" />
     </div>

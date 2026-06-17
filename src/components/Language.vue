@@ -16,6 +16,7 @@ defineProps({
     v-if="initScene === -1"
     class="text-center mb-3_5"
     :aria-label="messages.language">
+    <h2 class="visually-hidden">{{ messages.language }}</h2>
     <button
       type="button"
       class="language-btn"
@@ -59,6 +60,11 @@ defineProps({
 .language-btn[aria-pressed="true"] {
   border-color: #FFD700;
   opacity: 1;
+}
+
+.language-btn:focus-visible {
+  outline: 3px solid #FFD700;
+  outline-offset: 4px;
 }
 
 @media (prefers-reduced-motion: reduce) {

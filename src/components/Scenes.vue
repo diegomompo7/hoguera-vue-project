@@ -49,7 +49,7 @@ const gotoScene = (scene) => {
 const audioLabel = (key) => {
   if (isError.value[key])   return props.messages.audioError
   if (isLoading.value[key]) return props.messages.audioLoading
-  return isPlayed.value[key] ? props.messages.pauseAudio : props.messages.playAudio
+  return props.messages.audioGuide
 }
 
 const audioText = (key, playText) => {
@@ -79,9 +79,9 @@ const onAudioEnded = (index) => {
       :aria-label="messages.introduction">
 
       <swiper-slide class="scene-card">
-        <h1 class="scene-card__title" role="heading" aria-level="1">
+        <h2 class="scene-card__title">
           {{ messages.introduction }}
-        </h1>
+        </h2>
 
         <audio
           id="audioPlayerIntroduction"
@@ -110,7 +110,7 @@ const onAudioEnded = (index) => {
             <button
               class="btn-audio btn-audio--secondary"
               @click="toggleSubtitles(-1)"
-              :aria-label="showSubtitles ? messages.disableSubtitle : messages.enableSubtitle"
+              :aria-label="messages.subtitles"
               :aria-pressed="showSubtitles ? 'true' : 'false'">
               {{ showSubtitles ? messages.disableSubtitle : messages.enableSubtitle }}
             </button>
@@ -149,7 +149,7 @@ const onAudioEnded = (index) => {
       role="region"
       :aria-label="messages.signLanguage">
       <swiper-slide class="scene-card">
-        <h1 class="scene-card__title">{{ messages.signLanguage }}</h1>
+        <h2 class="scene-card__title">{{ messages.signLanguage }}</h2>
         <video
           src="../assets/video/signLanguageIntroduction.mp4"
           class="w-5_12 m-auto pb-2_5"
@@ -183,9 +183,9 @@ const onAudioEnded = (index) => {
           v-for="(_, index) in 5"
           :key="getSlideKey(index)">
 
-          <h1 class="scene-card__title" role="heading" aria-level="1">
+          <h2 class="scene-card__title">
             {{ getSceneMessage(index) }}
-          </h1>
+          </h2>
 
           <audio
             :id="`audioPlayer${((5 + index) % 5) + 1}`"
@@ -215,7 +215,7 @@ const onAudioEnded = (index) => {
             <button
               class="btn-audio btn-audio--secondary"
               @click="toggleSubtitles((5 + index) % 5)"
-              :aria-label="showSubtitles ? messages.disableSubtitle : messages.enableSubtitle"
+              :aria-label="messages.subtitles"
               :aria-pressed="showSubtitles ? 'true' : 'false'">
               {{ showSubtitles ? messages.disableSubtitle : messages.enableSubtitle }}
             </button>

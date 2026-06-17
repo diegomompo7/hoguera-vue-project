@@ -5,6 +5,10 @@
   "pageValencia":      "Pàgina en Valencià",
   "pageSpanish":       "Pàgina en Castellà",
 
+  "skipLinks":         "Enllaços de salt",
+  "skipLanguages":     "Saltar al menú d'idiomes",
+  "skipContent":       "Saltar al contingut principal",
+
   "scenes":            "Guia de la Foguera",
   "introduction":      "Introducció",
   "audioGuide":        "Audioguia",
@@ -13,6 +17,7 @@
   "pauseAudio":        "Pausar audioguia",
   "audioLoading":      "Carregant…",
   "audioError":        "Error en carregar l'àudio",
+  "subtitles":         "Subtítols",
   "enableSubtitle":    "Activar Subtítols",
   "disableSubtitle":   "Desactivar Subtítols",
   "signLanguageButton":"Llengua de signes",

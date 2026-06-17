@@ -1,18 +1,21 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
+
 <template>
-  <nav class="skip-links" aria-label="Enllaços de salt">
+  <nav class="skip-links" :aria-label="t('skipLinks')">
     <a
       href="#languages"
       class="skip-link"
-      aria-label="Saltar al menú d'idiomes"
       tabindex="0">
-      Saltar al menú
+      {{ t('skipLanguages') }}
     </a>
     <a
       href="#main-content"
       class="skip-link"
-      aria-label="Saltar al contingut principal"
       tabindex="0">
-      Saltar al contingut
+      {{ t('skipContent') }}
     </a>
   </nav>
 </template>
