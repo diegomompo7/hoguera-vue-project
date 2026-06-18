@@ -150,6 +150,7 @@ const onAudioEnded = (index) => {
           class="w-5_12"
           controls
           playsinline
+          autoplay
           :aria-label="messages['scene' + signLangSceneIndex] + ' — ' + messages.videoSignLanguage">
           <track
             kind="captions"
