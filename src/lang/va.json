@@ -21,8 +21,9 @@
   "enableSubtitle":    "Activar Subtítols",
   "disableSubtitle":   "Desactivar Subtítols",
   "signLanguageButton":"Llengua de signes",
-  "videoSignLanguage": "Introducció en llengua de signes",
-  "signLanguage":      "Introducció en llengua de signes",
+  "videoSignLanguage": "Vídeo en llengua de signes",
+  "signLanguage":      "Llengua de signes",
+  "backToScene":       "Tornar a l'escena",
   "swiperScenes":      "Escenes de la foguera",
   "previousScene":     "Escena anterior",
   "nextScene":         "Escena següent",
@@ -45,5 +46,17 @@
   "subtitle2":            "/assets/audio/Valencia/Scene2.srt",
   "subtitle3":            "/assets/audio/Valencia/Scene3.srt",
   "subtitle4":            "/assets/audio/Valencia/Scene4.srt",
-  "subtitle5":            "/assets/audio/Valencia/Scene5.srt"
+  "subtitle5":            "/assets/audio/Valencia/Scene5.srt",
+
+  "signLanguageVideo1":   "/assets/video/signLanguageScene1.mp4",
+  "signLanguageVideo2":   "/assets/video/signLanguageScene2.mp4",
+  "signLanguageVideo3":   "/assets/video/signLanguageScene3.mp4",
+  "signLanguageVideo4":   "/assets/video/signLanguageScene4.mp4",
+  "signLanguageVideo5":   "/assets/video/signLanguageScene5.mp4",
+
+  "signLanguageSub1":     "/assets/captions/signLanguageScene1.vtt",
+  "signLanguageSub2":     "/assets/captions/signLanguageScene2.vtt",
+  "signLanguageSub3":     "/assets/captions/signLanguageScene3.vtt",
+  "signLanguageSub4":     "/assets/captions/signLanguageScene4.vtt",
+  "signLanguageSub5":     "/assets/captions/signLanguageScene5.vtt"
 }

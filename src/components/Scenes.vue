@@ -45,6 +45,12 @@ const gotoScene = (scene) => {
   initScene.value = scene
 }
 
+const signLangSceneIndex = ref(1)
+const openSignLang = (sceneNum) => {
+  signLangSceneIndex.value = sceneNum
+  gotoScene(6)
+}
+
 // ── Helpers de texto/aria para botones de audio ──────────────
 const audioLabel = (key) => {
   if (isError.value[key])   return props.messages.audioError
@@ -116,18 +122,7 @@ const onAudioEnded = (index) => {
             </button>
           </div>
 
-          <!-- Separador (solo en sm+) -->
-          <div class="intro-controls__sep" aria-hidden="true"></div>
 
-          <!-- Lengua de signos -->
-          <div class="audio-controls">
-            <button
-              class="btn-audio"
-              @click="gotoScene(6)"
-              :aria-label="messages.videoSignLanguage">
-              {{ messages.signLanguageButton }}
-            </button>
-          </div>
         </div>
       </swiper-slide>
 
@@ -149,20 +144,28 @@ const onAudioEnded = (index) => {
       role="region"
       :aria-label="messages.signLanguage">
       <swiper-slide class="scene-card">
-        <h2 class="scene-card__title">{{ messages.signLanguage }}</h2>
+        <h2 class="scene-card__title">{{ messages[`scene${signLangSceneIndex}`] }} — {{ messages.signLanguage }}</h2>
         <video
-          src="../assets/video/signLanguageIntroduction.mp4"
-          class="w-5_12 m-auto pb-2_5"
+          :src="$t('signLanguageVideo' + signLangSceneIndex)"
+          class="w-5_12"
           controls
           playsinline
-          :aria-label="messages.videoSignLanguage">
+          :aria-label="messages['scene' + signLangSceneIndex] + ' — ' + messages.videoSignLanguage">
           <track
             kind="captions"
-            src="/assets/captions/signLanguageIntroduction.vtt"
+            :src="$t('signLanguageSub' + signLangSceneIndex)"
             srclang="es"
             label="Español"
             default />
         </video>
+        <div class="audio-controls sign-lang-back">
+          <button
+            class="btn-audio btn-audio--secondary"
+            @click="gotoScene(signLangSceneIndex - 1)"
+            :aria-label="messages.backToScene">
+            {{ messages.backToScene }}
+          </button>
+        </div>
       </swiper-slide>
     </swiper>
 
@@ -219,6 +222,13 @@ const onAudioEnded = (index) => {
               :aria-pressed="showSubtitles ? 'true' : 'false'">
               {{ showSubtitles ? messages.disableSubtitle : messages.enableSubtitle }}
             </button>
+
+            <button
+              class="btn-audio"
+              @click="openSignLang(((5 + index) % 5) + 1)"
+              :aria-label="messages.videoSignLanguage">
+              {{ messages.signLanguageButton }}
+            </button>
           </div>
         </swiper-slide>
 
@@ -259,6 +269,10 @@ const onAudioEnded = (index) => {
 <style scoped>
 .scene-card {
   padding-bottom: 0;
+}
+
+.scene-card video {
+  margin-top: var(--space-lg, 1.5rem);
 }
 
 
@@ -347,23 +361,11 @@ const onAudioEnded = (index) => {
   padding: 0.5rem 1.25rem;
 }
 
-.intro-controls__sep {
-  display: none;
-}
-
 @media (min-width: 576px) {
   .intro-controls {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
-  }
-
-  .intro-controls__sep {
-    display: block;
-    width: 1px;
-    height: 80px;
-    background: rgba(255, 215, 0, 0.25);
-    align-self: center;
   }
 }
 
