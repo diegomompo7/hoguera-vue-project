@@ -1,9 +1,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { useQueryParams } from '@/composables/useQueryParams'
 
 const { locale } = useI18n()
-const { initScene } = useQueryParams()
 
 defineProps({
   messages:    { type: Object,   required: true },
@@ -13,7 +11,6 @@ defineProps({
 
 <template>
   <nav
-    v-if="initScene === -1"
     class="text-center mb-3_5"
     :aria-label="messages.language">
     <h2 class="visually-hidden">{{ messages.language }}</h2>

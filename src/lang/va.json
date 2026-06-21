@@ -10,7 +10,7 @@
   "skipContent":       "Saltar al contingut principal",
 
   "scenes":            "Guia de la Foguera",
-  "introduction":      "Introducció",
+  "introduction":      "Foguera Sant Blai De Dalt",
   "audioGuide":        "Audioguia",
   "audioControls":     "Controls d'àudio",
   "playAudio":         "Reproduir audioguia",
@@ -28,11 +28,11 @@
   "previousScene":     "Escena anterior",
   "nextScene":         "Escena següent",
 
-  "scene1": "Banyà",
-  "scene2": "La Nimfa de l'Aigua",
-  "scene3": "La Palmera de Focs",
-  "scene4": "La Palometa",
-  "scene5": "Les Belleses d'Alacant",
+  "scene1": "Supervivienc-IA",
+  "scene2": "Els cocodrils",
+  "scene3": "Els mussols",
+  "scene4": "L'elefant",
+  "scene5": "Els pardals",
 
   "audioIntroduction":    "/assets/audio/Valencia/SceneIntroduction.mp3",
   "audio1":               "/assets/audio/Valencia/Scene12025.mp3",

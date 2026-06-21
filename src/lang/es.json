@@ -10,7 +10,7 @@
   "skipContent":       "Saltar al contenido principal",
 
   "scenes":            "Guía de la Foguera",
-  "introduction":      "Introducción",
+  "introduction":      "Foguera Sant Blai De Dalt",
   "audioGuide":        "Audioguía",
   "audioControls":     "Controles de audio",
   "playAudio":         "Reproducir audioguía",
@@ -28,11 +28,11 @@
   "previousScene":     "Escena anterior",
   "nextScene":         "Escena siguiente",
 
-  "scene1": "La Noche de la Baña",
-  "scene2": "La Ninfa del Agua",
-  "scene3": "La Palmera de Fuegos",
-  "scene4": "La Palometa",
-  "scene5": "Las Bellezas de Alicante",
+  "scene1": "Supervivienc-IA",
+  "scene2": "Los cocodrilos",
+  "scene3": "Los búhos",
+  "scene4": "El elefante",
+  "scene5": "Los pájaros",
 
   "audioIntroduction":    "/assets/audio/Spanish/SceneIntroduction.mp3",
   "audio1":               "/assets/audio/Spanish/Scene1.mp3",
