@@ -113,13 +113,13 @@ const onAudioEnded = (index) => {
               {{ audioText(0, messages.audioGuide) }}
             </button>
 
-            <button
+            <!--<button
               class="btn-audio btn-audio--secondary"
               @click="toggleSubtitles(-1)"
               :aria-label="messages.subtitles"
               :aria-pressed="showSubtitles ? 'true' : 'false'">
               {{ showSubtitles ? messages.disableSubtitle : messages.enableSubtitle }}
-            </button>
+            </button>-->
           </div>
 
 
@@ -233,7 +233,7 @@ const onAudioEnded = (index) => {
           </div>
         </swiper-slide>
 
-        <Transition name="subtitle-fade">
+        <!--<Transition name="subtitle-fade">
           <p
             v-if="currentSubtitle && showSubtitles"
             role="status"
@@ -241,7 +241,7 @@ const onAudioEnded = (index) => {
             class="subtitles fs-text_base text-center">
             {{ currentSubtitle.text }}
           </p>
-        </Transition>
+        </Transition>-->
       </swiper>
 
       <!-- Navegación fuera del swiper -->
