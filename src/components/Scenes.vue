@@ -216,13 +216,13 @@ const onAudioEnded = (index) => {
               {{ audioText(((5 + index) % 5) + 1, messages.playAudio) }}
             </button>
 
-            <button
+            <!--<button
               class="btn-audio btn-audio--secondary"
               @click="toggleSubtitles((5 + index) % 5)"
               :aria-label="messages.subtitles"
               :aria-pressed="showSubtitles ? 'true' : 'false'">
               {{ showSubtitles ? messages.disableSubtitle : messages.enableSubtitle }}
-            </button>
+            </button>-->
 
             <button
               class="btn-audio"
