@@ -34,12 +34,12 @@
   "scene4": "El elefante",
   "scene5": "Los pájaros",
 
-  "audioIntroduction":    "/assets/audio/Spanish/SceneIntroduction2026.mp3?v=1",
-  "audio1":               "/assets/audio/Spanish/Scene12026.mp3?v=1",
-  "audio2":               "/assets/audio/Spanish/Scene22026.mp3?v=1",
-  "audio3":               "/assets/audio/Spanish/Scene32026.mp3?v=1",
-  "audio4":               "/assets/audio/Spanish/Scene42026.mp3?v=1",
-  "audio5":               "/assets/audio/Spanish/Scene52026.mp3?v=1",
+  "audioIntroduction":    "/assets/audio/Spanish/SceneIntroductionDef.mp3",
+  "audio1":               "/assets/audio/Spanish/Scene1Def.mp3",
+  "audio2":               "/assets/audio/Spanish/Scene2Def.mp3",
+  "audio3":               "/assets/audio/Spanish/Scene3Def.mp3",
+  "audio4":               "/assets/audio/Spanish/Scene4Def.mp3",
+  "audio5":               "/assets/audio/Spanish/Scene5Def.mp3",
 
   "subtitleIntroduction": "/assets/audio/Spanish/SceneIntroduction.srt",
   "subtitle1":            "/assets/audio/Spanish/Scene1.srt",

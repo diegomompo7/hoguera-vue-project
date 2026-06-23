@@ -34,12 +34,12 @@
   "scene4": "L'elefant",
   "scene5": "Els pardals",
 
-  "audioIntroduction":    "/assets/audio/Valencia/SceneIntroduction2026.mp3?v=1",
-  "audio1":               "/assets/audio/Valencia/Scene12026.mp3?v=1",
-  "audio2":               "/assets/audio/Valencia/Scene22026.mp3?v=1",
-  "audio3":               "/assets/audio/Valencia/Scene32026.mp3?v=1",
-  "audio4":               "/assets/audio/Valencia/Scene42026.mp3?v=1",
-  "audio5":               "/assets/audio/Valencia/Scene52026.mp3?v=1",
+  "audioIntroduction":    "/assets/audio/Valencia/SceneIntroductionDef.mp3",
+  "audio1":               "/assets/audio/Valencia/Scene1Def.mp3",
+  "audio2":               "/assets/audio/Valencia/Scene2Def.mp3",
+  "audio3":               "/assets/audio/Valencia/Scene3Def.mp3",
+  "audio4":               "/assets/audio/Valencia/Scene4Def.mp3",
+  "audio5":               "/assets/audio/Valencia/Scene5Def.mp3",
 
   "subtitleIntroduction": "/assets/audio/Valencia/SceneIntroduction.srt",
   "subtitle1":            "/assets/audio/Valencia/Scene1.srt",
